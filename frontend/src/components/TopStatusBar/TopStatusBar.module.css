@@ -1,0 +1,106 @@
+.statusBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem 2.5rem;
+  background-color: rgba(10, 14, 20, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: var(--border-subtle);
+}
+
+.userSection {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatarPlaceholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--bg-secondary);
+  border: 2px solid var(--accent-gold);
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.username {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.level {
+  font-size: 0.8rem;
+  color: var(--accent-gold);
+  font-weight: bold;
+}
+
+.xpBarContainer {
+  width: 100px;
+  height: 6px;
+  background-color: var(--bg-secondary);
+  border-radius: 3px;
+  overflow: hidden;
+  margin-left: 0.5rem;
+}
+
+.xpBarFill {
+  height: 100%;
+  background-color: var(--accent-gold);
+}
+
+.resourcesSection {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.resourcePill {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-secondary);
+  border-radius: 20px;
+  padding: 0.25rem 0.5rem;
+  border: var(--border-subtle);
+}
+
+.resourceIcon {
+  margin-right: 0.5rem;
+}
+
+.resourceValue {
+  font-weight: bold;
+  color: var(--text-primary);
+  margin-right: 0.75rem;
+}
+
+.addBtn {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--accent-lime);
+  color: var(--bg-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1;
+  transition: transform 0.1s ease;
+}
+
+.addBtn:hover {
+  transform: scale(1.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .statusBar {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Website Base Theme Colors */
+  --bg-primary: #0a0e14;
+  --bg-secondary: rgba(25, 30, 40, 0.7);
+  --text-primary: #ffffff;
+  --text-secondary: rgba(255, 255, 255, 0.7);
+  
+  /* Brand Accents */
+  --accent-lime: #a3e635; /* Sleek lime green */
+  --glow-lime: 0 0 15px rgba(163, 230, 53, 0.3);
+  
+  /* UI Elements */
+  --border-subtle: 1px solid rgba(255, 255, 255, 0.1);
+  --radius-card: 16px;
+  
+  /* Fonts */
+  --font-heading: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  
+  font-family: var(--font-body);
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+}
