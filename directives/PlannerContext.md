@@ -68,3 +68,14 @@ When requirements change, explain the impact on scope, architecture, data, tasks
 
 ## Continuity
 This file contains permanent planning rules only. Feature-specific requirements, decisions, plans, and task details belong in separate project files or the current prompt. Use the current prompt and attached files as the primary project context.
+
+## Shared Data Constants (Single Source of Truth)
+
+### 1. Rating-Tier Thresholds
+The breakpoints defining a player's quality tier based on their `overallRating` are strictly defined as follows:
+- **Green (Bronze/Base):** `overallRating < 70`
+- **Blue (Silver/Pro):** `overallRating >= 70 AND overallRating <= 79`
+- **Red (Gold/Elite):** `overallRating >= 80 AND overallRating <= 89`
+- **Gold (Special/Legend):** `overallRating >= 90`
+
+*Implementation Note:* These values are mirrored across Java (`TierConstants.java`) and React (`constants/tiers.js`). Since we do not use a shared configuration monorepo, any change to these breakpoints MUST be manually updated in both places.

@@ -1,4 +1,90 @@
-.heroContainer {
+import os
+
+FRONTEND_DIR = "frontend"
+SRC_DIR = os.path.join(FRONTEND_DIR, "src")
+COMPONENTS_DIR = os.path.join(SRC_DIR, "components")
+HERO_WIDGET_DIR = os.path.join(COMPONENTS_DIR, "HeroWidget")
+
+HERO_WIDGET_JSX = """import React, { useEffect, useState } from 'react';
+import styles from './HeroWidget.module.css';
+
+// These are placeholder images (high quality football images).
+// You can replace these URLs with the paths to your own local pictures later!
+const BACKGROUND_IMAGES = [
+  "https://images.unsplash.com/photo-1518605368461-1e1c750b69bc?q=80&w=2074&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=1935&auto=format&fit=crop",
+  "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=2070&auto=format&fit=crop"
+];
+
+export default function HeroWidget() {
+  const [heroData, setHeroData] = useState({
+    headline: 'CREATE YOUR FOOTBALL LEGACY',
+    rank: 'Global Rank: 4,521',
+    rating: 'Team OVR: 86',
+    status: 'Season 1 Active'
+  });
+
+  const [currentBgImage, setCurrentBgImage] = useState("");
+
+  useEffect(() => {
+    // Pick a random image on mount/refresh
+    const randomIndex = Math.floor(Math.random() * BACKGROUND_IMAGES.length);
+    setCurrentBgImage(BACKGROUND_IMAGES[randomIndex]);
+
+    // TODO: Phase 2 REST Wiring
+    /*
+    fetch('/api/v1/dashboard/hero')
+      .then(res => res.json())
+      .then(data => setHeroData(data))
+      .catch(err => console.error("Error fetching hero data", err));
+    */
+  }, []);
+
+  const handlePlayMatch = () => {
+    console.log("PLAY MATCH clicked! Navigation pending Phase 2.");
+    alert("Draft Room coming soon!");
+  };
+
+  const handleCreateRoom = () => {
+    console.log("CREATE ROOM clicked!");
+  };
+
+  return (
+    <div className={styles.heroContainer}>
+      <div className={styles.heroContent}>
+        
+        {/* Dynamic Background Image */}
+        <div 
+          className={styles.playerCompositePlaceholder}
+          style={{ backgroundImage: `url(${currentBgImage})` }}
+        >
+        </div>
+        
+        <div className={styles.heroOverlay}>
+          <div className={styles.statsPanel}>
+            <span className={styles.statItem}>{heroData.status}</span>
+            <span className={styles.statItem}>{heroData.rating}</span>
+            <span className={styles.statItem}>{heroData.rank}</span>
+          </div>
+          <h1 className={styles.headline}>{heroData.headline}</h1>
+          <div className={styles.secondaryActions}>
+            <button className={styles.secondaryBtn} onClick={handleCreateRoom}>
+              Create Room
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Overlapping Primary CTA */}
+      <button className={styles.primaryCta} onClick={handlePlayMatch}>
+        PLAY MATCH
+      </button>
+    </div>
+  );
+}
+"""
+
+HERO_WIDGET_CSS = """.heroContainer {
   position: relative;
   width: 100%;
   margin-bottom: 5rem; /* Space for the overlapping button */
@@ -152,3 +238,18 @@
     display: none; 
   }
 }
+"""
+
+def write_file(path, content):
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    with open(path, 'w', encoding='utf-8') as f:
+        f.write(content)
+    print(f"[+] Wrote {path}")
+
+def update_hero():
+    write_file(os.path.join(HERO_WIDGET_DIR, "HeroWidget.jsx"), HERO_WIDGET_JSX)
+    write_file(os.path.join(HERO_WIDGET_DIR, "HeroWidget.module.css"), HERO_WIDGET_CSS)
+    print("Hero Widget update complete!")
+
+if __name__ == "__main__":
+    update_hero()
