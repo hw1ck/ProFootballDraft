@@ -34,3 +34,25 @@ body {
   min-height: 100vh;
   background-color: var(--bg-primary);
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  border: 2px solid var(--bg-primary); /* creates padding effect */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-lime);
+  box-shadow: var(--glow-lime);
+}
