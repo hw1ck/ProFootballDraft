@@ -31,3 +31,14 @@ export const fetchHub = async () => {
         return null;
     }
 };
+
+export const fetchPlayers = async () => {
+    try {
+        const response = await fetch(`${BASE_URL}/players`, { headers: getHeaders() });
+        if (!response.ok) throw new Error('Failed to fetch players');
+        return await response.json();
+    } catch (error) {
+        console.error("Error fetching players data:", error);
+        return [];
+    }
+};

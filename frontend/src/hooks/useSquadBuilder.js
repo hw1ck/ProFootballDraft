@@ -102,6 +102,7 @@ export function useSquadBuilder(initialLockerRoom = []) {
   return {
     squad,
     lockerRoom,
+    setLockerRoom,
     handleDragEnd,
     clearSquad,
     changeFormation

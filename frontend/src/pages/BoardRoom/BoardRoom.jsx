@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DndContext, MouseSensor, TouchSensor, useSensor, useSensors, DragOverlay } from '@dnd-kit/core';
 import TopStatusBar from '../../components/TopStatusBar/TopStatusBar';
 import PitchGrid from '../../components/PitchGrid/PitchGrid';
@@ -6,14 +6,31 @@ import SidebarControls from '../../components/SidebarControls/SidebarControls';
 import PlayerCard from '../../components/PlayerCard/PlayerCard';
 import formationsData from '../../../../data/formations.json';
 import { useSquadBuilder } from '../../hooks/useSquadBuilder';
-import { mockLockerRoom } from '../../data/mockLockerRoom';
+import { fetchPlayers } from '../../services/api';
+import { adaptPlayerFromApi } from '../../utils/playerAdapter';
 
 export default function BoardRoom() {
   const [formationName, setFormationName] = useState('4-3-3');
   const [activePlayer, setActivePlayer] = useState(null);
+  const [loading, setLoading] = useState(true);
   
-  // Use our custom pure-logic hook for drag/drop
-  const { squad, lockerRoom, handleDragEnd, clearSquad, changeFormation } = useSquadBuilder(mockLockerRoom);
+  // Use our custom pure-logic hook for drag/drop, initially empty
+  const { squad, lockerRoom, setLockerRoom, handleDragEnd, clearSquad, changeFormation } = useSquadBuilder([]);
+
+  useEffect(() => {
+    const loadPlayers = async () => {
+      try {
+        const data = await fetchPlayers();
+        const adaptedPlayers = data.map(adaptPlayerFromApi);
+        setLockerRoom(adaptedPlayers);
+      } catch (error) {
+        console.error("Failed to load players", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+    loadPlayers();
+  }, [setLockerRoom]);
 
   const currentFormation = formationsData.formations.find(f => f.name === formationName) || formationsData.formations[0];
 
@@ -51,23 +68,33 @@ export default function BoardRoom() {
           <TopStatusBar />
           
           <div className="flex-grow flex flex-col md:flex-row overflow-hidden">
-            {/* Main Pitch Area */}
-            <div className="flex-grow flex items-center justify-center p-4 md:p-8 overflow-y-auto">
-              <PitchGrid 
-                formation={currentFormation} 
-                squad={squad} 
-              />
-            </div>
+            {loading ? (
+              <div className="flex-grow flex items-center justify-center">
+                <div className="animate-pulse text-2xl font-bold text-white/50 tracking-widest">
+                  LOADING LOCKER ROOM...
+                </div>
+              </div>
+            ) : (
+              <>
+                {/* Main Pitch Area */}
+                <div className="flex-grow flex items-center justify-center p-4 md:p-8 overflow-y-auto">
+                  <PitchGrid 
+                    formation={currentFormation} 
+                    squad={squad} 
+                  />
+                </div>
 
-            {/* Sidebar Area */}
-            <div className="w-full md:w-96 shrink-0 p-4 md:p-8 md:pl-0 overflow-y-auto border-t md:border-t-0 md:border-l border-white/10 bg-black/20 backdrop-blur-md flex flex-col">
-              <SidebarControls 
-                selectedFormationName={formationName}
-                onFormationChange={handleFormationChange}
-                lockerRoom={lockerRoom}
-                onClearSquad={clearSquad}
-              />
-            </div>
+                {/* Sidebar Area */}
+                <div className="w-full md:w-96 shrink-0 p-4 md:p-8 md:pl-0 overflow-y-auto border-t md:border-t-0 md:border-l border-white/10 bg-black/20 backdrop-blur-md flex flex-col">
+                  <SidebarControls 
+                    selectedFormationName={formationName}
+                    onFormationChange={handleFormationChange}
+                    lockerRoom={lockerRoom}
+                    onClearSquad={clearSquad}
+                  />
+                </div>
+              </>
+            )}
           </div>
         </div>
       </div>

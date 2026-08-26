@@ -2,6 +2,8 @@ package com.profootballdraft.backend.controllers;
 
 import com.profootballdraft.backend.models.*;
 import com.profootballdraft.backend.repositories.*;
+import com.profootballdraft.backend.dto.PlayerResponseDTO;
+import com.profootballdraft.backend.services.PlayerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.transaction.annotation.Transactional;
@@ -13,6 +15,7 @@ import java.util.Map;
 @RequestMapping("/api/v1/players")
 public class PlayerController {
 
+    @Autowired private PlayerService playerService;
     @Autowired private PlayerRepository playerRepository;
     @Autowired private ClubRepository clubRepository;
     @Autowired private NationRepository nationRepository;
@@ -25,6 +28,11 @@ public class PlayerController {
             try { return Integer.parseInt((String) val); } catch (NumberFormatException e) { return 0; }
         }
         return 0; // fallback safe default
+    }
+
+    @GetMapping
+    public List<PlayerResponseDTO> getAllPlayers() {
+        return playerService.getTopPlayers();
     }
 
     @PostMapping("/batch")

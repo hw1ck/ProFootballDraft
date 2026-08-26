@@ -4,7 +4,7 @@ import { getCoordinates } from '../../utils/positionMap';
 import PlayerCard from '../PlayerCard/PlayerCard';
 import './PitchGrid.css';
 
-export default function PitchGrid({ formation, squad, onSlotClick }) {
+export default function PitchGrid({ formation, squad }) {
   if (!formation) return null;
 
   return (
@@ -46,7 +46,7 @@ export default function PitchGrid({ formation, squad, onSlotClick }) {
 // Subcomponents for DnD
 // ----------------------
 
-function DroppableSlot({ index, pos, coords, children }) {
+function DroppableSlot({ index, coords, children }) {
   const { setNodeRef, isOver } = useDroppable({
     id: `pitch-slot-${index}`,
   });
