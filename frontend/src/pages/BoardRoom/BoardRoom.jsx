@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { DndContext, MouseSensor, TouchSensor, useSensor, useSensors, DragOverlay } from '@dnd-kit/core';
-import TopStatusBar from '../../components/TopStatusBar/TopStatusBar';
+import TopNavBar from '../../components/TopNavBar/TopNavBar';
 import PitchGrid from '../../components/PitchGrid/PitchGrid';
 import SidebarControls from '../../components/SidebarControls/SidebarControls';
 import PlayerCard from '../../components/PlayerCard/PlayerCard';
@@ -61,11 +61,11 @@ export default function BoardRoom() {
     <DndContext sensors={sensors} onDragStart={onDragStart} onDragEnd={onDragEnd}>
       <div className="min-h-screen bg-dark-bg text-white flex flex-col font-sans relative overflow-hidden">
         {/* Background Orbs */}
-        <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-neon-blue/20 blur-[120px] pointer-events-none"></div>
-        <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-neon-pink/20 blur-[120px] pointer-events-none"></div>
+        <div className="absolute top-1/2 -translate-y-1/2 left-[5%] w-[30%] h-[40%] rounded-full bg-accent-primary/20 blur-[120px] pointer-events-none"></div>
+        <div className="absolute top-1/2 -translate-y-1/2 right-[5%] w-[30%] h-[40%] rounded-full bg-neon-pink/20 blur-[120px] pointer-events-none"></div>
         
         <div className="relative z-10 flex flex-col h-screen">
-          <TopStatusBar />
+          <TopNavBar />
           
           <div className="flex-grow flex flex-col md:flex-row overflow-hidden">
             {loading ? (

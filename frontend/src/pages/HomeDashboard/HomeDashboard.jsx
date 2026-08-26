@@ -33,9 +33,7 @@ export default function HomeDashboard() {
             {modesData.map(mode => (
               <ModeCard 
                 key={mode.id} 
-                title={mode.title} 
-                description={mode.description} 
-                status={mode.status} 
+                mode={mode}
               />
             ))}
           </div>
@@ -47,9 +45,9 @@ export default function HomeDashboard() {
           <div className={styles.widgetsList}>
             {hubData ? (
                <div className={styles.widgetPlaceholder}>
-                 <h3>{hubData.userTeamName}</h3>
-                 <p>Drafts Completed: {hubData.draftsCompleted}</p>
-                 <p>Current Rank: {hubData.currentRank}</p>
+                 <h3>Team Rating: {hubData.teamRating}</h3>
+                 <p>Upcoming: {hubData.upcomingMatch}</p>
+                 <p>Objectives: {hubData.objectivesCompleted} / {hubData.objectivesTotal}</p>
                </div>
             ) : (
                <div className={styles.widgetPlaceholder}>

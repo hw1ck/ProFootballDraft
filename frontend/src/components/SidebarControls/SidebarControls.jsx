@@ -9,15 +9,15 @@ export default function SidebarControls({ selectedFormationName, onFormationChan
   });
 
   return (
-    <div className="glass-panel p-6 flex flex-col gap-6 h-full border border-white/10 rounded-2xl bg-black/30 backdrop-blur-xl">
+    <div className="glass-panel p-6 flex flex-col gap-6 h-full border border-white/10 rounded-2xl bg-bg-panel backdrop-blur-xl">
       <div className="flex items-center justify-between">
-        <div>
-          <h2 className="text-xl font-bold text-white mb-1 tracking-wide font-display">TACTICS BOARD</h2>
-          <div className="h-[2px] w-12 bg-neon-blue rounded-full mb-1 shadow-[0_0_10px_#00f0ff]"></div>
+        <div className="flex flex-col">
+          <h2 className="text-xl font-bold text-white tracking-wide font-display leading-none mb-2">TACTICS BOARD</h2>
+          <div className="h-[2px] w-12 bg-accent-primary rounded-full shadow-[0_0_10px_var(--color-accent-primary)]"></div>
         </div>
         <button 
           onClick={onClearSquad}
-          className="text-xs font-bold text-red-400 border border-red-500/30 bg-red-500/10 hover:bg-red-500/20 px-3 py-1.5 rounded-full transition-colors uppercase tracking-wider"
+          className="text-xs font-bold text-danger border border-danger/30 bg-danger/10 hover:bg-danger/20 px-3 py-1.5 rounded-full transition-colors uppercase tracking-wider"
         >
           Clear Squad
         </button>
@@ -28,7 +28,7 @@ export default function SidebarControls({ selectedFormationName, onFormationChan
         
         <div className="relative">
           <select 
-            className="w-full appearance-none bg-black/50 border border-white/10 hover:border-white/30 rounded-xl p-4 text-white font-bold tracking-wide focus:outline-none focus:border-neon-blue focus:ring-1 focus:ring-neon-blue transition-all cursor-pointer shadow-inner"
+            className="w-full appearance-none bg-black/50 border border-white/10 hover:border-white/30 rounded-xl p-4 text-white font-bold tracking-wide focus:outline-none focus:border-accent-primary focus:ring-1 focus:ring-accent-primary transition-all cursor-pointer shadow-inner"
             value={selectedFormationName}
             onChange={(e) => onFormationChange(e.target.value)}
           >
@@ -38,7 +38,7 @@ export default function SidebarControls({ selectedFormationName, onFormationChan
               </option>
             ))}
           </select>
-          <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-neon-blue">
+          <div className="absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-accent-primary">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd" />
             </svg>
@@ -49,23 +49,30 @@ export default function SidebarControls({ selectedFormationName, onFormationChan
       <div className="flex flex-col gap-3 flex-grow overflow-hidden pt-4 border-t border-white/10">
         <div className="flex justify-between items-end">
           <label className="text-sm text-white/60 font-semibold uppercase tracking-wider">Locker Room</label>
-          <span className="text-xs font-bold text-neon-blue">{lockerRoom?.length || 0} Players</span>
+          <span className="text-xs font-bold text-accent-primary">{lockerRoom?.length || 0} Players</span>
         </div>
         
         <div 
           ref={setNodeRef} 
           className={`flex-grow bg-black/40 border-2 rounded-xl p-4 overflow-y-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 gap-3 items-start content-start transition-colors duration-200 ${
-            isOver ? 'border-neon-blue shadow-[inset_0_0_20px_rgba(0,240,255,0.2)]' : 'border-white/5'
+            isOver ? 'border-accent-primary shadow-[inset_0_0_20px_rgba(var(--color-accent-primary-rgb),0.2)]' : 'border-white/5'
           }`}
         >
           {lockerRoom?.map(player => (
             <DraggableLockerPlayer key={player.id} player={player} />
+          ))}
+          {/* Add empty placeholders to maintain grid rhythm */}
+          {Array.from({ length: lockerRoom ? (3 - (lockerRoom.length % 3)) % 3 : 3 }).map((_, i) => (
+            <div key={`empty-${i}`} className="w-full aspect-[2/3] border border-dashed border-white/10 rounded-lg bg-white/5 flex items-center justify-center pointer-events-none"></div>
           ))}
           {(!lockerRoom || lockerRoom.length === 0) && (
             <div className="col-span-full flex items-center justify-center text-white/30 text-sm font-semibold h-24">
               Locker Room is empty.
             </div>
           )}
+        </div>
+        <div className="text-center mt-2 text-white/40 text-xs font-semibold uppercase tracking-wider">
+          Drag players to the pitch to build your squad
         </div>
       </div>
     </div>

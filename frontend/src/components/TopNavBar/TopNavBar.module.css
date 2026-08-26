@@ -6,7 +6,7 @@
   background-color: rgba(10, 14, 20, 0.7);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border-bottom: var(--border-subtle);
+  border-bottom: var(--color-border-subtle);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -15,7 +15,7 @@
 .logo {
   font-family: var(--font-heading);
   font-size: 1.5rem;
-  color: var(--text-primary);
+  color: var(--color-text-primary);
   letter-spacing: 2px;
 }
 
@@ -28,13 +28,13 @@
 .navItem a {
   font-family: var(--font-heading);
   font-size: 1.1rem;
-  color: var(--text-secondary);
+  color: var(--color-text-secondary);
   transition: color 0.2s ease;
 }
 
 .navItem a:hover,
 .navItem a.active {
-  color: var(--accent-lime);
+  color: var(--color-accent-primary);
 }
 
 .authLinks {
@@ -42,8 +42,8 @@
 }
 
 .signupBtn {
-  background-color: var(--accent-lime);
-  color: var(--bg-primary);
+  background-color: var(--color-accent-primary);
+  color: var(--color-bg-primary);
   padding: 0.5rem 1.5rem;
   border-radius: var(--radius-card);
   font-size: 1rem;

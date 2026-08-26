@@ -52,9 +52,9 @@ const mockPlayers = [
 
 export default function Sandbox() {
   return (
-    <div className="p-10 min-h-[calc(100vh-80px)] font-sans" style={{ backgroundColor: 'var(--bg-primary)' }}>
-      <h1 className="text-3xl font-bold text-center mb-2" style={{ color: 'var(--text-primary)' }}>Modern Player Card Demo</h1>
-      <p className="text-center mb-10" style={{ color: 'var(--text-secondary)' }}>Clean Squircle Design with Glassmorphism</p>
+    <div className="p-10 min-h-[calc(100vh-80px)] font-sans" style={{ backgroundColor: 'var(--color-bg-primary)' }}>
+      <h1 className="text-3xl font-bold text-center mb-2" style={{ color: 'var(--color-text-primary)' }}>Modern Player Card Demo</h1>
+      <p className="text-center mb-10" style={{ color: 'var(--color-text-secondary)' }}>Clean Squircle Design with Glassmorphism</p>
       
       <div className="flex flex-wrap justify-center gap-10">
         {mockPlayers.map((player, idx) => (

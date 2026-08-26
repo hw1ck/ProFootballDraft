@@ -110,23 +110,23 @@
 .slot-empty {
   width: 100%;
   height: 100%;
-  background: rgba(0, 240, 255, 0.03);
+  background: rgba(var(--color-accent-primary-rgb), 0.03);
   backdrop-filter: blur(4px);
-  border: 1px dashed rgba(0, 240, 255, 0.4);
+  border: 1px dashed rgba(var(--color-accent-primary-rgb), 0.4);
   border-radius: 8px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: rgba(0, 240, 255, 0.8);
+  color: rgba(var(--color-accent-primary-rgb), 0.8);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: inset 0 0 10px rgba(0, 240, 255, 0.1);
+  box-shadow: inset 0 0 10px rgba(var(--color-accent-primary-rgb), 0.1);
 }
 
 .slot-empty:hover {
-  background: rgba(0, 240, 255, 0.1);
-  border-color: rgba(0, 240, 255, 0.9);
-  box-shadow: 0 0 20px rgba(0, 240, 255, 0.2), inset 0 0 15px rgba(0, 240, 255, 0.2);
+  background: rgba(var(--color-accent-primary-rgb), 0.1);
+  border-color: rgba(var(--color-accent-primary-rgb), 0.9);
+  box-shadow: 0 0 20px rgba(var(--color-accent-primary-rgb), 0.2), inset 0 0 15px rgba(var(--color-accent-primary-rgb), 0.2);
   transform: scale(1.05) translateY(-2px);
   color: #fff;
 }
