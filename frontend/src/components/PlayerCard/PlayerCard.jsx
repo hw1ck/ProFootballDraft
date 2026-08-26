@@ -23,9 +23,9 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
     e.target.src = 'https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg';
   };
 
-  // Card surface: corner-to-corner diagonal foil derived from tierConfig.
-  // gradientFrom (top-left) → gradientMid (centre) → gradientTo (bottom-right).
-  const cardBackground = `linear-gradient(135deg, ${theme.gradientFrom} 0%, ${theme.gradientMid} 50%, ${theme.gradientTo} 100%)`;
+  // Card surface: Dark theme background across all tiers.
+  // The tier colors are now used solely as subtle accents (border, top edge shimmer, text, and radial glow).
+  const cardBackground = `linear-gradient(135deg, rgba(30, 32, 35, 0.95) 0%, rgba(20, 22, 25, 0.97) 50%, rgba(12, 14, 16, 1) 100%)`;
 
   // Thin top-edge accent band using the tier accent stop — mimics the shimmer 
   // line you'd see on a physical foil card viewed at an angle.
@@ -36,8 +36,8 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
       className={`modern-card relative flex flex-col overflow-hidden select-none ${isMini ? 'is-mini' : ''}`}
       style={{
         '--tier-color': theme.color,
-        // CLEAN solid border — no box-shadow, no blur, just a crisp line.
-        border: `1.5px solid ${theme.color}`,
+        // CLEAN solid border — thicker as requested
+        border: `${isMini ? '2px' : '2.5px'} solid ${theme.color}`,
         background: cardBackground,
       }}
     >
@@ -79,7 +79,7 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
             >
               {player.overallRating}
             </span>
-            <span className={`${isMini ? 'text-[7px]' : 'text-[10px]'} uppercase tracking-widest font-bold`} style={{ color: theme.color, opacity: 0.75 }}>
+            <span className={`${isMini ? 'text-[7px]' : 'text-[10px]'} uppercase tracking-widest font-bold text-white/75`}>
               {player.position}
             </span>
           </div>
@@ -135,7 +135,7 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
             }
 
             return (
-              <h2 className={`${nameClasses} font-black uppercase text-white leading-tight truncate whitespace-nowrap`}>
+              <h2 className={`${nameClasses} font-black uppercase text-white leading-tight`}>
                 {display}
               </h2>
             );
@@ -162,7 +162,7 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
               {[['PAC', player.stats.pac], ['SHO', player.stats.sho], ['PAS', player.stats.pas]].map(([label, val], i) => (
                 <div key={label} className="flex flex-col items-center justify-center" style={{ borderLeft: i > 0 ? '1px solid rgba(255,255,255,0.07)' : 'none' }}>
                   <span className={`uppercase tracking-widest font-semibold text-white/40 leading-none ${isMini ? 'text-[4px] mb-[1px]' : 'text-[8px] mb-0.5'}`}>{label}</span>
-                  <span className={`font-black leading-none tracking-tighter ${isMini ? 'text-[9px]' : 'text-[15px]'}`} style={{ color: theme.color }}>{val}</span>
+                  <span className={`font-black text-white/80 leading-none tracking-tighter ${isMini ? 'text-[9px]' : 'text-[15px]'}`}>{val}</span>
                 </div>
               ))}
             </div>
@@ -171,7 +171,7 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
               {[['DRI', player.stats.dri], ['DEF', player.stats.def], ['PHY', player.stats.phy]].map(([label, val], i) => (
                 <div key={label} className="flex flex-col items-center justify-center" style={{ borderLeft: i > 0 ? '1px solid rgba(255,255,255,0.07)' : 'none' }}>
                   <span className={`uppercase tracking-widest font-semibold text-white/40 leading-none ${isMini ? 'text-[4px] mb-[1px]' : 'text-[8px] mb-0.5'}`}>{label}</span>
-                  <span className={`font-black leading-none tracking-tighter ${isMini ? 'text-[9px]' : 'text-[15px]'}`} style={{ color: theme.color }}>{val}</span>
+                  <span className={`font-black text-white/80 leading-none tracking-tighter ${isMini ? 'text-[9px]' : 'text-[15px]'}`}>{val}</span>
                 </div>
               ))}
             </div>

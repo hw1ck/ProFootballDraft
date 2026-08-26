@@ -54,7 +54,7 @@ export default function SidebarControls({ selectedFormationName, onFormationChan
         
         <div 
           ref={setNodeRef} 
-          className={`flex-grow bg-black/40 border-2 rounded-xl p-4 overflow-y-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 gap-3 transition-colors duration-200 ${
+          className={`flex-grow bg-black/40 border-2 rounded-xl p-4 overflow-y-auto grid grid-cols-3 sm:grid-cols-4 md:grid-cols-3 gap-3 items-start content-start transition-colors duration-200 ${
             isOver ? 'border-neon-blue shadow-[inset_0_0_20px_rgba(0,240,255,0.2)]' : 'border-white/5'
           }`}
         >
