@@ -115,11 +115,31 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
 
         {/* Player Name */}
         <div className={`text-center w-full z-20 ${isMini ? (showStats ? 'mb-1' : 'pb-1') : 'mb-3'}`}>
-          <h2 className={`${isMini ? 'text-[9px]' : 'text-lg'} font-black tracking-widest truncate uppercase text-white leading-tight`}>
-            {isMini 
-              ? (player.shortName || (player.name === 'Alexander-Arnold' ? 'ARNOLD' : player.name === 'Vinícius Jr.' ? 'VINI JR' : player.name) || player.lastName)
-              : (player.name || player.lastName)}
-          </h2>
+          {(() => {
+            const rawName = player.name || player.lastName;
+            // Option A approach: if it's mini, and the name is one of our known aliases, use it.
+            const display = isMini 
+              ? (player.shortName || (rawName === 'Alexander-Arnold' ? 'ARNOLD' : rawName === 'Vinícius Jr.' ? 'VINI JR' : rawName) || player.lastName)
+              : rawName;
+            
+            const len = display.length;
+            let nameClasses = '';
+            
+            // Tighter thresholds and smaller fonts to prevent truncation on 80px cards
+            if (len <= 7) {
+              nameClasses = isMini ? 'text-[8px] tracking-wide' : 'text-lg tracking-widest';
+            } else if (len <= 10) {
+              nameClasses = isMini ? 'text-[7px] tracking-normal' : 'text-base tracking-wide';
+            } else {
+              nameClasses = isMini ? 'text-[6px] tracking-tighter' : 'text-sm tracking-tighter';
+            }
+
+            return (
+              <h2 className={`${nameClasses} font-black uppercase text-white leading-tight truncate whitespace-nowrap`}>
+                {display}
+              </h2>
+            );
+          })()}
           {/* Tier-colored underline */}
           <div
             className={`mx-auto rounded-full ${isMini ? 'w-5 h-[1px] mt-0.5' : 'w-14 h-[2px] mt-1'}`}
