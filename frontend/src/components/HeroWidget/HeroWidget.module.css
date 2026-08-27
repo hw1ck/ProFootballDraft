@@ -11,9 +11,9 @@
   position: relative;
   width: 100%;
   height: 440px;
-  background: linear-gradient(180deg, var(--bg-secondary) 0%, #0d121c 100%);
+  background-color: var(--color-bg-panel);
   border-radius: var(--radius-card);
-  border: var(--border-subtle);
+  border: var(--color-border-subtle);
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
@@ -24,23 +24,12 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #1a2234; /* Solid placeholder color */
-  /* Add a subtle animated grid pattern to make it less boring */
-  background-image: linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
-  background-size: 30px 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background-color: #1a2234;
+  /* CRITICAL: object-fit cover equivalent for backgrounds to prevent stretching */
+  background-size: cover;
+  background-position: center 20%; /* Keep focus near the top-center of the image */
+  background-repeat: no-repeat;
   z-index: 1;
-}
-
-.placeholderText {
-  color: rgba(255, 255, 255, 0.2);
-  font-family: var(--font-heading);
-  font-size: 2.5rem;
-  font-weight: 800;
-  letter-spacing: 4px;
 }
 
 .heroOverlay {
@@ -54,7 +43,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(0deg, rgba(10,14,20,0.95) 0%, rgba(10,14,20,0) 60%);
+  /* Very dark gradient at bottom for text readability, fading to transparent */
+  background: linear-gradient(0deg, rgba(10,14,20,1) 5%, rgba(10,14,20,0.6) 50%, rgba(10,14,20,0.1) 100%);
   padding: 2rem;
 }
 
@@ -74,7 +64,7 @@
   border-radius: 6px;
   font-weight: 600;
   font-size: 0.9rem;
-  color: var(--text-primary);
+  color: var(--color-text-primary);
   border: 1px solid rgba(255, 255, 255, 0.08);
   backdrop-filter: blur(8px);
 }
@@ -85,11 +75,11 @@
   text-align: center;
   margin-top: auto;
   margin-bottom: 2.5rem;
-  text-shadow: 0 4px 15px rgba(0, 0, 0, 0.8);
-  background: linear-gradient(to bottom, #FFFFFF 20%, #98A2B3 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 1);
+  color: #ffffff;
   line-height: 1.1;
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: -1px;
 }
 
 .secondaryActions {
@@ -100,7 +90,7 @@
 
 .secondaryBtn {
   background-color: rgba(255, 255, 255, 0.05);
-  color: var(--text-primary);
+  color: var(--color-text-primary);
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 0.6rem 1.8rem;
   border-radius: var(--radius-card);
@@ -111,8 +101,8 @@
 }
 
 .secondaryBtn:hover {
-  background-color: var(--text-primary);
-  color: var(--bg-primary);
+  background-color: var(--color-text-primary);
+  color: var(--color-bg-primary);
   transform: translateY(-2px);
 }
 
@@ -122,26 +112,18 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
-  background: linear-gradient(135deg, var(--accent-lime) 0%, #6abf10 100%);
-  color: var(--bg-primary);
+  background: linear-gradient(135deg, var(--color-accent-primary) 0%, #6abf10 100%);
+  color: var(--color-bg-primary);
   font-size: 1.8rem;
   font-weight: 900;
   padding: 1.2rem 5rem;
   border-radius: 40px;
   box-shadow: 0 10px 25px rgba(140, 255, 26, 0.4), inset 0 2px 0 rgba(255,255,255,0.4);
   transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  animation: pulse 2.5s infinite;
-}
-
-@keyframes pulse {
-  0% { box-shadow: 0 10px 25px rgba(140, 255, 26, 0.4), inset 0 2px 0 rgba(255,255,255,0.4); }
-  50% { box-shadow: 0 15px 40px rgba(140, 255, 26, 0.6), inset 0 2px 0 rgba(255,255,255,0.4); }
-  100% { box-shadow: 0 10px 25px rgba(140, 255, 26, 0.4), inset 0 2px 0 rgba(255,255,255,0.4); }
 }
 
 .primaryCta:hover {
   transform: translateX(-50%) scale(1.05);
-  animation: none; /* Stop pulsing on hover */
   box-shadow: 0 15px 30px rgba(140, 255, 26, 0.5), inset 0 2px 0 rgba(255,255,255,0.6);
 }
 

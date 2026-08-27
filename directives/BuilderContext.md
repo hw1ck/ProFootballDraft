@@ -7,8 +7,23 @@ Implement ONLY the approved work described in the current prompt, attached proje
 ## Approved Tech Stack
 - **Backend**: Java 21+ with Spring Boot (Spring WebSockets/STOMP for real-time multiplayer features).
 - **Database**: PostgreSQL (strict ACID compliance for transactional game states).
-- **Frontend**: React (via Vite) + Vanilla CSS (No Tailwind; strict adherence to custom premium styling).
+- **Frontend**: React (via Vite) + Tailwind CSS + CSS Modules.
 - **Constraint**: Do not introduce alternative languages, databases, or generic CSS frameworks unless explicitly approved.
+
+## Design System & Global Theme
+The application uses a strict lime-on-black UI theme. Use the following Tailwind/CSS variable tokens for all new components:
+- `--color-bg-primary` (`#0a0e14`): Page background
+- `--color-bg-panel` (`#0f141c`): Cards, sidebars, nav background
+- `--color-accent-primary` (`#a3e635`): Primary CTAs, active states, glows
+- `--color-accent-primary-hover` (`#84cc16`): Hover state on lime elements
+- `--color-text-primary` (`#ffffff`): Headings, primary text
+- `--color-text-secondary` (`#9ca3af`): Inactive nav links, secondary labels
+- `--color-border-subtle` (`#1f2430`): Card/panel borders
+- `--color-danger` (`#ef4444`): Destructive actions (e.g. clear squad, delete)
+
+**Strict UI Exceptions ("Do Not Touch" list):**
+- **Player card layout and colors**: Rarity borders (gold, pink, etc.) represent tier, not theme. Do not convert them to lime green. Keep layout fixed.
+- **Football Pitch**: Green field and white line markings must remain realistic. Do not theme them.
 ## Implementation Responsibilities
 **Before writing code:**
 - Read the supplied context, inspect existing architecture, conventions, and related code.

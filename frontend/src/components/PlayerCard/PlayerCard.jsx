@@ -2,7 +2,15 @@ import React from 'react';
 import './PlayerCard.css';
 import { tierConfig, getTierFromRating } from './tierConfig';
 
-export default function PlayerCard({ player }) {
+// SVG hex grid pattern — same pattern used across the design system, scaled to card size.
+// It's encoded as a data URI so it works without an extra file and renders inside overflow:hidden.
+const HEX_PATTERN_URI = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='28'%3E%3Cpath d='M14 2 L26 8 L26 20 L14 26 L2 20 L2 8 Z' fill='none' stroke='rgba(255,255,255,0.06)' stroke-width='0.8'/%3E%3C/svg%3E")`;
+
+// Glare/shine layer — a static diagonal highlight across the top-right corner.
+// This is what gives it the "foil" feel at small sizes without being distracting.
+const GLARE_GRADIENT = `linear-gradient(135deg, rgba(255,255,255,0.10) 0%, rgba(255,255,255,0.04) 30%, rgba(255,255,255,0) 60%)`;
+
+export default function PlayerCard({ player, isMini = false, showStats = false }) {
   const tierKey = getTierFromRating(player.overallRating);
   const theme = tierConfig[tierKey];
 
@@ -14,91 +22,161 @@ export default function PlayerCard({ player }) {
   const handleClubError = (e) => {
     e.target.src = 'https://upload.wikimedia.org/wikipedia/commons/a/ac/No_image_available.svg';
   };
-  
+
+  // Card surface: Dark theme background across all tiers.
+  // The tier colors are now used solely as subtle accents (border, top edge shimmer, text, and radial glow).
+  const cardBackground = `linear-gradient(135deg, rgba(30, 32, 35, 0.95) 0%, rgba(20, 22, 25, 0.97) 50%, rgba(12, 14, 16, 1) 100%)`;
+
+  // Thin top-edge accent band using the tier accent stop — mimics the shimmer 
+  // line you'd see on a physical foil card viewed at an angle.
+  const topEdge = `linear-gradient(180deg, ${theme.accentStop} 0%, transparent 100%)`;
+
   return (
-    <div 
-      className="modern-card relative flex flex-col overflow-hidden select-none"
+    <div
+      className={`modern-card relative flex flex-col overflow-hidden select-none ${isMini ? 'is-mini' : ''}`}
       style={{
         '--tier-color': theme.color,
-        '--tier-glow': theme.glow,
+        // CLEAN solid border — thicker as requested
+        border: `${isMini ? '2px' : '2.5px'} solid ${theme.color}`,
+        background: cardBackground,
       }}
     >
-      {/* Background Gradient/Glass */}
-      <div className="modern-card-bg absolute inset-0"></div>
-      
-      {/* Top Edge Glow */}
-      <div className="absolute top-0 left-0 w-full h-[2px]" style={{ background: 'var(--tier-color)', boxShadow: '0 0 10px var(--tier-color)' }}></div>
+      {/* Hex pattern texture — sits on top of the gradient, very low opacity */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          backgroundImage: HEX_PATTERN_URI,
+          backgroundRepeat: 'repeat',
+          opacity: isMini ? 0.5 : 0.7,
+        }}
+      />
 
-      <div className="relative z-10 w-full h-full flex flex-col p-4">
-        
+      {/* Glare / foil shine layer */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{ background: GLARE_GRADIENT }}
+      />
+
+      {/* Top accent band */}
+      <div
+        className={`absolute top-0 left-0 w-full pointer-events-none`}
+        style={{
+          height: isMini ? '30%' : '35%',
+          background: topEdge,
+          opacity: 0.6,
+        }}
+      />
+
+      {/* Card content */}
+      <div className={`relative z-10 w-full h-full flex flex-col justify-between ${isMini ? 'p-1.5' : 'p-4'}`}>
+
         {/* Header: Rating & Position */}
-        <div className="flex justify-between items-start mb-2">
-           <div className="flex flex-col items-center">
-             <span className="text-3xl font-bold leading-none tracking-tighter" style={{ color: 'var(--tier-color)' }}>
-               {player.overallRating}
-             </span>
-             <span className="text-xs text-white/60 tracking-wider font-semibold">
-               {player.position}
-             </span>
-           </div>
-           
-           <div className="flex gap-1.5 items-center bg-black/40 rounded-full px-2 py-1 border border-white/10 shadow-sm">
-             <div className="w-5 h-4 overflow-hidden rounded-sm relative">
-                <img src={player.nation.flagUrl} alt={player.nation.name} className="w-full h-full object-cover absolute top-0 left-0" onError={handleClubError}/>
-             </div>
-             <img src={player.league.crestUrl} alt={player.league.name} className="w-4 h-4 object-contain" onError={handleClubError} />
-             <img src={player.club.crestUrl} alt={player.club.name} className="w-5 h-5 object-contain" onError={handleClubError} />
-           </div>
+        <div className={`flex justify-between items-start ${isMini ? 'mb-0.5' : 'mb-2'}`}>
+          <div className="flex flex-col items-center leading-none">
+            <span
+              className={`${isMini ? 'text-[15px]' : 'text-3xl'} font-black leading-none tracking-tighter`}
+              style={{ color: theme.color }}
+            >
+              {player.overallRating}
+            </span>
+            <span className={`${isMini ? 'text-[7px]' : 'text-[10px]'} uppercase tracking-widest font-bold text-white/75`}>
+              {player.position}
+            </span>
+          </div>
+
+          {/* Badges — only on full-size cards */}
+          {!isMini && (
+            <div className="flex gap-1.5 items-center bg-black/40 rounded-full px-2 py-1 border border-white/10">
+              <div className="w-5 h-4 overflow-hidden rounded-sm relative">
+                <img src={player.nation?.flagUrl} alt={player.nation?.name} className="w-full h-full object-cover absolute top-0 left-0" onError={handleClubError} />
+              </div>
+              <img src={player.league?.crestUrl} alt={player.league?.name} className="w-4 h-4 object-contain" onError={handleClubError} />
+              <img src={player.club?.crestUrl} alt={player.club?.name} className="w-5 h-5 object-contain" onError={handleClubError} />
+            </div>
+          )}
         </div>
-        
+
         {/* Player Photo */}
-        <div className="flex-grow flex justify-center items-center relative -mt-2">
-           {/* Subtle radial glow behind photo */}
-           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-24 h-24 rounded-full blur-2xl opacity-40" style={{ background: 'var(--tier-color)' }}></div>
-           
-           <div className="w-[120px] h-[120px] relative z-10">
-             <img 
-               src={player.photoUrl} 
-               alt={player.name} 
-               className="player-photo absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-full object-contain drop-shadow-xl" 
-               onError={handleImageError}
-             />
-           </div>
+        <div className={`flex-grow flex justify-center items-center relative ${isMini ? 'my-0' : '-mt-2'}`}>
+          {/* Subtle tier-tinted radial glow behind photo */}
+          <div
+            className={`absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none ${isMini ? 'w-10 h-10 blur-md' : 'w-28 h-28 blur-2xl'}`}
+            style={{ background: theme.color, opacity: isMini ? 0.15 : 0.25 }}
+          />
+          <div className={`relative z-10 ${isMini ? 'w-[78%] h-full flex items-end' : 'w-[120px] h-[120px]'}`}>
+            <img
+              src={player.photoUrl}
+              alt={player.name || player.lastName}
+              className={`player-photo absolute bottom-0 left-1/2 -translate-x-1/2 object-contain ${isMini ? 'w-full h-[120%]' : 'w-full h-full drop-shadow-xl'}`}
+              onError={handleImageError}
+            />
+          </div>
         </div>
-        
+
         {/* Player Name */}
-        <div className="text-center w-full mb-3 z-20">
-          <h2 className="text-lg font-bold tracking-wide truncate text-white uppercase">{player.name}</h2>
-          <div className="w-12 h-[2px] mx-auto mt-1 rounded-full opacity-50" style={{ background: 'var(--tier-color)' }}></div>
+        <div className={`text-center w-full z-20 ${isMini ? (showStats ? 'mb-1' : 'pb-1') : 'mb-3'}`}>
+          {(() => {
+            const rawName = player.name || player.lastName;
+            // Option A approach: if it's mini, and the name is one of our known aliases, use it.
+            const display = isMini 
+              ? (player.shortName || (rawName === 'Alexander-Arnold' ? 'ARNOLD' : rawName === 'Vinícius Jr.' ? 'VINI JR' : rawName) || player.lastName)
+              : rawName;
+            
+            const len = display.length;
+            let nameClasses = '';
+            
+            // Tighter thresholds and smaller fonts to prevent truncation on 80px cards
+            if (len <= 7) {
+              nameClasses = isMini ? 'text-[8px] tracking-wide' : 'text-lg tracking-widest';
+            } else if (len <= 10) {
+              nameClasses = isMini ? 'text-[7px] tracking-normal' : 'text-base tracking-wide';
+            } else {
+              nameClasses = isMini ? 'text-[6px] tracking-tighter' : 'text-sm tracking-tighter';
+            }
+
+            return (
+              <h2 className={`${nameClasses} font-black uppercase text-white leading-tight`}>
+                {display}
+              </h2>
+            );
+          })()}
+          {/* Tier-colored underline */}
+          <div
+            className={`mx-auto rounded-full ${isMini ? 'w-5 h-[1px] mt-0.5' : 'w-14 h-[2px] mt-1'}`}
+            style={{ background: theme.color, opacity: 0.6 }}
+          />
         </div>
-        
-        {/* Stats Grid */}
-        <div className="grid grid-cols-3 gap-y-2 gap-x-1 text-center bg-black/20 rounded-xl py-2 px-1 border border-white/5 z-20">
-           <div className="flex flex-col">
-             <span className="text-white/50 text-[10px] font-semibold">PAC</span>
-             <span className="font-bold text-sm">{player.stats.pac}</span>
-           </div>
-           <div className="flex flex-col border-l border-white/10">
-             <span className="text-white/50 text-[10px] font-semibold">SHO</span>
-             <span className="font-bold text-sm">{player.stats.sho}</span>
-           </div>
-           <div className="flex flex-col border-l border-white/10">
-             <span className="text-white/50 text-[10px] font-semibold">PAS</span>
-             <span className="font-bold text-sm">{player.stats.pas}</span>
-           </div>
-           <div className="flex flex-col">
-             <span className="text-white/50 text-[10px] font-semibold">DRI</span>
-             <span className="font-bold text-sm">{player.stats.dri}</span>
-           </div>
-           <div className="flex flex-col border-l border-white/10">
-             <span className="text-white/50 text-[10px] font-semibold">DEF</span>
-             <span className="font-bold text-sm">{player.stats.def}</span>
-           </div>
-           <div className="flex flex-col border-l border-white/10">
-             <span className="text-white/50 text-[10px] font-semibold">PHY</span>
-             <span className="font-bold text-sm">{player.stats.phy}</span>
-           </div>
-        </div>
+
+        {/* ── Stats Grid ──────────────────────────────────── */}
+        {/* Visible on full-size always; visible on mini only when showStats=true */}
+        {(!isMini || showStats) && player.stats && (
+          <div
+            className={`w-full z-20 rounded-md overflow-hidden ${isMini ? '' : 'mb-0'}`}
+            style={{
+              background: 'rgba(0,0,0,0.35)',
+              border: '1px solid rgba(255,255,255,0.07)',
+            }}
+          >
+            {/* Row 1: PAC · SHO · PAS */}
+            <div className={`grid grid-cols-3 ${isMini ? 'py-0.5' : 'py-1.5'}`} style={{ borderBottom: '1px solid rgba(255,255,255,0.07)' }}>
+              {[['PAC', player.stats.pac], ['SHO', player.stats.sho], ['PAS', player.stats.pas]].map(([label, val], i) => (
+                <div key={label} className="flex flex-col items-center justify-center" style={{ borderLeft: i > 0 ? '1px solid rgba(255,255,255,0.07)' : 'none' }}>
+                  <span className={`uppercase tracking-widest font-semibold text-white/40 leading-none ${isMini ? 'text-[4px] mb-[1px]' : 'text-[8px] mb-0.5'}`}>{label}</span>
+                  <span className={`font-black text-white/80 leading-none tracking-tighter ${isMini ? 'text-[9px]' : 'text-[15px]'}`}>{val}</span>
+                </div>
+              ))}
+            </div>
+            {/* Row 2: DRI · DEF · PHY */}
+            <div className={`grid grid-cols-3 ${isMini ? 'py-0.5' : 'py-1.5'}`}>
+              {[['DRI', player.stats.dri], ['DEF', player.stats.def], ['PHY', player.stats.phy]].map(([label, val], i) => (
+                <div key={label} className="flex flex-col items-center justify-center" style={{ borderLeft: i > 0 ? '1px solid rgba(255,255,255,0.07)' : 'none' }}>
+                  <span className={`uppercase tracking-widest font-semibold text-white/40 leading-none ${isMini ? 'text-[4px] mb-[1px]' : 'text-[8px] mb-0.5'}`}>{label}</span>
+                  <span className={`font-black text-white/80 leading-none tracking-tighter ${isMini ? 'text-[9px]' : 'text-[15px]'}`}>{val}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

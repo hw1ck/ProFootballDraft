@@ -13,8 +13,8 @@
 .sectionTitle {
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  color: var(--text-primary);
-  border-left: 4px solid var(--accent-lime);
+  color: var(--color-text-primary);
+  border-left: 4px solid var(--color-accent-primary);
   padding-left: 1rem;
 }
 
@@ -36,20 +36,20 @@
 }
 
 .widgetPlaceholder {
-  background-color: var(--bg-secondary);
+  background-color: var(--color-bg-panel);
   border-radius: var(--radius-card);
   padding: 1.5rem;
-  border: var(--border-subtle);
+  border: var(--color-border-subtle);
 }
 
 .widgetPlaceholder h3 {
   font-size: 1.2rem;
-  color: var(--text-primary);
+  color: var(--color-text-primary);
   margin-bottom: 0.5rem;
 }
 
 .widgetPlaceholder p {
-  color: var(--text-secondary);
+  color: var(--color-text-secondary);
   font-size: 0.9rem;
 }
 

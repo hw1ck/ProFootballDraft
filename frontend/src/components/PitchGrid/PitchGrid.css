@@ -1,0 +1,152 @@
+.pitch-container {
+  /* Dynamically sizes: 100% width on narrow mobile, max 600px on desktop, 
+     but scales down horizontally to ensure height NEVER exceeds 75vh */
+  width: min(100%, 600px, 50vh);
+  margin: 0 auto;
+  aspect-ratio: 2 / 3;
+  position: relative;
+  padding: 1rem;
+}
+
+.pitch {
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    #2a6136,
+    #2a6136 10%,
+    #2e6b3b 10%,
+    #2e6b3b 20%
+  );
+  border: 2px solid rgba(255,255,255,0.7);
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+/* Pitch Markings */
+.pitch-halfway-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: rgba(255,255,255,0.6);
+  transform: translateY(-50%);
+}
+
+.pitch-center-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 25%;
+  aspect-ratio: 1;
+  border: 2px solid rgba(255,255,255,0.6);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pitch-center-spot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  background: rgba(255,255,255,0.6);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pitch-penalty-box {
+  position: absolute;
+  left: 20%;
+  width: 60%;
+  height: 15%;
+  border: 2px solid rgba(255,255,255,0.6);
+}
+
+.pitch-penalty-box.top-box {
+  top: 0;
+  border-top: none;
+}
+
+.pitch-penalty-box.bottom-box {
+  bottom: 0;
+  border-bottom: none;
+}
+
+.pitch-goal-box {
+  position: absolute;
+  left: 35%;
+  width: 30%;
+  height: 5%;
+  border: 2px solid rgba(255,255,255,0.6);
+}
+
+.pitch-goal-box.top-goal {
+  top: 0;
+  border-top: none;
+}
+
+.pitch-goal-box.bottom-goal {
+  bottom: 0;
+  border-bottom: none;
+}
+
+.pitch-slot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: clamp(50px, 13%, 75px); /* Reduced to prevent overlapping empty slots */
+  aspect-ratio: 4 / 5;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slot-empty {
+  width: 100%;
+  height: 100%;
+  background: rgba(var(--color-accent-primary-rgb), 0.03);
+  backdrop-filter: blur(4px);
+  border: 1px dashed rgba(var(--color-accent-primary-rgb), 0.4);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(var(--color-accent-primary-rgb), 0.8);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: inset 0 0 10px rgba(var(--color-accent-primary-rgb), 0.1);
+}
+
+.slot-empty:hover {
+  background: rgba(var(--color-accent-primary-rgb), 0.1);
+  border-color: rgba(var(--color-accent-primary-rgb), 0.9);
+  box-shadow: 0 0 20px rgba(var(--color-accent-primary-rgb), 0.2), inset 0 0 15px rgba(var(--color-accent-primary-rgb), 0.2);
+  transform: scale(1.05) translateY(-2px);
+  color: #fff;
+}
+
+.slot-plus {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+.slot-pos {
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.slot-filled {
+  width: 115%;
+  height: 115%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -40,6 +40,7 @@ CREATE TABLE IF NOT EXISTS players (
     dribbling INT,
     defending INT,
     physicality INT,
+    card_type VARCHAR(20) DEFAULT 'BASE',
     player_image_url VARCHAR(255),
     club_id UUID REFERENCES clubs(id) ON DELETE SET NULL,
     nation_id UUID REFERENCES nations(id) ON DELETE SET NULL,
@@ -60,3 +61,8 @@ CREATE TABLE IF NOT EXISTS squad_players (
     position_index INT NOT NULL,
     PRIMARY KEY (squad_id, player_id)
 );
+
+CREATE INDEX IF NOT EXISTS idx_players_overall_rating ON players(overall_rating);
+CREATE INDEX IF NOT EXISTS idx_players_position ON players(position);
+CREATE INDEX IF NOT EXISTS idx_players_club_id ON players(club_id);
+CREATE INDEX IF NOT EXISTS idx_players_nation_id ON players(nation_id);
