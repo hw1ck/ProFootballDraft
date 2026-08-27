@@ -11,9 +11,7 @@
   position: relative;
   width: 100%;
   height: 440px;
-  background-color: var(--color-bg-panel);
-  border-radius: var(--radius-card);
-  border: var(--color-border-subtle);
+  background-color: transparent;
   overflow: hidden;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
@@ -53,20 +51,26 @@
   top: 1.5rem;
   right: 1.5rem;
   display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.5rem;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 8px; /* Slightly tighter corner for this small pill */
+  padding: 0 0.5rem; /* Centering fix */
 }
 
 .statItem {
-  background-color: rgba(10, 14, 20, 0.6);
-  padding: 0.4rem 0.8rem;
-  border-radius: 6px;
+  padding: 0.8rem 1.2rem;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   color: var(--color-text-primary);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statDivider {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(255, 255, 255, 0.15);
 }
 
 .headline {
@@ -75,60 +79,68 @@
   text-align: center;
   margin-top: auto;
   margin-bottom: 2.5rem;
-  text-shadow: 0 4px 20px rgba(0, 0, 0, 1);
-  color: #ffffff;
+  /* Softer, more dispersed shadow for text gradient support */
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(180deg, #ffffff 40%, #aab1bb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   line-height: 1.1;
   font-family: 'Inter', system-ui, sans-serif;
-  letter-spacing: -1px;
+  letter-spacing: -2px; /* Tighter for modern look */
 }
 
-.secondaryActions {
+.actionGroup {
   position: absolute;
-  bottom: 1.5rem;
-  left: 1.5rem;
+  bottom: -2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: max-content;
+  max-width: 95vw;
 }
 
 .secondaryBtn {
-  background-color: rgba(255, 255, 255, 0.05);
   color: var(--color-text-primary);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  padding: 0.6rem 1.8rem;
-  border-radius: var(--radius-card);
-  font-size: 1.1rem;
+  padding: 1.2rem 3rem;
+  border-radius: 40px;
+  font-size: 1.4rem;
   font-weight: 700;
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  backdrop-filter: blur(4px);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); /* Bouncier spring */
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .secondaryBtn:hover {
-  background-color: var(--color-text-primary);
-  color: var(--color-bg-primary);
+  background-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
 }
 
 .primaryCta {
-  position: absolute;
-  bottom: -2rem; /* Overlap effect */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
   background: linear-gradient(135deg, var(--color-accent-primary) 0%, #6abf10 100%);
   color: var(--color-bg-primary);
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 900;
   padding: 1.2rem 5rem;
   border-radius: 40px;
+  border: none;
   box-shadow: 0 10px 25px rgba(140, 255, 26, 0.4), inset 0 2px 0 rgba(255,255,255,0.4);
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); /* Bouncier spring */
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .primaryCta:hover {
-  transform: translateX(-50%) scale(1.05);
+  transform: scale(1.05);
   box-shadow: 0 15px 30px rgba(140, 255, 26, 0.5), inset 0 2px 0 rgba(255,255,255,0.6);
 }
 
 .primaryCta:active {
-  transform: translateX(-50%) scale(0.98);
+  transform: scale(0.98);
 }
 
 /* Mobile Responsive */
@@ -142,8 +154,14 @@
     margin-bottom: 3.5rem;
   }
   
-  .primaryCta {
+  .actionGroup {
+    flex-direction: column;
     width: 85%;
+    bottom: -4rem; /* push down slightly more for stacked buttons */
+  }
+  
+  .primaryCta, .secondaryBtn {
+    width: 100%;
     padding: 1rem 2rem;
     font-size: 1.4rem;
   }

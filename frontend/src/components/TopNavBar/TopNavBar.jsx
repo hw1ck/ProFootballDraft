@@ -9,20 +9,20 @@ export default function TopNavBar() {
     avatarUrl: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Alex'
   });
   return (
-    <nav className={styles.navbar}>
-      <div className={styles.logo}>
+    <nav className={`${styles.navbar} ios-glass-panel`}>
+      <a href="/" className={styles.logo}>
         ProFootballDraft
-      </div>
+      </a>
       <ul className={styles.navLinks}>
         <li className={styles.navItem}><a href="#" className={styles.active}>Home</a></li>
         <li className={styles.navItem}><a href="#">Modes</a></li>
         <li className={styles.navItem}><a href="#">News</a></li>
         <li className={styles.navItem}><a href="#">Friends</a></li>
       </ul>
-      <div className="relative">
+      <div className={`relative ${styles.profileSection}`}>
         <button 
           onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-          className="flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full pl-2 pr-4 py-1.5 transition-all focus:outline-none focus:ring-1 focus:ring-neon-blue"
+          className="flex items-center gap-3 bg-white/5 hover:bg-white/10 hover:scale-105 active:scale-95 border border-white/10 rounded-full pl-2 pr-4 py-1.5 transition-all duration-300 focus:outline-none focus:ring-1 focus:ring-neon-blue"
         >
           <img src={userData.avatarUrl} alt="Avatar" className="w-8 h-8 rounded-full bg-dark-bg" />
           <span className="text-sm font-bold text-white">{userData.username}</span>
@@ -33,7 +33,7 @@ export default function TopNavBar() {
 
         {/* Dropdown Menu */}
         {isDropdownOpen && (
-          <div className="absolute right-0 mt-3 w-48 rounded-xl bg-[#0f141e] border border-white/10 shadow-2xl py-2 overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200">
+          <div className="absolute right-0 mt-3 w-48 py-2 overflow-hidden z-50 animate-in fade-in slide-in-from-top-2 duration-200 ios-glass-popup">
             <div className="px-4 py-2 border-b border-white/5 mb-1">
               <p className="text-xs text-white/50 uppercase tracking-wider font-bold">Signed in as</p>
               <p className="text-sm text-white font-bold truncate">{userData.username}</p>

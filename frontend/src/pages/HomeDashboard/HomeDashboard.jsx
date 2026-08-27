@@ -41,20 +41,42 @@ export default function HomeDashboard() {
 
         {/* Sidebar / Hub */}
         <aside className={styles.sidebarSection}>
-          <h2 className={styles.sectionTitle}>Your Hub</h2>
-          <div className={styles.widgetsList}>
-            {hubData ? (
-               <div className={styles.widgetPlaceholder}>
-                 <h3>Team Rating: {hubData.teamRating}</h3>
-                 <p>Upcoming: {hubData.upcomingMatch}</p>
-                 <p>Objectives: {hubData.objectivesCompleted} / {hubData.objectivesTotal}</p>
-               </div>
-            ) : (
-               <div className={styles.widgetPlaceholder}>
-                 <h3>Sign In</h3>
-                 <p>Log in to view your team stats and history.</p>
-               </div>
-            )}
+          <div className={`${styles.sidebarPanel} ios-glass-panel ios-squircle`}>
+            <div className={styles.panelHeader}>
+              <h2 className={styles.panelTitle}>MY HUB</h2>
+            </div>
+            <div className={styles.widgetsList}>
+              {hubData ? (
+                <>
+                  <div className={styles.hubRow}>
+                    <div className={styles.rowIcon}>📊</div>
+                    <div className={styles.rowContent}>
+                      <span className={styles.rowLabel}>Team Rating</span>
+                      <span className={styles.rowValue}>{hubData.teamRating}</span>
+                    </div>
+                  </div>
+                  <div className={styles.hubRow}>
+                    <div className={styles.rowIcon}>🗓️</div>
+                    <div className={styles.rowContent}>
+                      <span className={styles.rowLabel}>Upcoming Matches</span>
+                      <span className={styles.rowValue}>{hubData.upcomingMatch}</span>
+                    </div>
+                  </div>
+                  <div className={styles.hubRow}>
+                    <div className={styles.rowIcon}>🎯</div>
+                    <div className={styles.rowContent}>
+                      <span className={styles.rowLabel}>Active Objectives</span>
+                      <span className={styles.rowValue}>{hubData.objectivesCompleted} / {hubData.objectivesTotal} Objectives</span>
+                    </div>
+                  </div>
+                </>
+              ) : (
+                <div className={`${styles.widgetPlaceholder} ios-glass-panel ios-squircle`}>
+                  <h3>Sign In</h3>
+                  <p>Log in to view your team stats and history.</p>
+                </div>
+              )}
+            </div>
           </div>
         </aside>
 
