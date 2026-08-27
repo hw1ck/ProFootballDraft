@@ -44,7 +44,7 @@ export default function HeroWidget() {
 
   return (
     <div className={styles.heroContainer}>
-      <div className={styles.heroContent}>
+      <div className={`${styles.heroContent} ios-squircle ios-glass-panel`}>
         
         {/* Dynamic Background Image */}
         <div 
@@ -54,24 +54,26 @@ export default function HeroWidget() {
         </div>
         
         <div className={styles.heroOverlay}>
-          <div className={styles.statsPanel}>
+          <div className={`${styles.statsPanel} ios-glass-panel`}>
             <span className={styles.statItem}>{heroData.status}</span>
+            <div className={styles.statDivider}></div>
             <span className={styles.statItem}>{heroData.rating}</span>
+            <div className={styles.statDivider}></div>
             <span className={styles.statItem}>{heroData.rank}</span>
           </div>
           <h1 className={styles.headline}>{heroData.headline}</h1>
-          <div className={styles.secondaryActions}>
-            <button className={styles.secondaryBtn} onClick={handleCreateRoom}>
-              Create Room
-            </button>
-          </div>
         </div>
       </div>
 
-      {/* Overlapping Primary CTA */}
-      <button className={styles.primaryCta} onClick={handlePlayMatch}>
-        PLAY MATCH
-      </button>
+      {/* Grouped Primary Actions */}
+      <div className={styles.actionGroup}>
+        <button className={`${styles.secondaryBtn} ios-glass-panel`} onClick={handleCreateRoom}>
+          Create Room
+        </button>
+        <button className={styles.primaryCta} onClick={handlePlayMatch}>
+          PLAY MATCH
+        </button>
+      </div>
     </div>
   );
 }
