@@ -1,0 +1,130 @@
+.setupContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 80px);
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.panel {
+  background-color: var(--bg-secondary);
+  border: var(--border-subtle);
+  border-radius: var(--radius-card);
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 600px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.formGroup {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  color: var(--text-primary);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.toggleGroup {
+  display: flex;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: 8px;
+  padding: 0.3rem;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.toggleBtn {
+  flex: 1;
+  padding: 0.8rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.toggleBtn.active {
+  background-color: rgba(140, 255, 26, 0.15);
+  color: var(--accent-lime);
+  box-shadow: var(--glow-lime);
+  border: 1px solid rgba(140, 255, 26, 0.3);
+}
+
+.sliderContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.slider {
+  flex: 1;
+  accent-color: var(--accent-lime);
+}
+
+.sliderValue {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--accent-lime);
+  min-width: 40px;
+  text-align: center;
+}
+
+.checkboxLabel {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+  padding: 0.8rem;
+  background-color: rgba(255,255,255,0.03);
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: all 0.2s ease;
+}
+
+.checkboxLabel:hover {
+  background-color: rgba(255,255,255,0.08);
+}
+
+.ctaWrapper {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.primaryCta {
+  background: linear-gradient(135deg, var(--accent-lime) 0%, #6abf10 100%);
+  color: var(--bg-primary);
+  font-size: 1.5rem;
+  font-weight: 800;
+  padding: 1rem 4rem;
+  border-radius: 30px;
+  box-shadow: 0 10px 25px rgba(140, 255, 26, 0.4), inset 0 2px 0 rgba(255,255,255,0.4);
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.primaryCta:hover {
+  transform: scale(1.05);
+}
