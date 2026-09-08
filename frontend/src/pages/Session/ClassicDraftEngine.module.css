@@ -1,0 +1,75 @@
+.engineContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 80vh;
+  color: var(--text-primary);
+  padding: 2rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2.5rem;
+  color: var(--accent-lime);
+}
+
+.subtitle {
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+}
+
+.packGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  width: 100%;
+}
+
+.cardWrapper {
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.cardWrapper:hover {
+  transform: translateY(-10px) scale(1.02);
+  filter: drop-shadow(0 0 20px rgba(140, 255, 26, 0.4));
+}
+
+.squadPanel {
+  margin-top: 3rem;
+  width: 100%;
+  max-width: 900px;
+  background: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: var(--radius-card);
+  border: var(--border-subtle);
+}
+
+.squadTitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  padding-bottom: 0.5rem;
+}
+
+.squadList {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.squadMiniCard {
+  background: rgba(255,255,255,0.05);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  border: 1px solid rgba(255,255,255,0.1);
+}

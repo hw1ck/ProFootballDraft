@@ -5,6 +5,7 @@ import java.util.UUID;
 
 public record PlayerResponseDTO(
     UUID id,
+    String displayName,
     String firstName,
     String lastName,
     String position,

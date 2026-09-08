@@ -34,6 +34,11 @@ export function useSession() {
     }, 3000);
   }, []);
 
+  const startBoardroom = useCallback((draftedSquad) => {
+    setResults({ draftedSquad }); // Temporarily store it
+    setSessionState('boardroom');
+  }, []);
+
   const completeSession = useCallback((finalResults) => {
     setResults(finalResults);
     setSessionState('completed');
@@ -48,6 +53,7 @@ export function useSession() {
     initSession,
     toggleReady,
     startReadyCheck,
+    startBoardroom,
     completeSession
   };
 }

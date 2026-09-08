@@ -5,6 +5,36 @@
  */
 
 export const GAMEMODES = {
+  classic_draft: {
+    id: 'classic_draft',
+    name: 'Classic Draft',
+    description: '16 rounds. 6 cards per pack. Build your squad, hit your quotas, and compete with highest Team Average OVR.',
+    supportsSolo: true,
+    supportsMultiplayer: true,
+    multiplayerMode: 'parallel',
+    playerCount: {
+      fixed: false,
+      min: 2,
+      max: 10,
+      default: 2
+    },
+    readyRequired: true
+  },
+  classic_draft: {
+    id: 'classic_draft',
+    name: 'Classic Draft',
+    description: '16 rounds. 6 cards per pack. Build your squad, hit your quotas, and compete with highest Team Average OVR.',
+    supportsSolo: true,
+    supportsMultiplayer: true,
+    multiplayerMode: 'parallel',
+    playerCount: {
+      fixed: false,
+      min: 2,
+      max: 10,
+      default: 2
+    },
+    readyRequired: true
+  },
   mock_mode: {
     id: 'mock_mode',
     name: 'Mock Gamemode',

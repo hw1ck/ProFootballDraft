@@ -7,9 +7,8 @@ import PlayerCard from '../../components/PlayerCard/PlayerCard';
 import formationsData from '../../../../data/formations.json';
 import { useSquadBuilder } from '../../hooks/useSquadBuilder';
 import { fetchPlayers } from '../../services/api';
-import { adaptPlayerFromApi } from '../../utils/playerAdapter';
 
-export default function BoardRoom() {
+export default function BoardRoom({ initialLockerRoom, onLockIn }) {
   const [formationName, setFormationName] = useState('4-3-3');
   const [activePlayer, setActivePlayer] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -19,10 +18,14 @@ export default function BoardRoom() {
 
   useEffect(() => {
     const loadPlayers = async () => {
+      if (initialLockerRoom) {
+        setLockerRoom(initialLockerRoom);
+        setLoading(false);
+        return;
+      }
       try {
         const data = await fetchPlayers();
-        const adaptedPlayers = data.map(adaptPlayerFromApi);
-        setLockerRoom(adaptedPlayers);
+        setLockerRoom(data);
       } catch (error) {
         console.error("Failed to load players", error);
       } finally {
@@ -91,6 +94,7 @@ export default function BoardRoom() {
                     onFormationChange={handleFormationChange}
                     lockerRoom={lockerRoom}
                     onClearSquad={clearSquad}
+                    onLockIn={() => onLockIn && onLockIn(squad)}
                   />
                 </div>
               </>

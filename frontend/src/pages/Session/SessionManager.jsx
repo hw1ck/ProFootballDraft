@@ -5,6 +5,8 @@ import { getGamemodeDef } from '../../session/gamemodes';
 import SessionSetup from './SessionSetup';
 import Lobby from './Lobby';
 import MockGamemode from './MockGamemode';
+import ClassicDraftEngine from './ClassicDraftEngine';
+import BoardRoom from '../BoardRoom/BoardRoom';
 
 export default function SessionManager() {
   const { modeId } = useParams();
@@ -12,7 +14,7 @@ export default function SessionManager() {
   
   const {
     sessionState, config, participants, roomId, results,
-    initSession, toggleReady, startReadyCheck, completeSession
+    initSession, toggleReady, startReadyCheck, completeSession, startBoardroom
   } = useSession();
 
   useEffect(() => {
@@ -35,7 +37,25 @@ export default function SessionManager() {
         <Lobby roomId={roomId} participants={participants} config={config} onReadyToggle={toggleReady} sessionState={sessionState} />
       )}
       {sessionState === 'inProgress' && (
-        <MockGamemode config={config} onComplete={(res) => completeSession(res)} />
+        modeId === 'classic_draft' 
+          ? <ClassicDraftEngine config={config} onComplete={(res) => {
+              if (res.status === 'BOARDROOM') {
+                startBoardroom(res.squad);
+              } else {
+                completeSession(res);
+              }
+            }} />
+          : <MockGamemode config={config} onComplete={(res) => completeSession(res)} />
+      )}
+      {sessionState === 'boardroom' && (
+        <BoardRoom 
+          initialLockerRoom={results?.draftedSquad} 
+          onLockIn={(finalSquad) => {
+            const starters = finalSquad.filter(p => p !== null);
+            const avgOvr = Math.round(starters.reduce((acc, p) => acc + (p.overallRating || 0), 0) / starters.length) || 0;
+            completeSession({ score: avgOvr, squad: starters, status: 'WIN' });
+          }} 
+        />
       )}
       {sessionState === 'completed' && (
         <div style={{ color: 'white', textAlign: 'center', padding: '4rem' }}>

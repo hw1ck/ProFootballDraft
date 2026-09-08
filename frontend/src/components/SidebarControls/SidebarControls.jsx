@@ -3,7 +3,7 @@ import { useDroppable, useDraggable } from '@dnd-kit/core';
 import formationsData from '../../../../data/formations.json';
 import PlayerCard from '../PlayerCard/PlayerCard';
 
-export default function SidebarControls({ selectedFormationName, onFormationChange, lockerRoom, onClearSquad }) {
+export default function SidebarControls({ selectedFormationName, onFormationChange, lockerRoom, onClearSquad, onLockIn }) {
   const { setNodeRef, isOver } = useDroppable({
     id: 'locker-room',
   });
@@ -75,6 +75,16 @@ export default function SidebarControls({ selectedFormationName, onFormationChan
           Drag players to the pitch to build your squad
         </div>
       </div>
+      
+      {onLockIn && (
+        <button 
+          onClick={onLockIn}
+          className="w-full mt-4 bg-accent-lime text-black font-bold text-lg py-4 rounded-xl uppercase tracking-widest hover:scale-105 transition-transform shadow-lg"
+          style={{ boxShadow: '0 0 20px rgba(140, 255, 26, 0.3)' }}
+        >
+          Lock In Squad
+        </button>
+      )}
     </div>
   );
 }
