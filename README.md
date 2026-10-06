@@ -1,64 +1,36 @@
-# ProFootballDraft
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A dynamic, full-stack fantasy football drafting application built with a modern React UI and a robust Java Spring Boot backend.
+## Getting Started
 
-## Tech Stack
-- **Frontend**: React 19, Vite, Tailwind CSS (Glassmorphism & modern UI patterns)
-- **Backend**: Java 21, Spring Boot 3, Spring Data JPA
-- **Database**: PostgreSQL (containerized via Docker)
-- **Tooling**: Maven, npm, Docker Compose
+First, run the development server:
 
----
-
-## Onboarding & Setup Instructions
-
-Welcome to the team! To get this project running on your local machine, follow the instructions below based on your operating system.
-
-### Prerequisites
-Before running the scripts, ensure you have the following installed:
-- **Node.js** (v18+)
-- **Java JDK** (v21)
-- **Docker & Docker Compose** (Must be running in the background)
-
-### Mac & Linux Users
-
-**1. Install Dependencies**
 ```bash
-./scripts/install.sh
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-**2. Build the Application (Optional for Dev)**
-```bash
-./scripts/build.sh
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-**3. Start the Application**
-```bash
-./scripts/start.sh
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-### Windows Users
-*We have provided `.bat` scripts so you can run the project natively using Command Prompt or PowerShell.*
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-**1. Install Dependencies**
-```cmd
-scripts\install.bat
-```
+## Learn More
 
-**2. Build the Application (Optional for Dev)**
-```cmd
-scripts\build.bat
-```
+To learn more about Next.js, take a look at the following resources:
 
-**3. Start the Application**
-```cmd
-scripts\start.bat
-```
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
----
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Application URLs
-Once the `start` script finishes booting, you can access the stack at:
-- **Frontend Dashboard**: [http://localhost:5173](http://localhost:5173)
-- **Backend API API**: [http://localhost:8080](http://localhost:8080)
-- **Database**: `localhost:5433` (Credentials in `application.yml`)
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
