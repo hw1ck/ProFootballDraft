@@ -30,4 +30,18 @@ public interface PlayerRepository extends JpaRepository<Player, UUID>, JpaSpecif
     @EntityGraph(attributePaths = {"club.league", "nation"})
     @Query("SELECT p FROM Player p ORDER BY p.overallRating DESC LIMIT :limit")
     List<Player> findTopPlayers(@Param("limit") int limit);
+    
+    @EntityGraph(attributePaths = {"club.league", "nation"})
+    @Query("SELECT p FROM Player p WHERE " +
+           "p.position IN :positions AND " +
+           "p.overallRating BETWEEN :min AND :max AND " +
+           "p.id NOT IN :excludedIds " +
+           "ORDER BY random() LIMIT :limit")
+    List<Player> findRandomPlayers(
+            @Param("positions") List<String> positions,
+            @Param("min") int min,
+            @Param("max") int max,
+            @Param("excludedIds") List<UUID> excludedIds,
+            @Param("limit") int limit
+    );
 }

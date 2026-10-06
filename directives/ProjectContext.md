@@ -336,9 +336,11 @@ Additional information:
 
 ### Mode Cards
 
-Required:
-
-- Simple Draft
+- Classic Draft
+- Merge Draft
+- Mixed Draft
+- Auction War
+- Random Draft
 - Live Season Fantasy
 - TOTY Mode
 - Favorite Builder

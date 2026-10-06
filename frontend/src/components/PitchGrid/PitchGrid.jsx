@@ -81,7 +81,7 @@ function DraggablePlayer({ player }) {
       className={`slot-filled w-full h-full transition-opacity ${isDragging ? 'opacity-30' : 'opacity-100'}`}
       style={{ zIndex: isDragging ? 0 : 10 }}
     >
-      <PlayerCard player={player} isMini={true} />
+      <PlayerCard player={player} isMini={true} showStats={true} />
     </div>
   );
 }

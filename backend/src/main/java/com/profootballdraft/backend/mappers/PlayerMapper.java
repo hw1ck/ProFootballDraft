@@ -15,6 +15,7 @@ public class PlayerMapper {
 
         return new PlayerResponseDTO(
             player.getId(),
+            player.getDisplayName(),
             player.getFirstName(),
             player.getLastName(),
             player.getPosition(),

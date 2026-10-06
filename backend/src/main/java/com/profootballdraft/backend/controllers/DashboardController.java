@@ -15,7 +15,7 @@ public class DashboardController {
     @GetMapping("/modes")
     public List<Map<String, Object>> getModes() {
         return List.of(
-            Map.of("id", "draft", "title", "Simple Draft", "subtitle", "Draft a team of 11 players and compete in a fast-paced tournament.", "icon", "📋", "cta", "Enter Draft", "status", "Active"),
+            Map.of("id", "classic_draft", "title", "Classic Draft", "subtitle", "Draft a team of 16 players in a 6-card pack format. Compete via Team Average OVR.", "icon", "📋", "cta", "Play Now", "status", "Active"),
             Map.of("id", "live-season", "title", "Live Season Fantasy", "subtitle", "Manage your squad across real-world match weeks.", "icon", "🌍", "cta", "Manage Squad"),
             Map.of("id", "toty", "title", "TOTY Mode", "subtitle", "Exclusive Team of the Year challenges with premium rewards.", "icon", "🏆", "cta", "View Events", "status", "2 Days Left"),
             Map.of("id", "builder", "title", "Favorite Builder", "subtitle", "Build your ultimate dream team without budget constraints.", "icon", "⚙️", "cta", "Build Team")
