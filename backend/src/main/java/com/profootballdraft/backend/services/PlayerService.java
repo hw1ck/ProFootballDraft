@@ -103,6 +103,21 @@ public class PlayerService {
     }
 
     /**
+     * UNBOUNDED QUERY: Not cached. Randomly samples players based on rules.
+     */
+    @Transactional(readOnly = true)
+    public List<PlayerResponseDTO> getRandomPlayers(List<String> positions, int min, int max, List<UUID> excludedIds, int limit) {
+        if (excludedIds == null || excludedIds.isEmpty()) {
+            excludedIds = List.of(UUID.randomUUID()); // Dummy UUID to satisfy SQL NOT IN clause
+        }
+        if (positions == null || positions.isEmpty()) {
+            positions = List.of("GK", "CB", "LB", "RB", "LWB", "RWB", "CDM", "CM", "CAM", "LM", "RM", "LW", "RW", "CF", "ST");
+        }
+        return playerRepository.findRandomPlayers(positions, min, max, excludedIds, limit)
+                .stream().map(playerMapper::toResponseDTO).collect(Collectors.toList());
+    }
+
+    /**
      * Creates a player. Evicts caches to maintain integrity.
      */
     @CacheEvict(value = {"playersByTier", "topPlayers"}, allEntries = true)

@@ -88,10 +88,10 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
           {!isMini && (
             <div className="flex gap-1.5 items-center bg-black/40 rounded-full px-2 py-1 border border-white/10">
               <div className="w-5 h-4 overflow-hidden rounded-sm relative">
-                <img src={player.nation?.flagUrl} alt={player.nation?.name} className="w-full h-full object-cover absolute top-0 left-0" onError={handleClubError} />
+                <img src={player.nationFlagUrl} alt={player.nationName} className="w-full h-full object-cover absolute top-0 left-0" onError={handleClubError} />
               </div>
-              <img src={player.league?.crestUrl} alt={player.league?.name} className="w-4 h-4 object-contain" onError={handleClubError} />
-              <img src={player.club?.crestUrl} alt={player.club?.name} className="w-5 h-5 object-contain" onError={handleClubError} />
+              <img src={player.leagueCrestUrl} alt={player.leagueName} className="w-4 h-4 object-contain" onError={handleClubError} />
+              <img src={player.clubCrestUrl} alt={player.clubName} className="w-5 h-5 object-contain" onError={handleClubError} />
             </div>
           )}
         </div>
@@ -105,8 +105,8 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
           />
           <div className={`relative z-10 ${isMini ? 'w-[78%] h-full flex items-end' : 'w-[120px] h-[120px]'}`}>
             <img
-              src={player.photoUrl}
-              alt={player.name || player.lastName}
+              src={player.playerImageUrl || player.photoUrl}
+              alt={player.lastName || player.name}
               className={`player-photo absolute bottom-0 left-1/2 -translate-x-1/2 object-contain ${isMini ? 'w-full h-[120%]' : 'w-full h-full drop-shadow-xl'}`}
               onError={handleImageError}
             />
@@ -116,10 +116,12 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
         {/* Player Name */}
         <div className={`text-center w-full z-20 ${isMini ? (showStats ? 'mb-1' : 'pb-1') : 'mb-3'}`}>
           {(() => {
-            const rawName = player.name || player.lastName;
-            // Option A approach: if it's mini, and the name is one of our known aliases, use it.
+            // As requested: Use the exact matched display name from the local dataset first, falling back to lastName
+            const rawName = player.displayName || player.lastName || player.firstName || player.name || "UNKNOWN";
+            
+            // Special aliases for extremely common long names that break the card
             const display = isMini 
-              ? (player.shortName || (rawName === 'Alexander-Arnold' ? 'ARNOLD' : rawName === 'Vinícius Jr.' ? 'VINI JR' : rawName) || player.lastName)
+              ? (rawName === 'Alexander-Arnold' ? 'ARNOLD' : rawName === 'Vinícius Jr.' ? 'VINI JR' : rawName)
               : rawName;
             
             const len = display.length;
@@ -149,7 +151,7 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
 
         {/* ── Stats Grid ──────────────────────────────────── */}
         {/* Visible on full-size always; visible on mini only when showStats=true */}
-        {(!isMini || showStats) && player.stats && (
+        {(!isMini || showStats) && (player.stats || player.pace !== undefined) && (
           <div
             className={`w-full z-20 rounded-md overflow-hidden ${isMini ? '' : 'mb-0'}`}
             style={{
@@ -159,7 +161,7 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
           >
             {/* Row 1: PAC · SHO · PAS */}
             <div className={`grid grid-cols-3 ${isMini ? 'py-0.5' : 'py-1.5'}`} style={{ borderBottom: '1px solid rgba(255,255,255,0.07)' }}>
-              {[['PAC', player.stats.pac], ['SHO', player.stats.sho], ['PAS', player.stats.pas]].map(([label, val], i) => (
+              {[['PAC', player.pace ?? player.stats?.pac], ['SHO', player.shooting ?? player.stats?.sho], ['PAS', player.passing ?? player.stats?.pas]].map(([label, val], i) => (
                 <div key={label} className="flex flex-col items-center justify-center" style={{ borderLeft: i > 0 ? '1px solid rgba(255,255,255,0.07)' : 'none' }}>
                   <span className={`uppercase tracking-widest font-semibold text-white/40 leading-none ${isMini ? 'text-[4px] mb-[1px]' : 'text-[8px] mb-0.5'}`}>{label}</span>
                   <span className={`font-black text-white/80 leading-none tracking-tighter ${isMini ? 'text-[9px]' : 'text-[15px]'}`}>{val}</span>
@@ -168,7 +170,7 @@ export default function PlayerCard({ player, isMini = false, showStats = false }
             </div>
             {/* Row 2: DRI · DEF · PHY */}
             <div className={`grid grid-cols-3 ${isMini ? 'py-0.5' : 'py-1.5'}`}>
-              {[['DRI', player.stats.dri], ['DEF', player.stats.def], ['PHY', player.stats.phy]].map(([label, val], i) => (
+              {[['DRI', player.dribbling ?? player.stats?.dri], ['DEF', player.defending ?? player.stats?.def], ['PHY', player.physicality ?? player.stats?.phy]].map(([label, val], i) => (
                 <div key={label} className="flex flex-col items-center justify-center" style={{ borderLeft: i > 0 ? '1px solid rgba(255,255,255,0.07)' : 'none' }}>
                   <span className={`uppercase tracking-widest font-semibold text-white/40 leading-none ${isMini ? 'text-[4px] mb-[1px]' : 'text-[8px] mb-0.5'}`}>{label}</span>
                   <span className={`font-black text-white/80 leading-none tracking-tighter ${isMini ? 'text-[9px]' : 'text-[15px]'}`}>{val}</span>

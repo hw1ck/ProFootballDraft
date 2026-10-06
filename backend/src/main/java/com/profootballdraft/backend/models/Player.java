@@ -23,6 +23,9 @@ public class Player {
     @GeneratedValue(strategy = GenerationType.UUID)
     private UUID id;
 
+    @Column(name = "display_name", nullable = false, length = 100)
+    private String displayName;
+
     @Column(name = "first_name", nullable = false, length = 100)
     private String firstName;
 
