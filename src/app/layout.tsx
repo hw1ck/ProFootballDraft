@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Silkscreen, Outfit } from "next/font/google";
 import "./globals.css";
 import "./landing.css";
@@ -17,6 +17,13 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "ProFootballDraft — Draft. Build. Win.",
   description: "Draft football players with your friends, build your squad, and compete to see who can build the best team.",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({
