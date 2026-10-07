@@ -218,11 +218,12 @@
 .pitchDemo {
   background: var(--surface);
   border-radius: var(--radius-lg);
-  padding: var(--space-6);
+  padding: var(--space-4);
   border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
+  overflow-x: auto;
 }
 .pitch {
   display: flex;
@@ -232,7 +233,9 @@
 }
 .row {
   display: flex;
-  gap: var(--space-10);
+  gap: var(--space-4);
+  width: 100%;
+  justify-content: center;
 }
 .node {
   width: 50px;
@@ -397,11 +400,12 @@
   border-radius: var(--radius-xl);
   padding: var(--space-6);
   width: 100%;
-  max-width: 380px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: var(--space-6);
   margin-bottom: var(--space-4);
+  box-sizing: border-box;
 }
 .demoCardHeader {
   display: flex;
@@ -465,6 +469,9 @@
   max-width: 400px;
 }
 .primaryCta {
+  width: 100%;
+}
+.secondaryCta {
   width: 100%;
 }
 .section {
