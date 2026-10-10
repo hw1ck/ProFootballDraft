@@ -12,7 +12,7 @@ import { Footer } from '../components/footer/Footer';
 
 export default function LandingPage() {
   return (
-    <div style={{ maxWidth: '800px', margin: '0 auto' }}>
+    <div style={{ maxWidth: '800px', width: '100%', margin: '0 auto', boxSizing: 'border-box' }}>
       <Header />
       <main>
         <Hero />

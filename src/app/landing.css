@@ -119,7 +119,7 @@
   border-radius: var(--radius-pill);
 }
 
-.header {
+.cardHeader {
   display: flex;
   gap: var(--space-4);
   align-items: flex-start;
@@ -218,11 +218,12 @@
 .pitchDemo {
   background: var(--surface);
   border-radius: var(--radius-lg);
-  padding: var(--space-6);
+  padding: var(--space-4);
   border: 1px solid var(--border);
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
+  overflow-x: auto;
 }
 .pitch {
   display: flex;
@@ -232,7 +233,9 @@
 }
 .row {
   display: flex;
-  gap: var(--space-10);
+  gap: var(--space-4);
+  width: 100%;
+  justify-content: center;
 }
 .node {
   width: 50px;
@@ -397,11 +400,12 @@
   border-radius: var(--radius-xl);
   padding: var(--space-6);
   width: 100%;
-  max-width: 380px;
+  max-width: 100%;
   display: flex;
   flex-direction: column;
   gap: var(--space-6);
   margin-bottom: var(--space-4);
+  box-sizing: border-box;
 }
 .demoCardHeader {
   display: flex;
@@ -445,11 +449,12 @@
   color: var(--text-secondary);
 }
 .headline {
-  font-size: 3rem;
-  line-height: 1.2;
-  letter-spacing: 0.05em;
+  font-size: clamp(1.6rem, 7vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: 0.02em;
   margin: var(--space-4) 0;
   color: var(--text-primary);
+  word-break: break-word;
 }
 .description {
   font-size: 1.1rem;
@@ -465,6 +470,9 @@
   max-width: 400px;
 }
 .primaryCta {
+  width: 100%;
+}
+.secondaryCta {
   width: 100%;
 }
 .section {
@@ -651,5 +659,68 @@
   font-size: 1.2rem;
   color: var(--text-primary);
   margin-top: var(--space-4);
+}
+
+@media (max-width: 640px) {
+  /* Reduce outer section margins and lateral paddings */
+  .section {
+    padding: var(--space-8) var(--space-4) !important;
+    margin: var(--space-2) !important;
+  }
+
+  /* Section Headings */
+  .heading {
+    font-size: clamp(1.3rem, 5vw, 1.8rem);
+    line-height: 1.25;
+  }
+
+  /* Navigation Header adjustments */
+  .header {
+    padding: var(--space-3) var(--space-4);
+  }
+  .header .logo {
+    font-size: 1rem;
+  }
+  .header .button {
+    padding: var(--space-2) var(--space-4);
+    font-size: 0.8rem;
+  }
+
+  /* Hero adjustments */
+  .hero {
+    padding: var(--space-6) var(--space-3);
+  }
+  .demoCard {
+    padding: var(--space-4);
+  }
+  .mockTurn {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-1);
+    text-align: center;
+  }
+
+  /* Tactics Pitch Footer */
+  .pitchFooter {
+    flex-direction: column;
+    gap: var(--space-2);
+    text-align: center;
+    border-radius: var(--radius-lg);
+  }
+
+  /* Lobby Code & Players Row */
+  .codeRow {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .playersRow {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  /* Cards */
+  .card {
+    max-width: 100%;
+  }
 }
 
