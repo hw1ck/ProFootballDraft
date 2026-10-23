@@ -21,6 +21,17 @@ export const GameModesSection = () => {
             Choose one card while the other goes to your opponent.
           </p>
         </div>
+        <div className="modeCard" style={{ borderColor: '#10B981', position: 'relative' }}>
+          <div style={{ position: 'absolute', top: '12px', right: '12px', background: 'rgba(16, 185, 129, 0.2)', color: '#10B981', border: '1px solid #10B981', borderRadius: '4px', fontSize: '10px', padding: '2px 6px', fontFamily: 'var(--font-family-display)' }}>LIVE MODE</div>
+          <h3>Auction Draft</h3>
+          <p className="tagline">Real-time bidding arena. Manage your cap.</p>
+          <p className="desc">
+            Compete live against friends in a high-stakes transfer auction. Outbid opponents and build your squad within your budget!
+          </p>
+          <a href="/auction" className="button primary" style={{ marginTop: '16px', display: 'inline-block', fontSize: '0.85rem', padding: '8px 16px', textDecoration: 'none' }}>
+            ENTER AUCTION ARENA ➔
+          </a>
+        </div>
       </div>
       <p className="comingSoon">More modes coming.</p>
     </section>

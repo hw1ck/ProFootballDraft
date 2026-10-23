@@ -1,56 +1,45 @@
 @import "tailwindcss";
 
-:root {
-  /* Colors */
-  --background-primary: #121216;
-  --background-secondary: #18181f;
-  --surface: #1e1e26;
-  --surface-elevated: #282834;
-  --text-primary: #ffffff;
-  --text-secondary: #a0a0b0;
-  --text-muted: #6b6b78;
-  --border: #2c2c35;
-  --divider-color: #2c2c35;
-  --accent-primary: #74748b;
-  --accent-secondary: #4a4a59;
-  --success: #4caf50;
-  --warning: #ff9800;
-  --danger: #f44336;
-  --overlay: rgba(0, 0, 0, 0.5);
+@theme {
+  --color-surface-midnight: #0B0E17;
+  --color-surface-elevated: #131826;
+  --color-surface-high: #1E263D;
+  --color-primary-cyan: #00F0FF;
+  --color-neon-violet: #8B5CF6;
+  --color-cyber-mint: #10E7B2;
+  --color-stat-gold: #F59E0B;
 
-  /* Spacing */
-  --space-1: 0.25rem;
-  --space-2: 0.5rem;
-  --space-3: 0.75rem;
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
-  --space-16: 4rem;
-  --space-20: 5rem;
-  --space-24: 6rem;
+  --color-brand-dark: #0B0E17;
+  --color-brand-card: #111625;
+  --color-brand-card-border: rgba(0, 240, 255, 0.15);
+  --color-brand-purple: #251B45;
+  --color-brand-purple-hover: #352665;
+  --color-brand-node: #1C243B;
+  --color-brand-node-active: #4A327E;
+  --color-brand-accent: #00F0FF;
+  --color-brand-button-slate: #00F0FF;
 
-  /* Radius */
-  --radius-sm: 0.25rem;
-  --radius-md: 0.5rem;
-  --radius-lg: 1rem;
-  --radius-xl: 1.5rem;
-  --radius-pill: 9999px;
-
-  /* Borders */
-  --border-width: 1px;
-
-  /* Typography */
-  --font-family-display: var(--font-silkscreen), monospace;
-  --font-family-body: var(--font-outfit), sans-serif;
+  --font-pixel: var(--font-pixel), "Press Start 2P", monospace;
+  --font-sans: var(--font-space-grotesk), var(--font-sans), "Space Grotesk", "Plus Jakarta Sans", sans-serif;
+  --font-mono: var(--font-mono), "JetBrains Mono", monospace;
 }
 
-html, body {
-  background-color: var(--background-primary);
-  color: var(--text-primary);
-  font-family: var(--font-family-body);
+:root {
+  --background-primary: #0B0E17;
+  --background-secondary: #131826;
+  --surface: #111625;
+  --surface-elevated: #1E263D;
+  --text-primary: #e5e7eb;
+  --text-secondary: #94a3b8;
+  --accent-cyan: #00F0FF;
+  --accent-violet: #8B5CF6;
+  --accent-mint: #10E7B2;
+}
+
+body {
+  background-color: #0B0E17;
+  color: #e5e7eb;
+  font-family: var(--font-space-grotesk), "Space Grotesk", "Plus Jakarta Sans", sans-serif;
   margin: 0;
   padding: 0;
   -webkit-font-smoothing: antialiased;
@@ -58,22 +47,34 @@ html, body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-display);
-  font-weight: 400;
-  margin: 0;
-  text-transform: uppercase;
+.pixel-text {
+  font-family: var(--font-pixel), "Press Start 2P", monospace;
+  letter-spacing: -0.05em;
 }
 
-p {
-  margin: 0;
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+.cyber-glow-cyan {
+  box-shadow: 0 0 25px -4px rgba(0, 240, 255, 0.35);
 }
 
-* {
-  box-sizing: border-box;
+.cyber-glow-btn {
+  box-shadow: 0 0 20px 0 rgba(0, 240, 255, 0.4), 0 0 40px -8px rgba(139, 92, 246, 0.45);
+}
+
+.pitch-grid-bg {
+  background-image: 
+    radial-gradient(ellipse at 50% 0%, rgba(0, 240, 255, 0.08) 0%, transparent 60%),
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 100% 100%, 28px 28px, 28px 28px;
+}
+
+.stadium-ambient {
+  background: radial-gradient(circle at 50% 0%, rgba(99, 102, 241, 0.15) 0%, rgba(0, 240, 255, 0.05) 35%, transparent 70%);
 }

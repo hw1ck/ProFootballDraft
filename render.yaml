@@ -1,0 +1,48 @@
+services:
+  # 1. ProFootballDraft Real-time Auction & API Service
+  - type: web
+    name: profootballdraft-api
+    env: node
+    plan: free
+    region: oregon
+    rootDir: server
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 5000
+      - key: JWT_SECRET
+        generateValue: true
+      - key: MONGODB_URI
+        sync: false
+      - key: CLIENT_URL
+        fromService:
+          type: web
+          name: profootballdraft-web
+          envVarKey: RENDER_EXTERNAL_URL
+
+  # 2. ProFootballDraft Next.js Web App
+  - type: web
+    name: profootballdraft-web
+    env: node
+    plan: free
+    region: oregon
+    rootDir: .
+    buildCommand: npm install --legacy-peer-deps && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_SOCKET_URL
+        fromService:
+          type: web
+          name: profootballdraft-api
+          envVarKey: RENDER_EXTERNAL_URL
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: profootballdraft-api
+          envVarKey: RENDER_EXTERNAL_URL

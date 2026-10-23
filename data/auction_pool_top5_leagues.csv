@@ -1,0 +1,457 @@
+player_id,display_name,long_name,position,player_positions,overall,potential,age,nationality_name,club_name,league_name,value_eur,wage_eur,international_reputation,pace,shooting,passing,dribbling,defending,physic,player_face_url
+231747,K. Mbappé,Kylian Mbappé Lottin,ST,"ST, LW, LM",91,94,26,France,Real Madrid,La Liga,173500000,610000,5,97.0,90.0,81.0,92.0,37.0,76.0,https://cdn.sofifa.net/players/231/747/26_120.png
+209331,M. Salah,Mohamed Salah Hamed Ghalyمحمد صلاح,RM,"RM, RW",91,91,33,Egypt,Liverpool,Premier League,82000000,370000,5,89.0,88.0,86.0,90.0,45.0,76.0,https://cdn.sofifa.net/players/209/331/26_120.png
+252371,Jude Bellingham,Jude Victor William Bellingham,CAM,"CAM, CM",90,94,22,England,Real Madrid,La Liga,174500000,320000,5,80.0,86.0,83.0,90.0,78.0,85.0,https://cdn.sofifa.net/players/252/371/26_120.png
+239085,E. Haaland,Erling Braut Håland,ST,ST,90,92,24,Norway,Manchester City,Premier League,157000000,260000,5,86.0,91.0,70.0,80.0,45.0,88.0,https://cdn.sofifa.net/players/239/085/26_120.png
+231443,O. Dembélé,Masour Ousmane Dembélé,ST,"ST, RW, CAM",90,90,28,France,Paris Saint-Germain,Ligue 1,122500000,220000,5,91.0,88.0,83.0,93.0,50.0,69.0,https://cdn.sofifa.net/players/231/443/26_120.png
+231866,Rodri,Rodrigo Hernández Cascante,CDM,"CDM, CM",90,90,29,Spain,Manchester City,Premier League,102000000,270000,5,65.0,80.0,86.0,84.0,86.0,85.0,https://cdn.sofifa.net/players/231/866/26_120.png
+203376,Virgil van Dijk,Virgil van Dijk,CB,CB,90,90,33,Netherlands,Liverpool,Premier League,57000000,230000,5,73.0,60.0,72.0,72.0,90.0,87.0,https://cdn.sofifa.net/players/203/376/26_120.png
+256630,F. Wirtz,Florian Richard Wirtz,CAM,"CAM, ST, CM",89,93,22,Germany,Liverpool,Premier League,150500000,190000,5,80.0,82.0,88.0,90.0,54.0,67.0,https://cdn.sofifa.net/players/256/630/26_120.png
+277643,Lamine Yamal,Lamine Yamal Nasraoui Ebanaلامين يامال نصراوي إبانا,RM,"RM, RW",89,95,17,Spain,FC Barcelona,La Liga,147000000,100000,5,85.0,81.0,86.0,90.0,23.0,53.0,https://cdn.sofifa.net/players/277/643/26_120.png
+238794,Vini Jr.,Vinicius José Paixão de Oliveira Junior,LW,"LW, ST, LM",89,92,24,Brazil,Real Madrid,La Liga,141000000,320000,5,95.0,84.0,81.0,91.0,29.0,69.0,https://cdn.sofifa.net/players/238/794/26_120.png
+202126,H. Kane,Harry Edward Kane,ST,ST,89,89,31,England,FC Bayern München,Bundesliga,87000000,155000,5,64.0,92.0,83.0,82.0,48.0,82.0,https://cdn.sofifa.net/players/202/126/26_120.png
+212831,Alisson,Alisson Ramsés Becker,GK,GK,89,89,32,Brazil,Liverpool,Premier League,51000000,140000,5,,,,,,,https://cdn.sofifa.net/players/212/831/26_120.png
+192119,T. Courtois,Thibaut Nicolas Marc Courtois,GK,GK,89,89,33,Belgium,Real Madrid,La Liga,33500000,220000,5,,,,,,,https://cdn.sofifa.net/players/192/119/26_120.png
+251854,Pedri,Pedro González López,CM,"CM, CDM, CAM",89,93,22,Spain,FC Barcelona,La Liga,149500000,170000,4,77.0,73.0,85.0,91.0,78.0,77.0,https://cdn.sofifa.net/players/251/854/26_120.png
+255253,Vitinha,Vítor Machado Ferreira,CM,"CM, CDM, CAM",89,91,25,Portugal,Paris Saint-Germain,Ligue 1,128500000,170000,4,72.0,80.0,86.0,90.0,75.0,70.0,https://cdn.sofifa.net/players/255/253/26_120.png
+239053,F. Valverde,Federico Santiago Valverde Dipetta,CM,"CM, CDM, RB",89,90,26,Uruguay,Real Madrid,La Liga,120500000,340000,4,88.0,84.0,84.0,84.0,83.0,85.0,https://cdn.sofifa.net/players/239/053/26_120.png
+235212,A. Hakimi,Achraf Hakimi Mouhأشرف حكيمي,RB,"RB, RM",89,90,26,Morocco,Paris Saint-Germain,Ligue 1,111000000,170000,4,92.0,79.0,82.0,83.0,82.0,79.0,https://cdn.sofifa.net/players/235/212/26_120.png
+233419,Raphinha,Raphael Dias Belloli,LM,"LM, LW",89,89,28,Brazil,FC Barcelona,La Liga,104000000,200000,4,91.0,84.0,85.0,87.0,53.0,75.0,https://cdn.sofifa.net/players/233/419/26_120.png
+230621,Gianluigi Donnarumma,Gianluigi Donnarumma,GK,GK,89,91,26,Italy,Manchester City,Premier League,97000000,150000,4,,,,,,,https://cdn.sofifa.net/players/230/621/26_120.png
+212622,J. Kimmich,Joshua Walter Kimmich,CDM,"CDM, RB, CM",89,89,30,Germany,FC Bayern München,Bundesliga,86000000,140000,4,72.0,74.0,89.0,84.0,83.0,79.0,https://cdn.sofifa.net/players/212/622/26_120.png
+231478,L. Martínez,Lautaro Javier Martínez,ST,ST,88,88,27,Argentina,Inter,Serie A,99000000,79000,5,81.0,88.0,75.0,84.0,51.0,83.0,https://cdn.sofifa.net/players/231/478/26_120.png
+188545,Robert Lewandowski,Robert Lewandowski,ST,ST,88,88,36,Poland,FC Barcelona,La Liga,31000000,155000,5,74.0,89.0,79.0,85.0,44.0,84.0,https://cdn.sofifa.net/players/188/545/26_120.png
+256790,Jamal Musiala,Jamal Musiala,CAM,"CAM, LM, CM, ST",88,92,22,Germany,FC Bayern München,Bundesliga,133500000,110000,4,80.0,82.0,80.0,90.0,66.0,65.0,https://cdn.sofifa.net/players/256/790/26_120.png
+246669,Bukayo Saka,Bukayo Saka,RW,"RW, RM",88,90,23,England,Arsenal,Premier League,118500000,230000,4,84.0,82.0,85.0,88.0,60.0,73.0,https://cdn.sofifa.net/players/246/669/26_120.png
+233731,Alexander Isak,Alexander Isak,ST,ST,88,89,25,Sweden,Liverpool,Premier League,111000000,200000,4,83.0,89.0,73.0,85.0,39.0,76.0,https://cdn.sofifa.net/players/233/731/26_120.png
+232580,Gabriel,Gabriel dos Santos Magalhães,CB,CB,88,88,27,Brazil,Arsenal,Premier League,84000000,230000,4,64.0,44.0,64.0,65.0,88.0,84.0,https://cdn.sofifa.net/players/232/580/26_120.png
+200389,Jan Oblak,Jan Oblak,GK,GK,88,88,32,Slovenia,Atlético Madrid,La Liga,45000000,87000,4,,,,,,,https://cdn.sofifa.net/players/200/389/26_120.png
+257534,C. Palmer,Cole Jermaine Palmer,CAM,"CAM, RM, ST",87,90,23,England,Chelsea,Premier League,109000000,185000,4,75.0,83.0,87.0,87.0,50.0,65.0,https://cdn.sofifa.net/players/257/534/26_120.png
+246191,Julián Alvarez,Julián Álvarez,ST,ST,87,90,25,Argentina,Atlético Madrid,La Liga,107000000,125000,4,85.0,87.0,81.0,87.0,57.0,79.0,https://cdn.sofifa.net/players/246/191/26_120.png
+222665,Martin Ødegaard,Martin Ødegaard,CM,"CM, CAM",87,89,26,Norway,Arsenal,Premier League,98000000,220000,4,68.0,79.0,88.0,87.0,67.0,65.0,https://cdn.sofifa.net/players/222/665/26_120.png
+239837,Alexis Mac Allister,Alexis Mac Allister,CM,"CM, CDM",87,88,26,Argentina,Liverpool,Premier League,93000000,180000,4,66.0,82.0,85.0,85.0,78.0,76.0,https://cdn.sofifa.net/players/239/837/26_120.png
+256079,M. Caicedo,Moisés Isaac Caicedo Corozo,CDM,"CDM, CM",87,89,23,Ecuador,Chelsea,Premier League,93000000,170000,4,71.0,64.0,78.0,81.0,84.0,82.0,https://cdn.sofifa.net/players/256/079/26_120.png
+241651,V. Gyökeres,Viktor Einar Gyökeres,ST,ST,87,88,27,Sweden,Arsenal,Premier League,93000000,240000,4,90.0,86.0,73.0,81.0,36.0,91.0,https://cdn.sofifa.net/players/241/651/26_120.png
+243715,W. Saliba,William Alain André Gabriel Saliba,CB,CB,87,89,24,France,Arsenal,Premier League,92000000,180000,4,77.0,39.0,68.0,72.0,87.0,83.0,https://cdn.sofifa.net/players/243/715/26_120.png
+237383,Alessandro Bastoni,Alessandro Bastoni,CB,CB,87,89,26,Italy,Inter,Serie A,87000000,63000,4,74.0,46.0,75.0,76.0,88.0,82.0,https://cdn.sofifa.net/players/237/383/26_120.png
+241486,J. Koundé,Jules Olivier Koundé,RB,"RB, CB, RM",87,88,26,France,FC Barcelona,La Liga,85500000,155000,4,84.0,47.0,74.0,79.0,86.0,84.0,https://cdn.sofifa.net/players/241/486/26_120.png
+234378,Declan Rice,Declan Rice,CDM,"CDM, CM",87,88,26,England,Arsenal,Premier League,83500000,210000,4,72.0,73.0,84.0,80.0,83.0,83.0,https://cdn.sofifa.net/players/234/378/26_120.png
+224232,Nicolò Barella,Nicolò Barella,CM,CM,87,87,28,Italy,Inter,Serie A,79500000,69000,4,80.0,78.0,84.0,86.0,81.0,76.0,https://cdn.sofifa.net/players/224/232/26_120.png
+228702,Frenkie de Jong,Frenkie de Jong,CM,"CM, CDM",87,87,28,Netherlands,FC Barcelona,La Liga,79500000,170000,4,82.0,71.0,85.0,87.0,78.0,77.0,https://cdn.sofifa.net/players/228/702/26_120.png
+215441,S. Guirassy,Serhou Yadaly Guirassy,ST,ST,87,87,29,Guinea,Borussia Dortmund,Bundesliga,79500000,105000,4,72.0,88.0,76.0,83.0,45.0,83.0,https://cdn.sofifa.net/players/215/441/26_120.png
+212198,Bruno Fernandes,Bruno Miguel Borges Fernandes,CAM,"CAM, CM",87,87,30,Portugal,Manchester United,Premier League,77000000,165000,4,67.0,83.0,89.0,83.0,65.0,75.0,https://cdn.sofifa.net/players/212/198/26_120.png
+213331,J. Tah,Jonathan Glao Tah,CB,CB,87,87,29,Germany,FC Bayern München,Bundesliga,66500000,115000,4,63.0,38.0,60.0,63.0,87.0,86.0,https://cdn.sofifa.net/players/213/331/26_120.png
+215698,M. Maignan,Mike Peterson Maignan,GK,GK,87,88,29,France,AC Milan,Serie A,61000000,61000,4,,,,,,,https://cdn.sofifa.net/players/215/698/26_120.png
+207865,Marquinhos,Marcos Aoás Corrêa,CB,CB,87,87,31,Brazil,Paris Saint-Germain,Ligue 1,54500000,145000,4,78.0,56.0,75.0,74.0,89.0,80.0,https://cdn.sofifa.net/players/207/865/26_120.png
+220901,David Raya,David Raya Martín,GK,GK,87,87,29,Spain,Arsenal,Premier League,54500000,145000,4,,,,,,,https://cdn.sofifa.net/players/220/901/26_120.png
+192985,Kevin De Bruyne,Kevin De Bruyne,CM,"CM, CAM",87,87,34,Belgium,Napoli,Serie A,36500000,175000,4,66.0,83.0,92.0,84.0,65.0,72.0,https://cdn.sofifa.net/players/192/985/26_120.png
+177683,Yann Sommer,Yann Sommer,GK,GK,87,87,36,Switzerland,Inter,Serie A,9000000,26000,4,,,,,,,https://cdn.sofifa.net/players/177/683/26_120.png
+247635,K. Kvaratskhelia,Khvicha Kvaratskheliaხვიჩა კვარაცხელია,LW,"LW, RW, LM",87,90,24,Georgia,Paris Saint-Germain,Ligue 1,109000000,140000,3,86.0,80.0,83.0,88.0,58.0,78.0,https://cdn.sofifa.net/players/247/635/26_120.png
+240638,T. Reijnders,Tijjani Martinus Jan Reijnders Lekatompessy,CM,"CM, CDM, CAM",86,87,26,Netherlands,Manchester City,Premier League,79500000,190000,4,79.0,79.0,82.0,85.0,77.0,77.0,https://cdn.sofifa.net/players/240/638/26_120.png
+247851,Bruno Guimarães,Bruno Guimarães Rodrigues Moura,CM,"CM, CDM",86,87,27,Brazil,Newcastle United,Premier League,77500000,190000,4,66.0,75.0,84.0,84.0,79.0,81.0,https://cdn.sofifa.net/players/247/851/26_120.png
+231281,Trent Alexander-Arnold,Trent John Alexander-Arnold,RB,"RB, RM",86,87,26,England,Real Madrid,La Liga,73000000,250000,4,76.0,72.0,89.0,80.0,80.0,74.0,https://cdn.sofifa.net/players/231/281/26_120.png
+237678,Ibrahima Konaté,Ibrahima Konaté,CB,CB,86,87,26,France,Liverpool,Premier League,70000000,155000,4,77.0,34.0,63.0,69.0,86.0,85.0,https://cdn.sofifa.net/players/237/678/26_120.png
+235073,Gregor Kobel,Gregor Kobel,GK,GK,86,89,27,Switzerland,Borussia Dortmund,Bundesliga,66500000,52000,4,,,,,,,https://cdn.sofifa.net/players/235/073/26_120.png
+239818,Rúben Dias,Rúben dos Santos Gato Alves Dias,CB,CB,86,87,28,Portugal,Manchester City,Premier League,64500000,190000,4,59.0,39.0,69.0,69.0,86.0,84.0,https://cdn.sofifa.net/players/239/818/26_120.png
+211110,P. Dybala,Paulo Bruno Exequiel Dybala,CAM,"CAM, ST",86,86,31,Argentina,Roma,Serie A,56500000,105000,4,80.0,85.0,84.0,87.0,41.0,64.0,https://cdn.sofifa.net/players/211/110/26_120.png
+208128,Hakan Çalhanoğlu,Hakan Çalhanoğlu,CDM,"CDM, CM",86,86,31,Türkiye,Inter,Serie A,47500000,61000,4,71.0,81.0,87.0,82.0,81.0,73.0,https://cdn.sofifa.net/players/208/128/26_120.png
+205452,Antonio Rüdiger,Antonio Rüdiger,CB,CB,86,86,32,Germany,Real Madrid,La Liga,44000000,260000,4,79.0,55.0,72.0,70.0,84.0,86.0,https://cdn.sofifa.net/players/205/452/26_120.png
+192448,Marc-André ter Stegen,Marc-André ter Stegen,GK,GK,86,86,33,Germany,FC Barcelona,La Liga,22000000,95000,4,,,,,,,https://cdn.sofifa.net/players/192/448/26_120.png
+256516,Nico Williams,Nicholas Williams Arthuer,LM,"LM, RM, LW",86,89,22,Spain,Athletic Club,La Liga,94500000,70000,3,93.0,76.0,80.0,87.0,36.0,66.0,https://cdn.sofifa.net/players/256/516/26_120.png
+247827,M. Olise,Michael Akpovie Olise,RM,"RM, RW",86,88,23,France,FC Bayern München,Bundesliga,88000000,95000,3,78.0,80.0,84.0,87.0,50.0,66.0,https://cdn.sofifa.net/players/247/827/26_120.png
+252145,Nuno Mendes,Nuno Alexandre Tavares Mendes,LB,"LB, LM",86,89,23,Portugal,Paris Saint-Germain,Ligue 1,86000000,110000,3,95.0,65.0,76.0,82.0,80.0,77.0,https://cdn.sofifa.net/players/252/145/26_120.png
+256196,W. Pacho,Willian Joel Pacho Tenorio,CB,CB,86,89,23,Ecuador,Paris Saint-Germain,Ligue 1,83000000,110000,3,80.0,34.0,62.0,62.0,86.0,86.0,https://cdn.sofifa.net/players/256/196/26_120.png
+241096,Sandro Tonali,Sandro Tonali,CDM,"CDM, CM",86,88,25,Italy,Newcastle United,Premier League,76500000,175000,3,79.0,74.0,82.0,80.0,81.0,83.0,https://cdn.sofifa.net/players/241/096/26_120.png
+243812,Rodrygo,Rodrygo Silva de Goes,RW,"RW, ST, RM",85,90,24,Brazil,Real Madrid,La Liga,81500000,220000,4,88.0,80.0,79.0,87.0,31.0,64.0,https://cdn.sofifa.net/players/243/812/26_120.png
+239580,Bremer,Gleison Bremer Silva Nascimento,CB,CB,85,86,28,Brazil,Juventus,Serie A,51000000,170000,4,82.0,50.0,58.0,66.0,86.0,80.0,https://cdn.sofifa.net/players/239/580/26_120.png
+204963,Carvajal,Daniel Carvajal Ramos,RB,"RB, RM",85,85,33,Spain,Real Madrid,La Liga,28000000,240000,4,80.0,58.0,79.0,81.0,81.0,79.0,https://cdn.sofifa.net/players/204/963/26_120.png
+194765,Antoine Griezmann,Antoine Griezmann,ST,"ST, LM, CAM",85,85,34,France,Atlético Madrid,La Liga,26000000,115000,4,77.0,86.0,85.0,88.0,59.0,73.0,https://cdn.sofifa.net/players/194/765/26_120.png
+271421,Désiré Doué,Désiré Doué,RW,"RW, LW, CM, RM",85,91,20,France,Paris Saint-Germain,Ligue 1,83500000,100000,3,83.0,80.0,77.0,90.0,55.0,74.0,https://cdn.sofifa.net/players/271/421/26_120.png
+272834,João Neves,João Pedro Gonçalves Neves,CM,"CM, CDM",85,90,20,Portugal,Paris Saint-Germain,Ligue 1,79500000,90000,3,74.0,71.0,80.0,84.0,82.0,83.0,https://cdn.sofifa.net/players/272/834/26_120.png
+237692,P. Foden,Philip Walter Foden,RW,"RW, CM, LW, RM",85,88,25,England,Manchester City,Premier League,71500000,180000,3,81.0,81.0,82.0,89.0,57.0,57.0,https://cdn.sofifa.net/players/237/692/26_120.png
+246104,Ryan Gravenberch,Ryan Jiro Gravenberch,CDM,"CDM, CM",85,88,23,Netherlands,Liverpool,Premier League,66500000,125000,3,76.0,76.0,81.0,85.0,81.0,81.0,https://cdn.sofifa.net/players/246/104/26_120.png
+243014,B. Mbeumo,Bryan Tetsadong Marceau Mbeumo,RW,"RW, RM, ST",85,86,25,Cameroon,Manchester United,Premier League,64500000,135000,3,88.0,84.0,79.0,84.0,49.0,76.0,https://cdn.sofifa.net/players/243/014/26_120.png
+247819,Nico Schlotterbeck,Nico Cedric Schlotterbeck,CB,CB,85,88,25,Germany,Borussia Dortmund,Bundesliga,63500000,72000,3,74.0,60.0,75.0,73.0,85.0,82.0,https://cdn.sofifa.net/players/247/819/26_120.png
+229558,D. Upamecano,Dayotchanculle Oswald Upamecano,CB,CB,85,88,26,France,FC Bayern München,Bundesliga,62500000,95000,3,77.0,45.0,64.0,73.0,84.0,84.0,https://cdn.sofifa.net/players/229/558/26_120.png
+244260,Dani Olmo,Daniel Olmo Carvajal,CAM,"CAM, CM, ST",85,86,27,Spain,FC Barcelona,La Liga,62000000,140000,3,73.0,79.0,83.0,87.0,50.0,56.0,https://cdn.sofifa.net/players/244/260/26_120.png
+228093,M. Thuram,Marcus Lilian Thuram-Ulien,ST,ST,85,85,27,France,Inter,Serie A,58500000,61000,3,86.0,83.0,76.0,82.0,50.0,80.0,https://cdn.sofifa.net/players/228/093/26_120.png
+241084,L. Díaz,Luis Fernando Díaz Marulanda,LM,"LM, LW, ST",85,85,28,Colombia,FC Bayern München,Bundesliga,54500000,100000,3,88.0,81.0,76.0,87.0,45.0,75.0,https://cdn.sofifa.net/players/241/084/26_120.png
+237238,S. McTominay,Scott Francis McTominay,CM,"CM, CAM, LM",85,85,28,Scotland,Napoli,Serie A,54000000,150000,3,76.0,82.0,77.0,80.0,80.0,85.0,https://cdn.sofifa.net/players/237/238/26_120.png
+216393,Youri Tielemans,Youri Tielemans,CM,"CM, CDM, CAM",85,85,28,Belgium,Aston Villa,Premier League,54000000,170000,3,54.0,79.0,85.0,80.0,75.0,72.0,https://cdn.sofifa.net/players/216/393/26_120.png
+234236,Patrik Schick,Patrik Schick,ST,ST,85,85,29,Czechia,Bayer 04 Leverkusen,Bundesliga,54000000,135000,3,72.0,83.0,71.0,81.0,38.0,77.0,https://cdn.sofifa.net/players/234/236/26_120.png
+226271,Fabián Ruiz,Fabián Ruiz Peña,CM,"CM, CDM",85,85,29,Spain,Paris Saint-Germain,Ligue 1,52500000,130000,3,61.0,77.0,80.0,81.0,75.0,72.0,https://cdn.sofifa.net/players/226/271/26_120.png
+226268,Federico Dimarco,Federico Dimarco,LB,"LB, LM",85,85,27,Italy,Inter,Serie A,52000000,54000,3,80.0,78.0,84.0,82.0,79.0,77.0,https://cdn.sofifa.net/players/226/268/26_120.png
+230869,Unai Simón,Unai Simón Mendibil,GK,GK,85,86,28,Spain,Athletic Club,La Liga,43000000,48000,3,,,,,,,https://cdn.sofifa.net/players/230/869/26_120.png
+199503,Granit Xhaka,Granit Xhaka,CDM,"CDM, CM",85,85,32,Switzerland,Sunderland,Premier League,36000000,105000,3,47.0,75.0,85.0,74.0,78.0,82.0,https://cdn.sofifa.net/players/199/503/26_120.png
+202811,E. Martínez,Damián Emiliano Martínez Romero,GK,GK,85,85,32,Argentina,Aston Villa,Premier League,26500000,105000,3,,,,,,,https://cdn.sofifa.net/players/202/811/26_120.png
+193080,De Gea,David de Gea Quintana,GK,GK,85,85,34,Spain,Fiorentina,Serie A,9000000,55000,3,,,,,,,https://cdn.sofifa.net/players/193/080/26_120.png
+185122,Péter Gulácsi,Péter Gulácsi,GK,GK,85,85,35,Hungary,RB Leipzig,Bundesliga,6000000,35000,3,,,,,,,https://cdn.sofifa.net/players/185/122/26_120.png
+257279,Álex Baena,Alejandro Baena Rodríguez,LM,"LM, ST, LW",84,89,23,Spain,Atlético Madrid,La Liga,63500000,82000,3,79.0,76.0,84.0,82.0,65.0,68.0,https://cdn.sofifa.net/players/257/279/26_120.png
+264652,Bradley Barcola,Bradley Barcola,LW,"LW, RW, LM",84,88,22,France,Paris Saint-Germain,Ligue 1,61500000,110000,3,90.0,77.0,78.0,84.0,39.0,66.0,https://cdn.sofifa.net/players/264/652/26_120.png
+244675,Sancet,Oihan Sancet Tirapu,CAM,"CAM, CM, ST",84,88,25,Spain,Athletic Club,La Liga,58500000,66000,3,76.0,83.0,80.0,85.0,70.0,82.0,https://cdn.sofifa.net/players/244/675/26_120.png
+245367,X. Simons,Xavier Quentin Shay Simons,CAM,"CAM, LM, ST",84,87,22,Netherlands,Tottenham Hotspur,Premier League,58500000,125000,3,77.0,77.0,80.0,87.0,61.0,70.0,https://cdn.sofifa.net/players/245/367/26_120.png
+247090,E. Fernández,Enzo Jeremías Fernández,CM,"CM, CDM, CAM",84,87,24,Argentina,Chelsea,Premier League,57000000,140000,3,68.0,75.0,85.0,81.0,73.0,75.0,https://cdn.sofifa.net/players/247/090/26_120.png
+234396,A. Davies,Alphonso Boyle Davies,LB,"LB, LM",84,87,24,Canada,FC Bayern München,Bundesliga,53500000,74000,3,94.0,66.0,78.0,85.0,74.0,76.0,https://cdn.sofifa.net/players/234/396/26_120.png
+251517,Joško Gvardiol,Joško Gvardiol,LB,"LB, CB, LM",84,87,23,Croatia,Manchester City,Premier League,53500000,130000,3,78.0,71.0,75.0,78.0,84.0,82.0,https://cdn.sofifa.net/players/251/517/26_120.png
+231521,E. Palacios,Exequiel Alejandro Palacios,CM,"CM, CDM",84,86,26,Argentina,Bayer 04 Leverkusen,Bundesliga,52000000,110000,3,62.0,76.0,80.0,82.0,81.0,71.0,https://cdn.sofifa.net/players/231/521/26_120.png
+241637,Aurélien Tchouaméni,Aurélien Djani Tchouameni,CDM,"CDM, CM, CB",84,87,25,France,Real Madrid,La Liga,50500000,200000,3,71.0,69.0,79.0,78.0,81.0,82.0,https://cdn.sofifa.net/players/241/637/26_120.png
+256675,O. Marmoush,Omar Khaled Mohamed Marmoush,ST,"ST, CAM, LW",84,85,26,Egypt,Manchester City,Premier League,50500000,175000,3,89.0,85.0,76.0,86.0,34.0,71.0,https://cdn.sofifa.net/players/256/675/26_120.png
+242516,C. Gakpo,Cody Mathès Gakpo,LM,"LM, LW",84,85,26,Netherlands,Liverpool,Premier League,49500000,140000,3,83.0,82.0,80.0,83.0,47.0,74.0,https://cdn.sofifa.net/players/242/516/26_120.png
+241721,Rafael Leão,Rafael Alexandre da Conceição Leão,LW,"LW, LM",84,85,26,Portugal,AC Milan,Serie A,49500000,79000,3,93.0,78.0,80.0,86.0,28.0,75.0,https://cdn.sofifa.net/players/241/721/26_120.png
+248550,Vivian,Daniel Vivian Moreno,CB,CB,84,87,25,Spain,Athletic Club,La Liga,49500000,62000,3,79.0,50.0,63.0,72.0,84.0,83.0,https://cdn.sofifa.net/players/248/550/26_120.png
+240130,Éder Militão,Éder Gabriel Militão,CB,CB,84,87,27,Brazil,Real Madrid,La Liga,48000000,210000,3,82.0,50.0,69.0,71.0,85.0,82.0,https://cdn.sofifa.net/players/240/130/26_120.png
+227796,Christian Pulisic,Christian Mate Pulišić,RW,"RW, RM, CAM",84,84,26,United States,AC Milan,Serie A,46000000,79000,3,88.0,82.0,80.0,86.0,46.0,65.0,https://cdn.sofifa.net/players/227/796/26_120.png
+252154,Marco Carnesecchi,Marco Carnesecchi,GK,GK,84,88,25,Italy,Atalanta,Serie A,46000000,55000,3,,,,,,,https://cdn.sofifa.net/players/252/154/26_120.png
+239231,Marc Cucurella,Marc Cucurella Saseta,LB,LB,84,85,26,Spain,Chelsea,Premier League,45500000,155000,3,75.0,64.0,79.0,80.0,82.0,79.0,https://cdn.sofifa.net/players/239/231/26_120.png
+230899,A. Lookman,Ademola Olajade Alade Aylola Lookman,ST,"ST, CAM",84,84,27,Nigeria,Atalanta,Serie A,45500000,105000,3,86.0,84.0,73.0,88.0,32.0,67.0,https://cdn.sofifa.net/players/230/899/26_120.png
+262621,G. Mamardashvili,Giorgi Mamardashviliგიორგი მამარდაშვილი,GK,GK,84,87,24,Georgia,Liverpool,Premier League,45000000,67000,3,,,,,,,https://cdn.sofifa.net/players/262/621/26_120.png
+222077,Manuel Locatelli,Manuel Locatelli,CDM,"CDM, CM",84,85,27,Italy,Juventus,Serie A,43000000,150000,3,63.0,69.0,80.0,76.0,81.0,78.0,https://cdn.sofifa.net/players/222/077/26_120.png
+220697,J. Maddison,James Daniel Maddison,CM,"CM, CAM",84,84,28,England,Tottenham Hotspur,Premier League,42000000,145000,3,67.0,81.0,86.0,85.0,58.0,64.0,https://cdn.sofifa.net/players/220/697/26_120.png
+221697,O. Watkins,Oliver George Arthur Watkins,ST,ST,84,84,29,England,Aston Villa,Premier League,42000000,170000,3,77.0,83.0,73.0,80.0,50.0,80.0,https://cdn.sofifa.net/players/221/697/26_120.png
+216549,Alexander Sørloth,Alexander Sørloth,ST,"ST, RW, RM",84,84,29,Norway,Atlético Madrid,La Liga,42000000,105000,3,77.0,82.0,71.0,76.0,36.0,85.0,https://cdn.sofifa.net/players/216/549/26_120.png
+210035,Grimaldo,Alejandro Grimaldo García,LM,"LM, LB, LW",84,84,29,Spain,Bayer 04 Leverkusen,Bundesliga,41500000,110000,3,72.0,73.0,87.0,85.0,74.0,67.0,https://cdn.sofifa.net/players/210/035/26_120.png
+218667,Bernardo Silva,Bernardo Mota Veiga de Carvalho e Silva,CM,"CM, RM, CDM, CAM",84,84,30,Portugal,Manchester City,Premier League,40500000,165000,3,61.0,78.0,83.0,89.0,71.0,65.0,https://cdn.sofifa.net/players/218/667/26_120.png
+220502,Mattia Zaccagni,Mattia Zaccagni,LM,"LM, LW",84,84,30,Italy,Lazio,Serie A,40500000,58000,3,88.0,78.0,77.0,87.0,57.0,66.0,https://cdn.sofifa.net/players/220/502/26_120.png
+233096,D. Dumfries,Denzel Justus Morris Dumfries,RB,"RB, RM",84,84,29,Netherlands,Inter,Serie A,37000000,51000,3,84.0,70.0,75.0,79.0,79.0,84.0,https://cdn.sofifa.net/players/233/096/26_120.png
+226161,Marcos Llorente,Marcos Llorente Moreno,RB,"RB, CM, RM",84,84,30,Spain,Atlético Madrid,La Liga,36500000,95000,3,89.0,79.0,78.0,81.0,78.0,82.0,https://cdn.sofifa.net/players/226/161/26_120.png
+226851,Benjamin Pavard,Benjamin Pavard,CB,CB,84,84,29,France,Olympique de Marseille,Ligue 1,35500000,51000,3,75.0,67.0,76.0,75.0,86.0,79.0,https://cdn.sofifa.net/players/226/851/26_120.png
+192505,R. Lukaku,Romelu Menama Lukaku Bolingoli,ST,ST,84,84,32,Belgium,Napoli,Serie A,34000000,150000,3,79.0,82.0,75.0,75.0,41.0,84.0,https://cdn.sofifa.net/players/192/505/26_120.png
+204638,W. Orban,Vilmos Tamás Orbán,CB,CB,84,84,32,Hungary,RB Leipzig,Bundesliga,27500000,81000,3,57.0,40.0,56.0,56.0,86.0,83.0,https://cdn.sofifa.net/players/204/638/26_120.png
+197781,Isco,Francisco Román Alarcón Suárez,CAM,"CAM, LM, CM",84,84,33,Spain,Real Betis Balompié,La Liga,26500000,52000,3,66.0,79.0,85.0,85.0,59.0,60.0,https://cdn.sofifa.net/players/197/781/26_120.png
+204935,Jordan Pickford,Jordan Lee Pickford,GK,GK,84,84,31,England,Everton,Premier League,22500000,45000,3,,,,,,,https://cdn.sofifa.net/players/204/935/26_120.png
+198176,Stefan de Vrij,Stefan de Vrij,CB,CB,84,84,33,Netherlands,Inter,Serie A,20000000,51000,3,62.0,41.0,68.0,69.0,86.0,74.0,https://cdn.sofifa.net/players/198/176/26_120.png
+199845,Francesco Acerbi,Francesco Acerbi,CB,CB,84,84,37,Italy,Inter,Serie A,7500000,38000,3,57.0,50.0,65.0,65.0,87.0,81.0,https://cdn.sofifa.net/players/199/845/26_120.png
+167495,M. Neuer,Manuel Peter Neuer,GK,GK,84,84,39,Germany,FC Bayern München,Bundesliga,4700000,28000,3,,,,,,,https://cdn.sofifa.net/players/167/495/26_120.png
+186153,W. Szczęsny,Wojciech Tomasz Szczęsny,GK,GK,84,84,35,Poland,FC Barcelona,La Liga,4700000,49000,3,,,,,,,https://cdn.sofifa.net/players/186/153/26_120.png
+248243,Eduardo Camavinga,Eduardo Celmi Camavinga,CM,"CM, CDM, LB",83,90,22,France,Real Madrid,La Liga,73500000,175000,3,80.0,68.0,81.0,84.0,78.0,80.0,https://cdn.sofifa.net/players/248/243/26_120.png
+264240,Gavi,Pablo Martín Páez Gavira,CM,"CM, CAM",83,89,20,Spain,FC Barcelona,La Liga,56000000,85000,3,76.0,66.0,78.0,85.0,68.0,70.0,https://cdn.sofifa.net/players/264/240/26_120.png
+257289,Hugo Ekitiké,Hugo Ekitiké,ST,"ST, CAM",83,88,23,France,Liverpool,Premier League,55500000,120000,3,86.0,78.0,69.0,85.0,33.0,73.0,https://cdn.sofifa.net/players/257/289/26_120.png
+256197,P. Hincapié,Piero Martín Hincapié Reyna,CB,"CB, LB, LM",83,89,23,Ecuador,Arsenal,Premier League,52000000,81000,3,84.0,41.0,65.0,72.0,84.0,82.0,https://cdn.sofifa.net/players/256/197/26_120.png
+236772,Dominik Szoboszlai,Dominik Szoboszlai,CAM,"CAM, CM",83,86,24,Hungary,Liverpool,Premier League,49500000,110000,3,79.0,82.0,84.0,82.0,67.0,76.0,https://cdn.sofifa.net/players/236/772/26_120.png
+242964,A. Gordon,Anthony Michael Gordon,LW,"LW, RW, LM",83,86,24,England,Newcastle United,Premier League,49500000,135000,3,91.0,79.0,78.0,83.0,50.0,72.0,https://cdn.sofifa.net/players/242/964/26_120.png
+263578,Balde,Alejandro Balde Martínez,LB,"LB, LM",83,87,21,Spain,FC Barcelona,La Liga,49500000,80000,3,91.0,50.0,75.0,79.0,78.0,67.0,https://cdn.sofifa.net/players/263/578/26_120.png
+236610,M. Kean,Moise Bioty Kean,ST,ST,83,86,25,Italy,Fiorentina,Serie A,48500000,74000,3,86.0,82.0,58.0,81.0,40.0,74.0,https://cdn.sofifa.net/players/236/610/26_120.png
+241461,Ferran Torres,Ferran Torres García,LW,"LW, RW, ST, LM",83,86,25,Spain,FC Barcelona,La Liga,48000000,115000,3,83.0,81.0,79.0,83.0,35.0,68.0,https://cdn.sofifa.net/players/241/461/26_120.png
+247394,D. Kulusevski,Dejan KulusevskiДејан Кулушевски,CM,"CM, RW, CAM",83,86,25,Sweden,Tottenham Hotspur,Premier League,47500000,125000,3,74.0,79.0,84.0,85.0,62.0,81.0,https://cdn.sofifa.net/players/247/394/26_120.png
+250959,Angelo Stiller,Angelo Stiller,CDM,"CDM, CM",83,87,24,Germany,VfB Stuttgart,Bundesliga,47500000,47000,3,56.0,58.0,83.0,84.0,76.0,71.0,https://cdn.sofifa.net/players/250/959/26_120.png
+278016,Murillo,Murillo Santiago Costa dos Santos,CB,CB,83,87,22,Brazil,Nottingham Forest,Premier League,47500000,100000,3,80.0,48.0,67.0,71.0,83.0,83.0,https://cdn.sofifa.net/players/278/016/26_120.png
+259532,Joan García,Joan García Pons,GK,GK,83,89,24,Spain,FC Barcelona,La Liga,46500000,55000,3,,,,,,,https://cdn.sofifa.net/players/259/532/26_120.png
+243580,L. Openda,Ikoma Loïs Openda,ST,ST,83,85,25,Belgium,Juventus,Serie A,46000000,77000,3,95.0,81.0,69.0,81.0,31.0,80.0,https://cdn.sofifa.net/players/243/580/26_120.png
+248148,Zubimendi,Martín Zubimendi Ibáñez,CDM,"CDM, CM",83,87,26,Spain,Arsenal,Premier League,45500000,150000,3,66.0,68.0,79.0,79.0,80.0,73.0,https://cdn.sofifa.net/players/248/148/26_120.png
+240243,Matheus Cunha,Matheus Santos Carneiro da Cunha,CAM,"CAM, LW, ST",83,85,26,Brazil,Manchester United,Premier League,45000000,115000,3,77.0,85.0,79.0,84.0,44.0,75.0,https://cdn.sofifa.net/players/240/243/26_120.png
+251752,Lucas Chevalier,Lucas Chevalier,GK,GK,83,88,23,France,Paris Saint-Germain,Ligue 1,44000000,50000,3,,,,,,,https://cdn.sofifa.net/players/251/752/26_120.png
+253149,J. Frimpong,Jeremie Agyekum Frimpong,RB,"RB, RM, RW",83,85,24,Netherlands,Liverpool,Premier League,43500000,105000,3,94.0,62.0,74.0,84.0,72.0,63.0,https://cdn.sofifa.net/players/253/149/26_120.png
+235794,E. Eze,Eberechi Oluchi Eze,CAM,"CAM, LW, ST",83,84,27,England,Arsenal,Premier League,42000000,160000,3,74.0,80.0,81.0,87.0,50.0,68.0,https://cdn.sofifa.net/players/235/794/26_120.png
+253163,R. Araujo,Ronald Federico Araújo da Silva,CB,"CB, RB",83,86,26,Uruguay,FC Barcelona,La Liga,42000000,110000,3,80.0,53.0,63.0,61.0,81.0,83.0,https://cdn.sofifa.net/players/253/163/26_120.png
+236987,B. Kamara,Boubacar Bernard Kamara,CDM,"CDM, CM",83,85,25,France,Aston Villa,Premier League,41000000,125000,3,64.0,55.0,74.0,75.0,83.0,80.0,https://cdn.sofifa.net/players/236/987/26_120.png
+247103,Dávid Hancko,Dávid Hancko,CB,"CB, LB, LM",83,85,27,Slovakia,Atlético Madrid,La Liga,38500000,82000,3,77.0,66.0,73.0,74.0,82.0,82.0,https://cdn.sofifa.net/players/247/103/26_120.png
+242458,A. Dovbyk,Artem DovbykДовбик Артем Олександрович,ST,ST,83,83,28,Ukraine,Roma,Serie A,37000000,85000,3,83.0,84.0,68.0,78.0,34.0,79.0,https://cdn.sofifa.net/players/242/458/26_120.png
+228813,Aleix García,Aleix García Serrano,CM,"CM, CDM",83,83,28,Spain,Bayer 04 Leverkusen,Bundesliga,36500000,100000,3,65.0,75.0,85.0,84.0,75.0,66.0,https://cdn.sofifa.net/players/228/813/26_120.png
+224371,Jarrod Bowen,Jarrod Bowen,RM,"RM, ST, RW",83,83,28,England,West Ham United,Premier League,36500000,100000,3,76.0,81.0,78.0,82.0,46.0,70.0,https://cdn.sofifa.net/players/224/371/26_120.png
+238095,Nikola Milenković,Nikola Milenković,CB,CB,83,84,27,Serbia,Nottingham Forest,Premier League,36500000,115000,3,57.0,46.0,63.0,62.0,84.0,86.0,https://cdn.sofifa.net/players/238/095/26_120.png
+233486,Robin Le Normand,Robin Le Normand,CB,CB,83,85,28,Spain,Atlético Madrid,La Liga,36500000,86000,3,65.0,28.0,59.0,63.0,84.0,80.0,https://cdn.sofifa.net/players/233/486/26_120.png
+225193,Mikel Merino,Mikel Merino Zazón,CM,"CM, ST",83,83,29,Spain,Arsenal,Premier League,35500000,160000,3,63.0,79.0,80.0,80.0,81.0,80.0,https://cdn.sofifa.net/players/225/193/26_120.png
+212194,Julian Brandt,Julian Brandt,CAM,"CAM, CM",83,83,29,Germany,Borussia Dortmund,Bundesliga,35500000,70000,3,74.0,78.0,83.0,84.0,44.0,70.0,https://cdn.sofifa.net/players/212/194/26_120.png
+210008,A. Rabiot,Adrien Rabiot-Provost,CAM,"CAM, CM",83,83,30,France,AC Milan,Serie A,35000000,71000,3,81.0,79.0,81.0,80.0,77.0,84.0,https://cdn.sofifa.net/players/210/008/26_120.png
+207421,Leandro Trossard,Leandro Trossard,LW,"LW, ST, LM",83,83,30,Belgium,Arsenal,Premier League,35000000,175000,3,80.0,81.0,80.0,85.0,30.0,60.0,https://cdn.sofifa.net/players/207/421/26_120.png
+231936,B. White,Benjamin William White,RB,RB,83,83,27,England,Arsenal,Premier League,35000000,150000,3,70.0,35.0,75.0,75.0,83.0,78.0,https://cdn.sofifa.net/players/231/936/26_120.png
+216435,Stanislav Lobotka,Stanislav Lobotka,CM,"CM, CDM",83,83,30,Slovakia,Napoli,Serie A,34500000,125000,3,71.0,69.0,80.0,82.0,76.0,71.0,https://cdn.sofifa.net/players/216/435/26_120.png
+229391,Palhinha,João Maria Lobo Alves Palhinha Gonçalves,CDM,"CDM, CM",83,83,29,Portugal,Tottenham Hotspur,Premier League,31000000,82000,3,56.0,68.0,70.0,72.0,84.0,85.0,https://cdn.sofifa.net/players/229/391/26_120.png
+215590,Ayoze,Ayoze Pérez Gutiérrez,ST,"ST, CAM",83,83,31,Spain,Villarreal CF,La Liga,30500000,65000,3,86.0,83.0,80.0,83.0,59.0,67.0,https://cdn.sofifa.net/players/215/590/26_120.png
+229582,Gianluca Mancini,Gianluca Mancini,CB,CB,83,83,29,Italy,Roma,Serie A,30500000,75000,3,70.0,50.0,57.0,64.0,85.0,82.0,https://cdn.sofifa.net/players/229/582/26_120.png
+216201,Iñaki Williams,Iñaki Williams Arthuer,RM,"RM, ST, RW",83,83,31,Ghana,Athletic Club,La Liga,30000000,64000,3,94.0,81.0,74.0,80.0,45.0,84.0,https://cdn.sofifa.net/players/216/201/26_120.png
+207410,Mateo Kovačić,Mateo Kovačić,CM,"CM, CDM, CAM",83,83,31,Croatia,Manchester City,Premier League,30000000,150000,3,67.0,74.0,81.0,83.0,73.0,72.0,https://cdn.sofifa.net/players/207/410/26_120.png
+208920,N. Aké,Nathan Benjamin Aké,CB,"CB, LB, LM",83,83,30,Netherlands,Manchester City,Premier League,30000000,145000,3,72.0,53.0,72.0,75.0,84.0,74.0,https://cdn.sofifa.net/players/208/920/26_120.png
+216460,J. Giménez,José María Giménez de Vargas,CB,CB,83,83,30,Uruguay,Atlético Madrid,La Liga,30000000,86000,3,73.0,46.0,60.0,62.0,85.0,82.0,https://cdn.sofifa.net/players/216/460/26_120.png
+227127,Álex Remiro,Alejandro Remiro Gargallo,GK,GK,83,84,30,Spain,Real Sociedad,La Liga,27500000,38000,3,,,,,,,https://cdn.sofifa.net/players/227/127/26_120.png
+217870,Giovanni Di Lorenzo,Giovanni Di Lorenzo,RB,"RB, CB, RM",83,83,31,Italy,Napoli,Serie A,26500000,120000,3,84.0,72.0,73.0,77.0,79.0,80.0,https://cdn.sofifa.net/players/217/870/26_120.png
+244263,A. Rrahmani,Amir Kadri Rrahmani,CB,CB,83,83,31,Kosovo,Napoli,Serie A,25000000,120000,3,69.0,51.0,60.0,63.0,84.0,78.0,https://cdn.sofifa.net/players/244/263/26_120.png
+209989,T. Partey,Thomas Teye Partey,CDM,"CDM, CM, RB",83,83,32,Ghana,Villarreal CF,La Liga,24000000,57000,3,59.0,71.0,80.0,77.0,80.0,82.0,https://cdn.sofifa.net/players/209/989/26_120.png
+192629,Iago Aspas,Iago Aspas Juncal,RW,"RW, ST, RM",83,83,37,Spain,RC Celta,La Liga,12000000,38000,3,77.0,84.0,80.0,84.0,35.0,62.0,https://cdn.sofifa.net/players/192/629/26_120.png
+199641,M. Sels,Matz Willy Els Sels,GK,GK,83,83,33,Belgium,Nottingham Forest,Premier League,12000000,78000,3,,,,,,,https://cdn.sofifa.net/players/199/641/26_120.png
+192883,Henrikh Mkhitaryan,Henrikh Mkhitaryan,CM,CM,83,83,36,Armenia,Inter,Serie A,11500000,37000,3,77.0,78.0,82.0,83.0,72.0,75.0,https://cdn.sofifa.net/players/192/883/26_120.png
+177003,Luka Modrić,Luka Modrić,CM,"CM, CAM, CDM",83,83,39,Croatia,AC Milan,Serie A,11500000,47000,3,68.0,74.0,86.0,86.0,70.0,62.0,https://cdn.sofifa.net/players/177/003/26_120.png
+193698,Oliver Baumann,Oliver Baumann,GK,GK,83,83,35,Germany,TSG 1899 Hoffenheim,Bundesliga,4000000,21000,3,,,,,,,https://cdn.sofifa.net/players/193/698/26_120.png
+278349,D. Huijsen,Dean Donny Huijsen,CB,CB,82,89,20,Spain,Real Madrid,La Liga,56000000,125000,3,71.0,55.0,73.0,74.0,82.0,76.0,https://cdn.sofifa.net/players/278/349/26_120.png
+270409,Savinho,Sávio Moreira de Oliveira,RW,"RW, LW, RM",82,87,21,Brazil,Manchester City,Premier League,47000000,110000,3,87.0,71.0,78.0,86.0,30.0,53.0,https://cdn.sofifa.net/players/270/409/26_120.png
+256853,M. Tillman,Malik Leon Tillman,CAM,"CAM, LW, CM",82,87,23,United States,Bayer 04 Leverkusen,Bundesliga,46000000,80000,3,84.0,76.0,77.0,83.0,65.0,77.0,https://cdn.sofifa.net/players/256/853/26_120.png
+260247,M. Rogers,Morgan Elliot Rogers,CAM,"CAM, RM, LM, CM",82,86,22,England,Aston Villa,Premier League,44500000,110000,3,77.0,77.0,79.0,84.0,67.0,79.0,https://cdn.sofifa.net/players/260/247/26_120.png
+251470,Charles De Ketelaere,Charles De Ketelaere,CAM,"CAM, ST, CM",82,86,24,Belgium,Atalanta,Serie A,43500000,72000,3,70.0,79.0,80.0,83.0,56.0,68.0,https://cdn.sofifa.net/players/251/470/26_120.png
+246147,Sam Greenwood,Mason Will John Greenwood,RM,"RM, CAM, RW",82,86,23,England,Olympique de Marseille,Ligue 1,43500000,47000,3,83.0,83.0,77.0,83.0,37.0,63.0,https://cdn.sofifa.net/players/246/147/26_120.png
+237681,T. Kubo,Takefusa Kubo久保 建英,RM,"RM, RW",82,86,24,Japan,Real Sociedad,La Liga,43500000,46000,3,86.0,77.0,78.0,85.0,40.0,64.0,https://cdn.sofifa.net/players/237/681/26_120.png
+244257,J. Burkardt,Jonathan Michael Burkardt,ST,ST,82,85,24,Germany,Eintracht Frankfurt,Bundesliga,42000000,43000,3,83.0,82.0,67.0,81.0,44.0,76.0,https://cdn.sofifa.net/players/244/257/26_120.png
+260908,M. Kerkez,Milos KerkezМилош Керкез,LB,"LB, LM",82,86,21,Hungary,Liverpool,Premier League,41500000,81000,3,87.0,59.0,75.0,78.0,77.0,80.0,https://cdn.sofifa.net/players/260/908/26_120.png
+246430,D. Vlahović,Dušan VlahovićДушан Влаховић,ST,ST,82,85,25,Serbia,Juventus,Serie A,41000000,135000,3,78.0,84.0,69.0,77.0,29.0,82.0,https://cdn.sofifa.net/players/246/430/26_120.png
+243630,J. David,Jonathan Christian David,ST,ST,82,85,25,Canada,Juventus,Serie A,41000000,135000,3,81.0,82.0,71.0,80.0,34.0,78.0,https://cdn.sofifa.net/players/243/630/26_120.png
+278046,Pau Cubarsí,Pau Cubarsí Paredes,CB,CB,82,88,18,Spain,FC Barcelona,La Liga,40500000,64000,3,70.0,42.0,66.0,77.0,84.0,76.0,https://cdn.sofifa.net/players/278/046/26_120.png
+246863,F. Nmecha,Felix Kalu Nmecha,CDM,"CDM, CM",82,86,24,Germany,Borussia Dortmund,Bundesliga,40000000,50000,3,82.0,74.0,73.0,81.0,80.0,86.0,https://cdn.sofifa.net/players/246/863/26_120.png
+266866,Éderson,Éderson José dos Santos Lourenço da Silva,CM,CM,82,85,25,Brazil,Atalanta,Serie A,40000000,77000,3,78.0,72.0,77.0,80.0,80.0,81.0,https://cdn.sofifa.net/players/266/866/26_120.png
+251805,J. Timber,Jurriën David Norman Timber,RB,"RB, LB, CB, RM",82,85,24,Netherlands,Arsenal,Premier League,38500000,120000,3,76.0,48.0,72.0,77.0,82.0,80.0,https://cdn.sofifa.net/players/251/805/26_120.png
+236015,M. Gibbs-White,Morgan Anthony Gibbs-White,CAM,"CAM, ST",82,84,25,England,Nottingham Forest,Premier League,38000000,105000,3,75.0,77.0,82.0,84.0,60.0,72.0,https://cdn.sofifa.net/players/236/015/26_120.png
+235790,Kai Havertz,Kai Lukas Havertz,ST,"ST, CM, CAM",82,84,26,Germany,Arsenal,Premier League,38000000,155000,3,72.0,79.0,78.0,81.0,48.0,74.0,https://cdn.sofifa.net/players/235/790/26_120.png
+243241,Alessandro Buongiorno,Alessandro Buongiorno,CB,CB,82,86,26,Italy,Napoli,Serie A,37500000,105000,3,69.0,45.0,67.0,65.0,84.0,79.0,https://cdn.sofifa.net/players/243/241/26_120.png
+243576,Pedro Porro,Pedro Antonio Porro Sauceda,RB,"RB, RM",82,85,25,Spain,Tottenham Hotspur,Premier League,37000000,105000,3,78.0,73.0,81.0,80.0,77.0,76.0,https://cdn.sofifa.net/players/243/576/26_120.png
+264453,Micky van de Ven,Micky van de Ven,CB,"CB, LB, LM",82,85,24,Netherlands,Tottenham Hotspur,Premier League,37000000,95000,3,90.0,49.0,64.0,72.0,82.0,80.0,https://cdn.sofifa.net/players/264/453/26_120.png
+231410,Brahim,Brahim Abdelkader Díazابراهيم عبد القادر دياز,RM,"RM, LM, CAM, RW",82,83,25,Morocco,Real Madrid,La Liga,36500000,175000,3,82.0,74.0,79.0,85.0,31.0,58.0,https://cdn.sofifa.net/players/231/410/26_120.png
+236496,M. Guendouzi,Mattéo Elias Kenzo Guendouzi Olié,CDM,"CDM, CM",82,85,26,France,Lazio,Serie A,36000000,44000,3,72.0,73.0,80.0,80.0,77.0,77.0,https://cdn.sofifa.net/players/236/496/26_120.png
+251809,S. Botman,Sven Adriaan Botman,CB,CB,82,85,25,Netherlands,Newcastle United,Premier League,36000000,120000,3,56.0,37.0,62.0,65.0,83.0,82.0,https://cdn.sofifa.net/players/251/809/26_120.png
+241159,M. Guéhi,Addji Keaninkin Marc-Israel Guéhi,CB,CB,82,84,24,England,Crystal Palace,Premier League,35000000,85000,3,69.0,39.0,69.0,73.0,83.0,78.0,https://cdn.sofifa.net/players/241/159/26_120.png
+235243,Matthijs de Ligt,Matthijs de Ligt,CB,CB,82,84,25,Netherlands,Manchester United,Premier League,34000000,95000,3,62.0,61.0,62.0,67.0,82.0,83.0,https://cdn.sofifa.net/players/235/243/26_120.png
+230872,M. Svilar,Mile SvilarМиле Свилар,GK,GK,82,86,25,Serbia,Roma,Serie A,33500000,39000,3,,,,,,,https://cdn.sofifa.net/players/230/872/26_120.png
+232639,R. Doan,Ritsu Doan堂安 律,RM,"RM, CAM, RB",82,82,27,Japan,Eintracht Frankfurt,Bundesliga,32500000,45000,3,82.0,71.0,78.0,85.0,41.0,64.0,https://cdn.sofifa.net/players/232/639/26_120.png
+232488,C. Romero,Cristian Gabriel Romero,CB,CB,82,84,27,Argentina,Tottenham Hotspur,Premier League,32500000,115000,3,66.0,48.0,62.0,65.0,83.0,81.0,https://cdn.sofifa.net/players/232/488/26_120.png
+236703,David Raum,David Raum,LB,"LB, LM",82,83,27,Germany,RB Leipzig,Bundesliga,32000000,65000,3,86.0,61.0,80.0,79.0,74.0,78.0,https://cdn.sofifa.net/players/236/703/26_120.png
+230142,Oyarzabal,Mikel Oyarzabal Ugarte,ST,"ST, LM, LW",82,82,28,Spain,Real Sociedad,La Liga,31000000,59000,3,77.0,83.0,81.0,82.0,42.0,65.0,https://cdn.sofifa.net/players/230/142/26_120.png
+236461,Jean-Philippe Mateta,Jean-Philippe Mateta,ST,ST,82,82,28,France,Crystal Palace,Premier League,31000000,115000,3,75.0,84.0,70.0,77.0,41.0,81.0,https://cdn.sofifa.net/players/236/461/26_120.png
+234824,Yoane Wissa,Yoane Wissa,ST,ST,82,82,28,Congo DR,Newcastle United,Premier League,31000000,150000,3,85.0,82.0,70.0,80.0,31.0,71.0,https://cdn.sofifa.net/players/234/824/26_120.png
+223334,Joelinton,Joelinton Cassio Apolinário de Lira,CM,"CM, LW, LM",82,82,28,Brazil,Newcastle United,Premier League,30500000,140000,3,74.0,73.0,77.0,81.0,82.0,90.0,https://cdn.sofifa.net/players/223/334/26_120.png
+233556,Riccardo Orsolini,Riccardo Orsolini,RM,"RM, RW",82,82,28,Italy,Bologna,Serie A,30500000,68000,3,79.0,81.0,79.0,83.0,49.0,67.0,https://cdn.sofifa.net/players/233/556/26_120.png
+255565,Kaoru Mitoma,Kaoru Mitoma三笘 薫,LM,"LM, LW",82,82,28,Japan,Brighton & Hove Albion,Premier League,30500000,115000,3,87.0,73.0,76.0,86.0,57.0,64.0,https://cdn.sofifa.net/players/255/565/26_120.png
+227678,E. Konsa,Ezri Konsa Ngoyo,CB,"CB, RB, RM",82,83,27,England,Aston Villa,Premier League,30500000,120000,3,75.0,53.0,71.0,75.0,84.0,78.0,https://cdn.sofifa.net/players/227/678/26_120.png
+225201,Berenguer,Alejandro Berenguer Remiro,LM,"LM, RM, CAM, LW",82,82,29,Spain,Athletic Club,La Liga,30000000,59000,3,84.0,77.0,79.0,84.0,65.0,69.0,https://cdn.sofifa.net/players/225/201/26_120.png
+226226,Giovani Lo Celso,Giovani Lo Celso,CAM,"CAM, CM, CDM",82,82,29,Argentina,Real Betis Balompié,La Liga,30000000,43000,3,68.0,81.0,82.0,84.0,68.0,71.0,https://cdn.sofifa.net/players/226/226/26_120.png
+206113,S. Gnabry,Serge David Gnabry,LM,"LM, RM, ST, CAM",82,82,29,Germany,FC Bayern München,Bundesliga,30000000,78000,3,79.0,83.0,78.0,84.0,43.0,66.0,https://cdn.sofifa.net/players/206/113/26_120.png
+227236,André-Franck Zambo Anguissa,André-Frank Zambo Anguissa,CM,"CM, CAM",82,82,29,Cameroon,Napoli,Serie A,29500000,115000,3,75.0,75.0,75.0,79.0,79.0,85.0,https://cdn.sofifa.net/players/227/236/26_120.png
+229261,D. Zakaria,Denis Lemi Zakaria Lako Lado,CDM,"CDM, CM",82,83,28,Switzerland,AS Monaco,Ligue 1,29500000,45000,3,80.0,67.0,74.0,77.0,80.0,85.0,https://cdn.sofifa.net/players/229/261/26_120.png
+210935,Domenico Berardi,Domenico Berardi,RW,"RW, RM",82,82,30,Italy,Sassuolo,Serie A,29500000,36000,3,82.0,80.0,79.0,84.0,35.0,68.0,https://cdn.sofifa.net/players/210/935/26_120.png
+229348,Antonee Robinson,Antonee Robinson,LB,"LB, LM",82,82,27,United States,Fulham FC,Premier League,29500000,100000,3,88.0,46.0,75.0,77.0,78.0,80.0,https://cdn.sofifa.net/players/229/348/26_120.png
+209658,L. Goretzka,Leon Christoph Goretzka,CM,"CM, CDM, CAM",82,82,30,Germany,FC Bayern München,Bundesliga,29000000,78000,3,77.0,78.0,80.0,80.0,80.0,82.0,https://cdn.sofifa.net/players/209/658/26_120.png
+237086,Kim Min Jae,Min-jae Kim김민재 金敏在,CB,CB,82,83,28,Korea Republic,FC Bayern München,Bundesliga,29000000,75000,3,73.0,33.0,58.0,63.0,83.0,84.0,https://cdn.sofifa.net/players/237/086/26_120.png
+225375,Konrad Laimer,Konrad Laimer,RB,"RB, CDM, CM, RM",82,82,28,Austria,FC Bayern München,Bundesliga,27500000,75000,3,82.0,69.0,76.0,75.0,81.0,76.0,https://cdn.sofifa.net/players/225/375/26_120.png
+227647,Maximilian Mittelstädt,Maximilian Mittelstädt,LB,"LB, LM",82,82,28,Germany,VfB Stuttgart,Bundesliga,27500000,53000,3,81.0,62.0,77.0,77.0,78.0,74.0,https://cdn.sofifa.net/players/227/647/26_120.png
+229476,W. Anton,Waldemar AntonРипцов-Антон Владимир Александрович,CB,CB,82,82,28,Germany,Borussia Dortmund,Bundesliga,26500000,60000,3,69.0,47.0,67.0,66.0,84.0,84.0,https://cdn.sofifa.net/players/229/476/26_120.png
+236532,R. Koch,Robin Leon Koch,CB,CB,82,82,28,Germany,Eintracht Frankfurt,Bundesliga,26500000,45000,3,66.0,44.0,63.0,66.0,83.0,81.0,https://cdn.sofifa.net/players/236/532/26_120.png
+213648,Pierre-Emile Højbjerg,Pierre-Emile Kordt Højbjerg,CDM,"CDM, CM",82,82,29,Denmark,Olympique de Marseille,Ligue 1,26000000,54000,3,49.0,73.0,78.0,74.0,78.0,80.0,https://cdn.sofifa.net/players/213/648/26_120.png
+240091,Guglielmo Vicario,Guglielmo Vicario,GK,GK,82,84,28,Italy,Tottenham Hotspur,Premier League,26000000,77000,3,,,,,,,https://cdn.sofifa.net/players/240/091/26_120.png
+225116,Alex Meret,Alex Meret,GK,GK,82,84,28,Italy,Napoli,Serie A,26000000,72000,3,,,,,,,https://cdn.sofifa.net/players/225/116/26_120.png
+229237,M. Akanji,Manuel Obafemi Akanji,CB,CB,82,82,29,Switzerland,Inter,Serie A,25500000,135000,3,74.0,48.0,69.0,73.0,82.0,81.0,https://cdn.sofifa.net/players/229/237/26_120.png
+210413,Alessio Romagnoli,Alessio Romagnoli,CB,CB,82,82,30,Italy,Lazio,Serie A,25000000,46000,3,64.0,40.0,55.0,69.0,84.0,80.0,https://cdn.sofifa.net/players/210/413/26_120.png
+216267,A. Robertson,Andrew Henry Robertson,LB,"LB, LM",82,82,31,Scotland,Liverpool,Premier League,22000000,115000,3,74.0,61.0,80.0,77.0,79.0,75.0,https://cdn.sofifa.net/players/216/267/26_120.png
+208333,Emre Can,Emre Can,CB,"CB, CDM, CM",82,82,31,Germany,Borussia Dortmund,Bundesliga,21000000,60000,3,77.0,76.0,72.0,74.0,82.0,84.0,https://cdn.sofifa.net/players/208/333/26_120.png
+203574,John Stones,John Stones,CB,"CB, RB",82,82,31,England,Manchester City,Premier League,21000000,135000,3,64.0,58.0,74.0,75.0,84.0,72.0,https://cdn.sofifa.net/players/203/574/26_120.png
+207862,M. Ginter,Matthias Lukas Ginter,CB,CB,82,82,31,Germany,SC Freiburg,Bundesliga,21000000,41000,3,55.0,58.0,71.0,66.0,85.0,75.0,https://cdn.sofifa.net/players/207/862/26_120.png
+212218,A. Laporte,Aymeric Jean Louis Gerard Alphonse Laporte,CB,CB,82,82,31,Spain,Athletic Club,La Liga,21000000,56000,3,51.0,50.0,74.0,70.0,83.0,77.0,https://cdn.sofifa.net/players/212/218/26_120.png
+192123,C. Wood,Christopher Grant Wood,ST,ST,82,82,33,New Zealand,Nottingham Forest,Premier League,19500000,125000,3,53.0,83.0,68.0,72.0,40.0,81.0,https://cdn.sofifa.net/players/192/123/26_120.png
+188335,Ante Budimir,Ante Budimir,ST,ST,82,82,33,Croatia,CA Osasuna,La Liga,19500000,53000,3,59.0,84.0,63.0,76.0,35.0,80.0,https://cdn.sofifa.net/players/188/335/26_120.png
+192318,Mario Götze,Mario Götze,CM,"CM, CAM, RM, CDM",82,82,33,Germany,Eintracht Frankfurt,Bundesliga,18500000,47000,3,60.0,75.0,85.0,85.0,56.0,67.0,https://cdn.sofifa.net/players/192/318/26_120.png
+224987,Ivan Provedel,Ivan Provedel,GK,GK,82,82,31,Italy,Lazio,Serie A,16000000,30000,3,,,,,,,https://cdn.sofifa.net/players/224/987/26_120.png
+215333,D. Zapata,Duván Esteban Zapata Banguero,ST,ST,82,82,34,Colombia,Torino,Serie A,15000000,61000,3,74.0,81.0,64.0,77.0,35.0,82.0,https://cdn.sofifa.net/players/215/333/26_120.png
+197445,D. Alaba,David Olatukunbo Alaba,CB,"CB, LB, LM",82,82,33,Austria,Real Madrid,La Liga,14500000,185000,3,68.0,71.0,82.0,79.0,82.0,75.0,https://cdn.sofifa.net/players/197/445/26_120.png
+210047,F. Schär,Fabian Lukas Schär,CB,CB,82,82,33,Switzerland,Newcastle United,Premier League,14500000,135000,3,51.0,68.0,76.0,73.0,84.0,80.0,https://cdn.sofifa.net/players/210/047/26_120.png
+215316,Gerónimo Rulli,Gerónimo Rulli,GK,GK,82,82,33,Argentina,Olympique de Marseille,Ligue 1,10000000,35000,3,,,,,,,https://cdn.sofifa.net/players/215/316/26_120.png
+189513,Parejo,Daniel Parejo Muñoz,CM,"CM, CDM",82,82,36,Spain,Villarreal CF,La Liga,9500000,41000,3,39.0,80.0,87.0,78.0,74.0,67.0,https://cdn.sofifa.net/players/189/513/26_120.png
+272449,Pablo Barrios,Pablo Barrios Rivas,CM,"CM, CDM",82,87,22,Spain,Atlético Madrid,La Liga,46500000,69000,1,80.0,70.0,74.0,80.0,74.0,71.0,https://cdn.sofifa.net/players/272/449/26_120.png
+251570,R. Cherki,Mathis Rayan Cherki,RW,"RW, RM, CAM",81,88,21,France,Manchester City,Premier League,52500000,100000,3,75.0,75.0,80.0,88.0,21.0,65.0,https://cdn.sofifa.net/players/251/570/26_120.png
+251852,K. Adeyemi,Karim-David Adeyemi,RM,"RM, LW, CAM, RW",81,86,23,Germany,Borussia Dortmund,Bundesliga,39000000,48000,3,96.0,76.0,72.0,82.0,36.0,69.0,https://cdn.sofifa.net/players/251/852/26_120.png
+272500,C. Baleba,Carlos Noom Quomah Baleba,CDM,"CDM, CM",81,87,21,Cameroon,Brighton & Hove Albion,Premier League,38000000,70000,3,74.0,70.0,75.0,80.0,79.0,79.0,https://cdn.sofifa.net/players/272/500/26_120.png
+247679,Victor Boniface,Victor Okoh Boniface,ST,ST,81,85,24,Nigeria,SV Werder Bremen,Bundesliga,37500000,79000,3,67.0,83.0,66.0,80.0,38.0,79.0,https://cdn.sofifa.net/players/247/679/26_120.png
+247246,K. Thuram,Khéphren Thuram-Ulien,CM,"CM, CDM",81,85,24,France,Juventus,Serie A,36500000,105000,3,78.0,76.0,77.0,80.0,81.0,81.0,https://cdn.sofifa.net/players/247/246/26_120.png
+238216,Conor Gallagher,Conor Gallagher,CM,"CM, CAM, LM",81,85,25,England,Atlético Madrid,La Liga,35500000,70000,3,75.0,76.0,80.0,78.0,79.0,84.0,https://cdn.sofifa.net/players/238/216/26_120.png
+251566,Gabriel Martinelli,Gabriel Teodoro Martinelli Silva,LW,"LW, LM",81,84,24,Brazil,Arsenal,Premier League,35000000,125000,3,90.0,77.0,75.0,83.0,46.0,72.0,https://cdn.sofifa.net/players/251/566/26_120.png
+257470,A. Elanga,Anthony David Junior Elanga,RW,"RW, RM",81,84,23,Sweden,Newcastle United,Premier League,35000000,115000,3,92.0,72.0,76.0,82.0,39.0,70.0,https://cdn.sofifa.net/players/257/470/26_120.png
+261865,Miguel Gutiérrez,Miguel Gutiérrez Ortega,LB,"LB, LM",81,85,23,Spain,Napoli,Serie A,34500000,84000,3,81.0,71.0,79.0,81.0,76.0,73.0,https://cdn.sofifa.net/players/261/865/26_120.png
+255475,Antony,Antony Matheus dos Santos,RW,"RW, RM",81,84,25,Brazil,Real Betis Balompié,La Liga,34000000,38000,3,84.0,78.0,78.0,83.0,43.0,70.0,https://cdn.sofifa.net/players/255/475/26_120.png
+239807,Davide Frattesi,Davide Frattesi,CM,CM,81,83,25,Italy,Inter,Serie A,32000000,38000,3,82.0,77.0,78.0,82.0,73.0,72.0,https://cdn.sofifa.net/players/239/807/26_120.png
+238074,Reece James,Reece James,RB,RB,81,84,25,England,Chelsea,Premier League,31500000,115000,3,76.0,71.0,82.0,77.0,81.0,81.0,https://cdn.sofifa.net/players/238/074/26_120.png
+237679,Randal Kolo Muani,Randal Kolo Muani,ST,ST,81,82,26,France,Tottenham Hotspur,Premier League,31000000,95000,3,90.0,79.0,71.0,80.0,38.0,65.0,https://cdn.sofifa.net/players/237/679/26_120.png
+245630,Youssouf Fofana,Youssouf Fofana,CDM,"CDM, CM",81,84,26,France,AC Milan,Serie A,30500000,54000,3,68.0,68.0,75.0,78.0,79.0,77.0,https://cdn.sofifa.net/players/245/630/26_120.png
+242835,L. Balerdi,Leonardo Julián Balerdi Rossa,CB,CB,81,84,26,Argentina,Olympique de Marseille,Ligue 1,30000000,48000,3,77.0,46.0,65.0,69.0,82.0,79.0,https://cdn.sofifa.net/players/242/835/26_120.png
+234060,Y. Herrera,Yangel Clemente Herrera Ravelo,CM,"CM, CDM, CAM",81,82,27,Venezuela,Real Sociedad,La Liga,29500000,49000,3,65.0,76.0,77.0,79.0,80.0,81.0,https://cdn.sofifa.net/players/234/060/26_120.png
+232756,F. Tomori,Oluwafikayomi Oluwadamilola Tomori,CB,CB,81,84,27,England,AC Milan,Serie A,29500000,54000,3,81.0,40.0,60.0,67.0,82.0,78.0,https://cdn.sofifa.net/players/232/756/26_120.png
+243952,A. Lunin,Andriy LuninЛунін Андрій Олексійович,GK,GK,81,86,26,Ukraine,Real Madrid,La Liga,29500000,105000,3,,,,,,,https://cdn.sofifa.net/players/243/952/26_120.png
+236403,E. Ndicka,Obite Evan Ndicka,CB,CB,81,83,25,Côte d'Ivoire,Roma,Serie A,28500000,58000,3,74.0,53.0,69.0,69.0,81.0,82.0,https://cdn.sofifa.net/players/236/403/26_120.png
+247263,E. Tapsoba,Edmond Fayçal Tapsoba,CB,CB,81,83,26,Burkina Faso,Bayer 04 Leverkusen,Bundesliga,28000000,79000,3,75.0,56.0,68.0,70.0,82.0,80.0,https://cdn.sofifa.net/players/247/263/26_120.png
+240679,Teun Koopmeiners,Teun Koopmeiners,CAM,"CAM, CM",81,81,27,Netherlands,Juventus,Serie A,27500000,120000,3,70.0,79.0,83.0,78.0,75.0,75.0,https://cdn.sofifa.net/players/240/679/26_120.png
+258648,Carlos Augusto,Carlos Augusto Zopalato Neves,LB,"LB, CB, LM",81,82,26,Brazil,Inter,Serie A,27500000,38000,3,78.0,72.0,77.0,79.0,79.0,76.0,https://cdn.sofifa.net/players/258/648/26_120.png
+235805,Federico Chiesa,Federico Chiesa,RM,"RM, LM, ST, RW",81,81,27,Italy,Liverpool,Premier League,27500000,105000,3,87.0,80.0,75.0,83.0,44.0,68.0,https://cdn.sofifa.net/players/235/805/26_120.png
+232411,Christopher Nkunku,Christopher Alan Nkunku,CAM,"CAM, LM, ST, CM",81,81,27,France,AC Milan,Serie A,27500000,58000,3,77.0,79.0,80.0,82.0,40.0,59.0,https://cdn.sofifa.net/players/232/411/26_120.png
+239301,Lisandro Martínez,Lisandro Martínez,CB,CB,81,82,27,Argentina,Manchester United,Premier League,26000000,90000,3,67.0,59.0,75.0,75.0,81.0,80.0,https://cdn.sofifa.net/players/239/301/26_120.png
+236632,David Neres,David Neres Campos,LW,"LW, LM",81,81,28,Brazil,Napoli,Serie A,26000000,115000,3,86.0,76.0,75.0,86.0,46.0,61.0,https://cdn.sofifa.net/players/236/632/26_120.png
+235944,Brais Méndez,Brais Méndez Portela,CM,"CM, RM, CAM",81,81,28,Spain,Real Sociedad,La Liga,25500000,51000,3,70.0,80.0,82.0,81.0,65.0,73.0,https://cdn.sofifa.net/players/235/944/26_120.png
+222509,Dani Ceballos,Daniel Ceballos Fernández,CM,"CM, CDM",81,81,28,Spain,Real Madrid,La Liga,25500000,175000,3,61.0,71.0,80.0,82.0,72.0,67.0,https://cdn.sofifa.net/players/222/509/26_120.png
+214096,Tim Kleindienst,Tim Kleindienst,ST,ST,81,81,29,Germany,Borussia Mönchengladbach,Bundesliga,25500000,43000,3,67.0,82.0,62.0,70.0,45.0,88.0,https://cdn.sofifa.net/players/214/096/26_120.png
+235840,Michele Di Gregorio,Michele Di Gregorio,GK,GK,81,84,27,Italy,Juventus,Serie A,25500000,73000,3,,,,,,,https://cdn.sofifa.net/players/235/840/26_120.png
+210881,John McGinn,John McGinn,LM,"LM, RM, CAM, LB",81,81,30,Scotland,Aston Villa,Premier League,25000000,120000,3,69.0,77.0,78.0,80.0,77.0,83.0,https://cdn.sofifa.net/players/210/881/26_120.png
+232498,Isi,Isaac Palazón Camacho,CAM,"CAM, RM, ST, CM",81,81,30,Spain,Rayo Vallecano,La Liga,25000000,35000,3,84.0,77.0,80.0,82.0,39.0,65.0,https://cdn.sofifa.net/players/232/498/26_120.png
+219683,Corentin Tolisso,Corentin Tolisso,CM,"CM, CDM, CAM",81,81,30,France,Olympique Lyonnais,Ligue 1,24500000,30000,3,68.0,78.0,78.0,76.0,77.0,79.0,https://cdn.sofifa.net/players/219/683/26_120.png
+244749,N. Aguerd,Nayef Aguerdنايف أكرد,CB,CB,81,82,29,Morocco,Olympique de Marseille,Ligue 1,24000000,80000,3,72.0,50.0,67.0,65.0,82.0,77.0,https://cdn.sofifa.net/players/244/749/26_120.png
+228618,F. Mendy,Ferland Sinna Mendy,LB,"LB, LM",81,81,30,France,Real Madrid,La Liga,22000000,170000,3,85.0,64.0,74.0,75.0,78.0,84.0,https://cdn.sofifa.net/players/228/618/26_120.png
+211688,Gayà,José Luis Gayà Peña,LB,"LB, LM",81,81,30,Spain,Valencia CF,La Liga,22000000,49000,3,80.0,61.0,76.0,77.0,77.0,72.0,https://cdn.sofifa.net/players/211/688/26_120.png
+202648,Sergi Darder,Sergi Darder Moll,LM,"LM, CM, CDM, LW",81,81,31,Spain,RCD Mallorca,La Liga,21500000,43000,3,77.0,76.0,81.0,80.0,73.0,77.0,https://cdn.sofifa.net/players/202/648/26_120.png
+212242,Robert Andrich,Robert Andrich,CDM,"CDM, CM, CB",81,81,30,Germany,Bayer 04 Leverkusen,Bundesliga,21500000,83000,3,57.0,77.0,76.0,73.0,83.0,81.0,https://cdn.sofifa.net/players/212/242/26_120.png
+216409,Matteo Politano,Matteo Politano,RW,"RW, RM",81,81,31,Italy,Napoli,Serie A,21500000,115000,3,80.0,78.0,80.0,83.0,59.0,55.0,https://cdn.sofifa.net/players/216/409/26_120.png
+220814,L. Hernández,Lucas François Bernard Hernández Pi,CB,"CB, LB, LM",81,81,29,France,Paris Saint-Germain,Ligue 1,21500000,89000,3,71.0,54.0,72.0,70.0,82.0,77.0,https://cdn.sofifa.net/players/220/814/26_120.png
+212190,Niklas Süle,Niklas Süle,CB,"CB, RB, RM",81,81,29,Germany,Borussia Dortmund,Bundesliga,21500000,55000,3,61.0,51.0,68.0,67.0,81.0,79.0,https://cdn.sofifa.net/players/212/190/26_120.png
+201153,Morata,Álvaro Borja Morata Martín,ST,"ST, CAM",81,81,32,Spain,Como,Serie A,21000000,64000,3,78.0,81.0,74.0,80.0,31.0,78.0,https://cdn.sofifa.net/players/201/153/26_120.png
+208574,F. Kostić,Filip KostićФилип Костић,LM,"LM, LB, LW",81,81,32,Serbia,Juventus,Serie A,20500000,125000,3,82.0,76.0,81.0,80.0,70.0,77.0,https://cdn.sofifa.net/players/208/574/26_120.png
+208093,Gerard Moreno,Gerard Moreno Balagueró,ST,"ST, RW, CAM",81,81,33,Spain,Villarreal CF,La Liga,16500000,55000,3,77.0,82.0,77.0,80.0,46.0,71.0,https://cdn.sofifa.net/players/208/093/26_120.png
+193747,Koke,Jorge Resurrección Merodio,CM,"CM, CDM",81,81,33,Spain,Atlético Madrid,La Liga,16000000,76000,3,61.0,72.0,83.0,78.0,76.0,77.0,https://cdn.sofifa.net/players/193/747/26_120.png
+202024,R. Freuler,Remo Marco Freuler,CDM,"CDM, CM",81,81,33,Switzerland,Bologna,Serie A,13000000,60000,3,58.0,72.0,76.0,77.0,77.0,74.0,https://cdn.sofifa.net/players/202/024/26_120.png
+223952,David Soria,David Soria Solís,GK,GK,81,81,32,Spain,Getafe CF,La Liga,13000000,29000,3,,,,,,,https://cdn.sofifa.net/players/223/952/26_120.png
+208461,M. de Roon,Marten Elco de Roon,CM,"CM, CDM",81,81,34,Netherlands,Atalanta,Serie A,12000000,78000,3,61.0,74.0,77.0,76.0,83.0,80.0,https://cdn.sofifa.net/players/208/461/26_120.png
+216354,Andrej Kramarić,Andrej Kramarić,CAM,"CAM, CM",81,81,34,Croatia,TSG 1899 Hoffenheim,Bundesliga,12000000,49000,3,67.0,82.0,78.0,84.0,33.0,73.0,https://cdn.sofifa.net/players/216/354/26_120.png
+188567,P. Aubameyang,Pierre-Emerick Emiliano François Aubameyang,ST,ST,81,81,36,Gabon,Olympique de Marseille,Ligue 1,9000000,43000,3,82.0,83.0,72.0,78.0,36.0,63.0,https://cdn.sofifa.net/players/188/567/26_120.png
+180930,Edin Džeko,Edin Džeko,ST,ST,81,81,39,Bosnia and Herzegovina,Fiorentina,Serie A,9000000,47000,3,55.0,82.0,74.0,77.0,40.0,72.0,https://cdn.sofifa.net/players/180/930/26_120.png
+203841,N. Pope,Nicholas David Pope,GK,GK,81,81,33,England,Newcastle United,Premier League,8500000,81000,3,,,,,,,https://cdn.sofifa.net/players/203/841/26_120.png
+184392,Matteo Darmian,Matteo Darmian,RB,"RB, CB, RM",81,81,35,Italy,Inter,Serie A,8000000,29000,3,71.0,62.0,74.0,76.0,81.0,71.0,https://cdn.sofifa.net/players/184/392/26_120.png
+188943,K. Trapp,Kevin Christian Trapp,GK,GK,81,81,34,Germany,Paris FC,Ligue 1,4400000,39000,3,,,,,,,https://cdn.sofifa.net/players/188/943/26_120.png
+190941,Lukáš Hrádecký,Lukáš Hrádecký,GK,GK,81,81,35,Finland,AS Monaco,Ligue 1,2900000,16000,3,,,,,,,https://cdn.sofifa.net/players/190/941/26_120.png
+225309,Nadiem Amiri,Nadiem Amiri,CM,"CM, CAM",81,81,28,Germany,1. FSV Mainz 05,Bundesliga,25500000,40000,2,65.0,79.0,82.0,82.0,62.0,72.0,https://cdn.sofifa.net/players/225/309/26_120.png
+223885,Alexander Nübel,Alexander Nübel,GK,GK,81,82,28,Germany,VfB Stuttgart,Bundesliga,20500000,45000,2,,,,,,,https://cdn.sofifa.net/players/223/885/26_120.png
+264309,Arda Güler,Arda Güler,RM,"RM, CAM, RW",81,89,20,Türkiye,Real Madrid,La Liga,56500000,125000,1,70.0,77.0,83.0,83.0,52.0,50.0,https://cdn.sofifa.net/players/264/309/26_120.png
+253396,G. Simeone,Giuliano Simeone Baldini,RM,"RM, ST, LM, RW",81,86,22,Argentina,Atlético Madrid,La Liga,39500000,63000,1,91.0,73.0,72.0,81.0,45.0,81.0,https://cdn.sofifa.net/players/253/396/26_120.png
+259516,Johnny Cardoso,João Lucas de Souza Cardoso,CDM,"CDM, CM",81,87,23,United States,Atlético Madrid,La Liga,37500000,60000,1,72.0,67.0,76.0,78.0,80.0,77.0,https://cdn.sofifa.net/players/259/516/26_120.png
+242641,R. Aït-Nouri,Rayan Aït Nouriريان آيت نوري,LB,"LB, LM",81,85,24,Algeria,Manchester City,Premier League,34500000,100000,1,84.0,53.0,76.0,84.0,77.0,70.0,https://cdn.sofifa.net/players/242/641/26_120.png
+210676,Wladimiro Falcone,Wladimiro Falcone,GK,GK,81,81,30,Italy,Lecce,Serie A,17000000,12000,1,,,,,,,https://cdn.sofifa.net/players/210/676/26_120.png
+228805,Raíllo,Antonio José Raíllo Arenas,CB,CB,81,81,33,Spain,RCD Mallorca,La Liga,12500000,42000,1,41.0,36.0,59.0,62.0,83.0,84.0,https://cdn.sofifa.net/players/228/805/26_120.png
+260592,Benjamin Šeško,Benjamin Šeško,ST,ST,80,88,22,Slovenia,Manchester United,Premier League,47500000,84000,3,83.0,80.0,65.0,78.0,46.0,80.0,https://cdn.sofifa.net/players/260/592/26_120.png
+246420,Jérémy Doku,Jérémy Doku,LW,"LW, RW, LM",80,85,23,Belgium,Manchester City,Premier League,32000000,110000,3,91.0,71.0,72.0,87.0,32.0,68.0,https://cdn.sofifa.net/players/246/420/26_120.png
+259197,Nicolas Jackson,Nicolas Jackson,ST,ST,80,84,24,Senegal,FC Bayern München,Bundesliga,30500000,110000,3,82.0,77.0,69.0,79.0,40.0,77.0,https://cdn.sofifa.net/players/259/197/26_120.png
+245155,Mohammed Kudus,Mohammed Kudus,RW,"RW, LW, ST, RM",80,83,24,Ghana,Tottenham Hotspur,Premier League,29000000,95000,3,89.0,76.0,72.0,86.0,60.0,74.0,https://cdn.sofifa.net/players/245/155/26_120.png
+246875,O. Kossounou,Odilon Kossounou Kouakou,CB,CB,80,85,24,Côte d'Ivoire,Atalanta,Serie A,29000000,57000,3,80.0,32.0,64.0,67.0,81.0,78.0,https://cdn.sofifa.net/players/246/875/26_120.png
+259583,D. Udogie,Iyenoma Destiny Udogie,LB,LB,80,84,22,Italy,Tottenham Hotspur,Premier League,28500000,84000,3,88.0,64.0,73.0,78.0,76.0,79.0,https://cdn.sofifa.net/players/259/583/26_120.png
+262859,L. Colwill,Levi Lemar Samuel Colwill,CB,CB,80,84,22,England,Chelsea,Premier League,27500000,95000,3,70.0,43.0,71.0,72.0,81.0,80.0,https://cdn.sofifa.net/players/262/859/26_120.png
+241236,A. Semenyo,Antoine Serlom Semenyo,RM,"RM, LM, RW",80,82,25,Ghana,AFC Bournemouth,Premier League,26500000,76000,3,80.0,78.0,73.0,81.0,40.0,79.0,https://cdn.sofifa.net/players/241/236/26_120.png
+233049,J. Sancho,Jadon Malik Sancho,LM,"LM, RM, LW",80,82,25,England,Aston Villa,Premier League,26500000,84000,3,79.0,73.0,77.0,87.0,35.0,58.0,https://cdn.sofifa.net/players/233/049/26_120.png
+237712,V. Castellanos,Valentín Mariano José Castellanos Giménez,ST,ST,80,81,26,Argentina,Lazio,Serie A,25000000,43000,3,75.0,80.0,71.0,81.0,45.0,75.0,https://cdn.sofifa.net/players/237/712/26_120.png
+266872,Federico Gatti,Federico Gatti,CB,CB,80,83,27,Italy,Juventus,Serie A,24000000,105000,3,76.0,42.0,53.0,65.0,81.0,80.0,https://cdn.sofifa.net/players/266/872/26_120.png
+233195,Xaver Schlager,Xaver Schlager,CDM,"CDM, CM",80,82,27,Austria,RB Leipzig,Bundesliga,23000000,56000,3,69.0,70.0,74.0,78.0,75.0,78.0,https://cdn.sofifa.net/players/233/195/26_120.png
+225539,D. Solanke,Dominic Ayodele Solanke-Mitchell,ST,ST,80,80,27,England,Tottenham Hotspur,Premier League,23000000,110000,3,71.0,80.0,66.0,77.0,42.0,83.0,https://cdn.sofifa.net/players/225/539/26_120.png
+236499,Douglas Luiz,Douglas Luiz Soares de Paulo,CM,"CM, CDM",80,80,27,Brazil,Nottingham Forest,Premier League,22500000,110000,3,67.0,75.0,82.0,80.0,75.0,70.0,https://cdn.sofifa.net/players/236/499/26_120.png
+233927,Lucas Paquetá,Lucas Tolentino Coelho de Lima,CM,"CM, LM, CAM",80,80,27,Brazil,West Ham United,Premier League,22500000,75000,3,68.0,78.0,78.0,84.0,69.0,75.0,https://cdn.sofifa.net/players/233/927/26_120.png
+231677,Marcus Rashford,Marcus Rashford,LM,"LM, LW, ST",80,80,27,England,FC Barcelona,La Liga,22500000,88000,3,87.0,82.0,77.0,80.0,33.0,63.0,https://cdn.sofifa.net/players/231/677/26_120.png
+236401,N. Mazraoui,Noussair Mazraouiنصير مزراوي,RB,"RB, CB, RM",80,81,27,Morocco,Manchester United,Premier League,22000000,84000,3,75.0,66.0,76.0,80.0,77.0,72.0,https://cdn.sofifa.net/players/236/401/26_120.png
+229880,Aaron Wan-Bissaka,Aaron Wan-Bissaka,RB,"RB, RM",80,81,27,Congo DR,West Ham United,Premier League,22000000,71000,3,80.0,51.0,69.0,77.0,78.0,73.0,https://cdn.sofifa.net/players/229/880/26_120.png
+230666,Gabriel Jesus,Gabriel Fernando de Jesus,ST,"ST, CAM",80,80,28,Brazil,Arsenal,Premier League,21500000,140000,3,81.0,79.0,74.0,86.0,39.0,71.0,https://cdn.sofifa.net/players/230/666/26_120.png
+244176,Deniz Undav,Deniz Undav,ST,"ST, CAM",80,80,28,Germany,VfB Stuttgart,Bundesliga,21500000,51000,3,66.0,82.0,74.0,80.0,33.0,77.0,https://cdn.sofifa.net/players/244/176/26_120.png
+228251,Lorenzo Pellegrini,Lorenzo Pellegrini,CAM,"CAM, CM",80,80,29,Italy,Roma,Serie A,20500000,63000,3,75.0,77.0,80.0,80.0,73.0,73.0,https://cdn.sofifa.net/players/228/251/26_120.png
+213666,Ruben Loftus-Cheek,Ruben Ira Loftus-Cheek,CM,"CM, CAM",80,80,29,England,AC Milan,Serie A,20500000,55000,3,81.0,76.0,79.0,80.0,76.0,80.0,https://cdn.sofifa.net/players/213/666/26_120.png
+227535,R. Bentancur,Rodrigo Bentancur Colmán,CDM,"CDM, CM",80,81,28,Uruguay,Tottenham Hotspur,Premier League,20500000,100000,3,64.0,68.0,78.0,79.0,78.0,72.0,https://cdn.sofifa.net/players/227/535/26_120.png
+213655,A. Iwobi,Alexander Chuka Iwobi,LM,"LM, RM, LW",80,80,29,Nigeria,Fulham FC,Premier League,20500000,90000,3,76.0,74.0,77.0,81.0,56.0,73.0,https://cdn.sofifa.net/players/213/655/26_120.png
+206517,J. Grealish,Jack Peter Grealish,LW,"LW, LM",80,80,29,England,Everton,Premier League,20500000,130000,3,72.0,76.0,80.0,85.0,53.0,67.0,https://cdn.sofifa.net/players/206/517/26_120.png
+223273,Mario Pašalić,Mario Pašalić,CM,"CM, CAM",80,80,30,Croatia,Atalanta,Serie A,20000000,73000,3,69.0,78.0,77.0,81.0,67.0,76.0,https://cdn.sofifa.net/players/223/273/26_120.png
+208268,Bryan Cristante,Bryan Cristante,CM,"CM, CDM",80,80,30,Italy,Roma,Serie A,20000000,62000,3,52.0,74.0,78.0,75.0,78.0,81.0,https://cdn.sofifa.net/players/208/268/26_120.png
+213661,A. Christensen,Andreas Bødtker Christensen,CB,"CB, CM",80,81,29,Denmark,FC Barcelona,La Liga,19500000,90000,3,64.0,32.0,67.0,70.0,81.0,74.0,https://cdn.sofifa.net/players/213/661/26_120.png
+228579,Benjamin Henrichs,Benjamin Henrichs,RB,"RB, RM, LB",80,80,28,Germany,RB Leipzig,Bundesliga,19000000,58000,3,73.0,54.0,76.0,78.0,78.0,74.0,https://cdn.sofifa.net/players/228/579/26_120.png
+223697,R. Gosens,Robin Everardus Gosens,LB,"LB, LM",80,80,30,Germany,Fiorentina,Serie A,18000000,56000,3,72.0,74.0,73.0,76.0,77.0,77.0,https://cdn.sofifa.net/players/223/697/26_120.png
+241464,Pau Torres,Pau Francisco Torres,CB,CB,80,80,28,Spain,Aston Villa,Premier League,18000000,110000,3,67.0,41.0,75.0,69.0,82.0,73.0,https://cdn.sofifa.net/players/241/464/26_120.png
+210406,P. Zieliński,Piotr Sebastian Zieliński,CM,CM,80,80,31,Poland,Inter,Serie A,17500000,39000,3,76.0,76.0,80.0,82.0,70.0,59.0,https://cdn.sofifa.net/players/210/406/26_120.png
+225126,E. Skhiri,Ellyes Joris Skhiriإلياس صخيري,CDM,"CDM, CM",80,80,30,Tunisia,Eintracht Frankfurt,Bundesliga,17500000,39000,3,64.0,73.0,74.0,75.0,80.0,74.0,https://cdn.sofifa.net/players/225/126/26_120.png
+229668,Mario Hermoso,Mario Hermoso Canseco,CB,CB,80,80,30,Spain,Roma,Serie A,17500000,60000,3,72.0,49.0,73.0,71.0,80.0,79.0,https://cdn.sofifa.net/players/229/668/26_120.png
+220440,C. Lenglet,Clément Nicolas Laurent Lenglet,CB,CB,80,80,30,France,Atlético Madrid,La Liga,17500000,68000,3,54.0,45.0,69.0,64.0,82.0,76.0,https://cdn.sofifa.net/players/220/440/26_120.png
+216447,Álvaro García,Álvaro García Rivera,LM,"LM, LW",80,80,32,Spain,Rayo Vallecano,La Liga,16500000,33000,3,88.0,70.0,77.0,81.0,51.0,45.0,https://cdn.sofifa.net/players/216/447/26_120.png
+209889,R. Guerreiro,Raphaël Adelino José Guerreiro,LB,"LB, CM, RB, LM",80,80,31,Portugal,FC Bayern München,Bundesliga,15500000,65000,3,69.0,78.0,85.0,88.0,74.0,54.0,https://cdn.sofifa.net/players/209/889/26_120.png
+204923,Marcel Sabitzer,Marcel Sabitzer,CDM,"CDM, CM",80,80,31,Austria,Borussia Dortmund,Bundesliga,15000000,52000,3,74.0,80.0,80.0,80.0,76.0,76.0,https://cdn.sofifa.net/players/204/923/26_120.png
+205157,Ruiz de Galarreta,Iñigo Ruiz de Galarreta Etxeberria,CDM,"CDM, CM",80,80,31,Spain,Athletic Club,La Liga,15000000,49000,3,69.0,65.0,77.0,79.0,76.0,76.0,https://cdn.sofifa.net/players/205/157/26_120.png
+241671,Dominik Livaković,Dominik Livaković,GK,GK,80,80,30,Croatia,Girona FC,La Liga,14000000,38000,3,,,,,,,https://cdn.sofifa.net/players/241/671/26_120.png
+203263,H. Maguire,Jacob Harry Maguire,CB,CB,80,80,32,England,Manchester United,Premier League,13500000,88000,3,35.0,57.0,70.0,65.0,80.0,82.0,https://cdn.sofifa.net/players/203/263/26_120.png
+204883,B. Samba,Brice Lauriche Samba,GK,GK,80,80,31,France,Stade Rennais FC,Ligue 1,11000000,22000,3,,,,,,,https://cdn.sofifa.net/players/204/883/26_120.png
+200145,Casemiro,Carlos Henrique Casimiro,CDM,"CDM, CM",80,80,33,Brazil,Manchester United,Premier League,10500000,88000,3,36.0,74.0,76.0,69.0,80.0,76.0,https://cdn.sofifa.net/players/200/145/26_120.png
+186345,Kieran Trippier,Kieran John Trippier,RB,"RB, RM",80,80,34,England,Newcastle United,Premier League,7500000,115000,3,66.0,65.0,83.0,77.0,80.0,71.0,https://cdn.sofifa.net/players/186/345/26_120.png
+190765,Pascal Groß,Pascal Groß,CDM,"CDM, CM",80,80,34,Germany,Borussia Dortmund,Bundesliga,7000000,52000,3,48.0,75.0,84.0,79.0,72.0,76.0,https://cdn.sofifa.net/players/190/765/26_120.png
+190674,Benjamin André,Benjamin André,CDM,"CDM, CM",80,80,34,France,Lille OSC,Ligue 1,7000000,36000,3,55.0,64.0,73.0,76.0,79.0,83.0,https://cdn.sofifa.net/players/190/674/26_120.png
+192563,Bernd Leno,Bernd Leno,GK,GK,80,80,33,Germany,Fulham FC,Premier League,7000000,58000,3,,,,,,,https://cdn.sofifa.net/players/192/563/26_120.png
+259377,Yeremy Pino,Yéremy Jesús Pino Santos,RM,"RM, LM, LW, RW",80,88,22,Spain,Crystal Palace,Premier League,47500000,77000,2,77.0,73.0,78.0,81.0,38.0,53.0,https://cdn.sofifa.net/players/259/377/26_120.png
+262138,C. Lukeba,Castello Junior Lukeba,CB,"CB, LB",80,88,22,France,RB Leipzig,Bundesliga,44500000,48000,2,72.0,43.0,68.0,73.0,81.0,75.0,https://cdn.sofifa.net/players/262/138/26_120.png
+238900,Ermedin Demirović,Ermedin Demirović,ST,ST,80,80,27,Bosnia and Herzegovina,VfB Stuttgart,Bundesliga,23000000,49000,2,72.0,81.0,73.0,78.0,42.0,78.0,https://cdn.sofifa.net/players/238/900/26_120.png
+234742,H. Barnes,Harvey Lewis Barnes,LW,"LW, LM",80,80,27,England,Newcastle United,Premier League,22500000,125000,2,83.0,80.0,75.0,81.0,43.0,68.0,https://cdn.sofifa.net/players/234/742/26_120.png
+220876,Franck Honorat,Franck Honorat,RM,"RM, RW, RB",80,80,28,France,Borussia Mönchengladbach,Bundesliga,21000000,37000,2,84.0,78.0,79.0,78.0,53.0,63.0,https://cdn.sofifa.net/players/220/876/26_120.png
+226110,Nicolas Pépé,Nicolas Pépé,RM,"RM, ST, RW",80,80,30,Côte d'Ivoire,Villarreal CF,La Liga,20500000,47000,2,88.0,77.0,76.0,82.0,36.0,67.0,https://cdn.sofifa.net/players/226/110/26_120.png
+224179,Borja Iglesias,Borja Iglesias Quintas,ST,ST,80,80,32,Spain,RC Celta,La Liga,17000000,40000,2,62.0,82.0,71.0,74.0,40.0,77.0,https://cdn.sofifa.net/players/224/179/26_120.png
+212096,Vincenzo Grifo,Vincenzo Grifo,LM,"LM, CAM, LW",80,80,32,Italy,SC Freiburg,Bundesliga,16500000,37000,2,70.0,76.0,82.0,81.0,43.0,66.0,https://cdn.sofifa.net/players/212/096/26_120.png
+200458,Lucas Digne,Lucas Digne,LB,"LB, LM",80,80,31,France,Aston Villa,Premier League,15500000,110000,2,69.0,68.0,79.0,76.0,77.0,74.0,https://cdn.sofifa.net/players/200/458/26_120.png
+239093,Jonathan Clauss,Jonathan Clauss,RB,"RB, RM",80,80,32,France,OGC Nice,Ligue 1,14500000,34000,2,85.0,69.0,76.0,78.0,73.0,69.0,https://cdn.sofifa.net/players/239/093/26_120.png
+212602,Diego Llorente,Diego Javier Llorente Ríos,CB,CB,80,80,31,Spain,Real Betis Balompié,La Liga,14500000,35000,2,64.0,41.0,63.0,69.0,81.0,76.0,https://cdn.sofifa.net/players/212/602/26_120.png
+201269,Frederik Rønnow,Frederik Riis Rønnow,GK,GK,80,80,32,Denmark,1. FC Union Berlin,Bundesliga,10500000,28000,2,,,,,,,https://cdn.sofifa.net/players/201/269/26_120.png
+268889,Álvaro Carreras,Álvaro Fernández Carreras,LB,"LB, LM",80,88,22,Spain,Real Madrid,La Liga,45000000,130000,1,85.0,65.0,75.0,79.0,73.0,80.0,https://cdn.sofifa.net/players/268/889/26_120.png
+277179,Fermín,Fermín López Marín,CAM,"CAM, CM, LW, ST",80,87,22,Spain,FC Barcelona,La Liga,43000000,80000,1,74.0,75.0,75.0,82.0,62.0,55.0,https://cdn.sofifa.net/players/277/179/26_120.png
+273018,Andrey Santos,Andrey Nascimento dos Santos,CM,"CM, CDM",80,87,21,Brazil,Chelsea,Premier League,42500000,86000,1,74.0,69.0,74.0,78.0,77.0,80.0,https://cdn.sofifa.net/players/273/018/26_120.png
+270673,Warren Zaïre-Emery,Warren Zaïre-Emery,CM,"CM, CDM, CAM",80,87,19,France,Paris Saint-Germain,Ligue 1,41000000,58000,1,79.0,68.0,76.0,79.0,75.0,79.0,https://cdn.sofifa.net/players/270/673/26_120.png
+264862,Maghnes Akliouche,Maghnes Akliouche,RM,"RM, CAM, RW",80,86,23,France,AS Monaco,Ligue 1,33500000,34000,1,74.0,70.0,78.0,83.0,48.0,62.0,https://cdn.sofifa.net/players/264/862/26_120.png
+262118,Tino Livramento,Valentino Francisco Livramento,RB,"RB, LB, RM",80,86,22,England,Newcastle United,Premier League,31500000,95000,1,82.0,51.0,72.0,78.0,76.0,74.0,https://cdn.sofifa.net/players/262/118/26_120.png
+266127,L. Hall,Lewis Kieran Hall,LB,LB,80,86,20,England,Newcastle United,Premier League,30500000,81000,1,77.0,62.0,78.0,79.0,77.0,64.0,https://cdn.sofifa.net/players/266/127/26_120.png
+256903,Gonçalo Ramos,Gonçalo Matias Ramos,ST,ST,80,84,24,Portugal,Paris Saint-Germain,Ligue 1,30500000,79000,1,73.0,79.0,64.0,77.0,48.0,79.0,https://cdn.sofifa.net/players/256/903/26_120.png
+254796,N. Madueke,Chukwunonso Tristan Madueke,RW,"RW, RM",80,84,23,England,Arsenal,Premier League,30000000,115000,1,88.0,75.0,74.0,83.0,45.0,69.0,https://cdn.sofifa.net/players/254/796/26_120.png
+254243,E. Anderson,Elliot Junior Anderson,CDM,"CDM, CM",80,85,22,England,Nottingham Forest,Premier League,29500000,78000,1,71.0,68.0,79.0,81.0,77.0,78.0,https://cdn.sofifa.net/players/254/243/26_120.png
+264697,M. Amoura,Mohamed El Amine Amouraمحمد الأمين عمورة,ST,"ST, LW, LM, CAM",80,84,25,Algeria,VfL Wolfsburg,Bundesliga,29500000,56000,1,90.0,81.0,71.0,86.0,47.0,61.0,https://cdn.sofifa.net/players/264/697/26_120.png
+241508,M. Damsgaard,Mikkel Krogh Damsgaard,CAM,"CAM, CM",80,83,24,Denmark,Brentford,Premier League,29000000,71000,1,68.0,73.0,82.0,81.0,66.0,67.0,https://cdn.sofifa.net/players/241/508/26_120.png
+242434,Curtis Jones,Curtis Jones,CAM,"CAM, CM, CDM",80,83,24,England,Liverpool,Premier League,29000000,89000,1,74.0,74.0,76.0,82.0,72.0,76.0,https://cdn.sofifa.net/players/242/434/26_120.png
+256612,Evanilson,Francisco Evanilson de Lima Barbosa,ST,ST,80,83,25,Brazil,AFC Bournemouth,Premier League,28500000,83000,1,76.0,79.0,66.0,77.0,37.0,76.0,https://cdn.sofifa.net/players/256/612/26_120.png
+271400,Igor Paixão,Igor Guilherme Barbosa da Paixão,LM,"LM, LW",80,83,25,Brazil,Olympique de Marseille,Ligue 1,28000000,45000,1,83.0,80.0,75.0,81.0,32.0,70.0,https://cdn.sofifa.net/players/271/400/26_120.png
+255654,P. Kalulu,Pierre Kazeye Rommel Kalulu Kyatengwa,CB,"CB, RB",80,85,25,France,Juventus,Serie A,28000000,100000,1,80.0,53.0,68.0,70.0,81.0,76.0,https://cdn.sofifa.net/players/255/654/26_120.png
+238616,Pedro Neto,Pedro Lomba Neto,RM,"RM, LM, ST, RW",80,82,25,Portugal,Chelsea,Premier League,26500000,110000,1,91.0,76.0,74.0,82.0,40.0,68.0,https://cdn.sofifa.net/players/238/616/26_120.png
+257278,A. Theate,Arthur Nicolas Theate,CB,"CB, LB, LM",80,84,25,Belgium,Eintracht Frankfurt,Bundesliga,26500000,36000,1,67.0,40.0,70.0,71.0,80.0,82.0,https://cdn.sofifa.net/players/257/278/26_120.png
+269493,Alexsandro,Alexsandro Victor de Souza Ribeiro,CB,CB,80,84,25,Brazil,Lille OSC,Ligue 1,26500000,33000,1,66.0,40.0,63.0,59.0,80.0,81.0,https://cdn.sofifa.net/players/269/493/26_120.png
+259694,Mingueza,Óscar Mingueza García,RB,"RB, RM, LM",80,83,26,Spain,RC Celta,La Liga,25500000,34000,1,80.0,66.0,77.0,77.0,76.0,76.0,https://cdn.sofifa.net/players/259/694/26_120.png
+239380,N. Lang,Noa Noëll Lang,LW,"LW, LM",80,81,26,Netherlands,Napoli,Serie A,25000000,100000,1,80.0,77.0,73.0,84.0,50.0,68.0,https://cdn.sofifa.net/players/239/380/26_120.png
+243593,A. Laurienté,Armand Gaëtan Laurienté,LW,"LW, LM",80,80,26,France,Sassuolo,Serie A,23000000,30000,1,91.0,77.0,74.0,83.0,36.0,57.0,https://cdn.sofifa.net/players/243/593/26_120.png
+246172,S. Chukwueze,Samuel Chimerenka Chukwueze,RM,"RM, RW",80,80,26,Nigeria,Fulham FC,Premier League,23000000,53000,1,88.0,74.0,74.0,83.0,36.0,57.0,https://cdn.sofifa.net/players/246/172/26_120.png
+246242,Boulaye Dia,Boulaye Dia,ST,"ST, CAM",80,80,28,Senegal,Lazio,Serie A,21500000,45000,1,84.0,81.0,67.0,78.0,43.0,73.0,https://cdn.sofifa.net/players/246/242/26_120.png
+232665,Arambarri,Mauro Wilney Arambarri Rosa,CM,"CM, CDM",80,80,29,Uruguay,Getafe CF,La Liga,20500000,43000,1,65.0,79.0,76.0,77.0,79.0,79.0,https://cdn.sofifa.net/players/232/665/26_120.png
+231591,Javi Galán,Javier Galán Gil,LB,"LB, LM",80,80,30,Spain,Atlético Madrid,La Liga,18000000,68000,1,78.0,56.0,75.0,79.0,77.0,73.0,https://cdn.sofifa.net/players/231/591/26_120.png
+202695,James Tarkowski,James Alan Tarkowski,CB,CB,80,80,32,England,Everton,Premier League,13500000,50000,1,45.0,47.0,64.0,59.0,81.0,82.0,https://cdn.sofifa.net/players/202/695/26_120.png
+255001,Nicolò Rovella,Nicolò Rovella,CDM,"CDM, CM",79,84,23,Italy,Lazio,Serie A,24500000,31000,3,76.0,63.0,77.0,78.0,75.0,71.0,https://cdn.sofifa.net/players/255/001/26_120.png
+253306,M. Ugarte,Manuel Ugarte Ribeiro,CDM,"CDM, CM",79,83,24,Uruguay,Manchester United,Premier League,23000000,69000,3,62.0,65.0,72.0,76.0,77.0,75.0,https://cdn.sofifa.net/players/253/306/26_120.png
+248695,Wesley Fofana,Wesley Fofana,CB,CB,79,82,24,France,Chelsea,Premier League,21500000,90000,3,74.0,41.0,62.0,71.0,80.0,78.0,https://cdn.sofifa.net/players/248/695/26_120.png
+226710,Gianluca Scamacca,Gianluca Scamacca,ST,ST,79,80,26,Italy,Atalanta,Serie A,21000000,71000,3,65.0,81.0,67.0,74.0,36.0,70.0,https://cdn.sofifa.net/players/226/710/26_120.png
+231447,Donyell Malen,Donyell Malen,RM,"RM, RW, LM",79,80,26,Netherlands,Aston Villa,Premier League,20500000,100000,3,86.0,78.0,72.0,82.0,35.0,67.0,https://cdn.sofifa.net/players/231/447/26_120.png
+234574,Diogo Dalot,José Diogo Dalot Teixeira,RB,"RB, LB, RM",79,81,26,Portugal,Manchester United,Premier League,20000000,80000,3,85.0,63.0,74.0,77.0,76.0,78.0,https://cdn.sofifa.net/players/234/574/26_120.png
+235152,F. Kadıoğlu,Ferdi Erenay Kadıoğlu,RB,"RB, LB, RM",79,81,25,Türkiye,Brighton & Hove Albion,Premier League,20000000,81000,3,82.0,68.0,74.0,80.0,76.0,67.0,https://cdn.sofifa.net/players/235/152/26_120.png
+232999,T. Adams,Tyler Shaan Adams,CDM,"CDM, CM",79,81,26,United States,AFC Bournemouth,Premier League,19500000,72000,3,79.0,56.0,71.0,75.0,79.0,75.0,https://cdn.sofifa.net/players/232/999/26_120.png
+229906,L. Bailey,Leon Patrick Bailey Butler,RM,"RM, RW",79,79,27,Jamaica,Roma,Serie A,18500000,100000,3,87.0,74.0,73.0,84.0,38.0,61.0,https://cdn.sofifa.net/players/229/906/26_120.png
+237942,P. Estupiñán,Pervis Josué Estupiñán Tenorio,LB,"LB, LM",79,80,27,Ecuador,AC Milan,Serie A,18500000,48000,3,76.0,57.0,77.0,78.0,75.0,72.0,https://cdn.sofifa.net/players/237/942/26_120.png
+225663,A. Golovin,Aleksandr GolovinГоловин Александр Сергеевич,LM,"LM, CAM, LW",79,79,29,Russia,AS Monaco,Ligue 1,17000000,38000,3,73.0,76.0,79.0,82.0,61.0,66.0,https://cdn.sofifa.net/players/225/663/26_120.png
+205175,A. Milik,Arkadiusz Krystian Milik,ST,ST,79,79,31,Poland,Juventus,Serie A,15000000,120000,3,50.0,82.0,72.0,77.0,40.0,67.0,https://cdn.sofifa.net/players/205/175/26_120.png
+205988,L. Shaw,Luke Paul Hoare Shaw,CB,"CB, LB, LM",79,79,29,England,Manchester United,Premier League,14500000,83000,3,69.0,57.0,78.0,75.0,79.0,72.0,https://cdn.sofifa.net/players/205/988/26_120.png
+195864,P. Pogba,Paul Labile Pogba,CM,"CM, CDM, CAM",79,79,32,France,AS Monaco,Ligue 1,14000000,38000,3,64.0,76.0,81.0,83.0,60.0,78.0,https://cdn.sofifa.net/players/195/864/26_120.png
+205431,Niclas Füllkrug,Niclas Füllkrug,ST,ST,79,79,32,Germany,West Ham United,Premier League,14000000,80000,3,57.0,82.0,71.0,73.0,43.0,77.0,https://cdn.sofifa.net/players/205/431/26_120.png
+202335,E. Dier,Eric Jeremy Edgar Dier,CB,CB,79,79,31,England,AS Monaco,Ligue 1,12000000,37000,3,54.0,62.0,67.0,62.0,80.0,82.0,https://cdn.sofifa.net/players/202/335/26_120.png
+178509,O. Giroud,Olivier Jonathan Giroud,ST,ST,79,79,38,France,Lille OSC,Ligue 1,6000000,30000,3,48.0,80.0,71.0,73.0,41.0,79.0,https://cdn.sofifa.net/players/178/509/26_120.png
+188377,K. Walker,Kyle Andrew Walker,RB,"RB, RM",79,79,35,England,Burnley,Premier League,5500000,48000,3,80.0,64.0,75.0,76.0,77.0,78.0,https://cdn.sofifa.net/players/188/377/26_120.png
+183711,J. Henderson,Jordan Brian Henderson,CDM,"CDM, CM",79,79,35,England,Brentford,Premier League,4900000,56000,3,65.0,71.0,80.0,74.0,75.0,77.0,https://cdn.sofifa.net/players/183/711/26_120.png
+243780,Lee Kang In,Kang-in Lee이강인,RW,"RW, CM, RM",79,84,24,Korea Republic,Paris Saint-Germain,Ligue 1,26500000,74000,2,72.0,75.0,80.0,82.0,50.0,64.0,https://cdn.sofifa.net/players/243/780/26_120.png
+206585,Kepa,Kepa Arrizabalaga Revuelta,GK,GK,79,79,30,Spain,Arsenal,Premier League,11500000,76000,2,,,,,,,https://cdn.sofifa.net/players/206/585/26_120.png
+232487,W. Endo,Wataru Endo遠藤 航,CDM,"CDM, CM",79,79,32,Japan,Liverpool,Premier League,11500000,95000,2,58.0,68.0,71.0,77.0,79.0,73.0,https://cdn.sofifa.net/players/232/487/26_120.png
+192638,Marcos Alonso,Marcos Alonso Mendoza,CB,"CB, LB",79,79,34,Spain,RC Celta,La Liga,5500000,33000,2,57.0,74.0,80.0,74.0,80.0,77.0,https://cdn.sofifa.net/players/192/638/26_120.png
+231943,Richarlison,Richarlison de Andrade,ST,"ST, LW, LM",78,78,28,Brazil,Tottenham Hotspur,Premier League,14500000,100000,3,76.0,78.0,72.0,78.0,53.0,75.0,https://cdn.sofifa.net/players/231/943/26_120.png
+202652,R. Sterling,Raheem Shaquille Sterling,LW,"LW, LM, RM",78,78,30,England,Chelsea,Premier League,13500000,110000,3,82.0,74.0,74.0,82.0,42.0,48.0,https://cdn.sofifa.net/players/202/652/26_120.png
+236480,Yves Bissouma,Yves Bissouma,CDM,"CDM, CM",78,78,28,Mali,Tottenham Hotspur,Premier League,12500000,87000,3,66.0,66.0,74.0,79.0,76.0,74.0,https://cdn.sofifa.net/players/236/480/26_120.png
+202884,Leonardo Spinazzola,Leonardo Spinazzola,LB,"LB, LM",78,78,32,Italy,Napoli,Serie A,9500000,81000,3,85.0,65.0,73.0,77.0,76.0,67.0,https://cdn.sofifa.net/players/202/884/26_120.png
+211256,N. Tagliafico,Nicolás Alejandro Tagliafico,LB,"LB, LM",78,78,32,Argentina,Olympique Lyonnais,Ligue 1,9500000,23000,3,67.0,56.0,70.0,76.0,77.0,76.0,https://cdn.sofifa.net/players/211/256/26_120.png
+192387,Ciro Immobile,Ciro Immobile,ST,"ST, CAM",78,78,35,Italy,Bologna,Serie A,6000000,42000,3,68.0,79.0,66.0,76.0,39.0,71.0,https://cdn.sofifa.net/players/192/387/26_120.png
+184432,Azpilicueta,César Azpilicueta Tanco,CB,"CB, RB",78,78,35,Spain,Sevilla FC,La Liga,3700000,25000,3,52.0,55.0,75.0,71.0,79.0,74.0,https://cdn.sofifa.net/players/184/432/26_120.png
+240740,Callum Hudson-Odoi,Callum James Hudson-Odoi,LM,"LM, LW",78,82,24,England,Nottingham Forest,Premier League,20000000,70000,2,82.0,75.0,75.0,81.0,50.0,63.0,https://cdn.sofifa.net/players/240/740/26_120.png
+253002,Giacomo Raspadori,Giacomo Raspadori,ST,"ST, CAM, LW",78,81,25,Italy,Atlético Madrid,La Liga,19000000,61000,2,78.0,78.0,71.0,84.0,28.0,58.0,https://cdn.sofifa.net/players/253/002/26_120.png
+234205,H. Ito,Hiroki Ito伊藤 洋輝,CB,"CB, LB, LM",78,82,26,Japan,FC Bayern München,Bundesliga,17500000,53000,2,74.0,57.0,71.0,72.0,80.0,72.0,https://cdn.sofifa.net/players/234/205/26_120.png
+238744,W. McKennie,Weston James Earl McKennie,CM,"CM, CDM, CAM",78,79,26,United States,Juventus,Serie A,16500000,95000,2,77.0,71.0,77.0,77.0,80.0,80.0,https://cdn.sofifa.net/players/238/744/26_120.png
+201455,Geoffrey Kondogbia,Geoffrey Edwin Kondogbia,CB,"CB, CDM, CM",78,78,32,Central African Republic,Olympique de Marseille,Ligue 1,9000000,40000,2,65.0,69.0,73.0,71.0,78.0,81.0,https://cdn.sofifa.net/players/201/455/26_120.png
+219693,Diego Carlos,Diego Carlos Santos Silva,CB,CB,78,78,32,Brazil,Como,Serie A,9000000,50000,2,63.0,47.0,62.0,67.0,78.0,76.0,https://cdn.sofifa.net/players/219/693/26_120.png
+186146,D. Welbeck,Daniel Nii Tackie Mensah Welbeck,ST,ST,78,78,34,England,Brighton & Hove Albion,Premier League,7000000,90000,2,60.0,78.0,74.0,77.0,45.0,77.0,https://cdn.sofifa.net/players/186/146/26_120.png
+198009,Mattia Perin,Mattia Perin,GK,GK,78,78,32,Italy,Juventus,Serie A,7000000,62000,2,,,,,,,https://cdn.sofifa.net/players/198/009/26_120.png
+199005,M. Ryan,Mathew David Ryan,GK,GK,78,78,33,Australia,Levante UD,La Liga,4600000,20000,2,,,,,,,https://cdn.sofifa.net/players/199/005/26_120.png
+233064,M. Mount,Mason Tony Mount,CAM,"CAM, CM, RW",77,78,26,England,Manchester United,Premier League,12500000,72000,3,67.0,76.0,79.0,78.0,62.0,61.0,https://cdn.sofifa.net/players/233/064/26_120.png
+212188,Timo Werner,Timo Werner,LW,"LW, ST, LM",77,77,29,Germany,RB Leipzig,Bundesliga,10500000,52000,3,91.0,74.0,68.0,77.0,35.0,66.0,https://cdn.sofifa.net/players/212/188/26_120.png
+233934,A. Ramsdale,Aaron Christopher Ramsdale,GK,GK,77,79,27,England,Newcastle United,Premier League,9500000,34000,3,,,,,,,https://cdn.sofifa.net/players/233/934/26_120.png
+208596,Andrea Belotti,Andrea Belotti,ST,ST,77,77,31,Italy,Cagliari,Serie A,9000000,16000,3,68.0,76.0,58.0,74.0,38.0,80.0,https://cdn.sofifa.net/players/208/596/26_120.png
+199564,Sergi Roberto,Sergio Roberto Carnicer,CDM,"CDM, CM",77,77,33,Spain,Como,Serie A,5000000,75000,3,69.0,63.0,78.0,75.0,74.0,65.0,https://cdn.sofifa.net/players/199/564/26_120.png
+190815,Daley Blind,Daley Blind,CB,"CB, LB",77,77,35,Netherlands,Girona FC,La Liga,2800000,23000,3,36.0,62.0,85.0,76.0,80.0,67.0,https://cdn.sofifa.net/players/190/815/26_120.png
+191202,N. Matić,Nemanja MatićНемања Матић,CDM,"CDM, CM",77,77,36,Serbia,Sassuolo,Serie A,2100000,17000,3,33.0,66.0,74.0,73.0,76.0,73.0,https://cdn.sofifa.net/players/191/202/26_120.png
+177413,A. Witsel,Axel Laurent Angel Lambert Witsel,CB,"CB, CDM, CM",77,77,36,Belgium,Girona FC,La Liga,1900000,23000,3,31.0,63.0,76.0,74.0,79.0,66.0,https://cdn.sofifa.net/players/177/413/26_120.png
+263781,Vanderson,Vanderson de Oliveira Campos,RB,RB,77,83,24,Brazil,AS Monaco,Ligue 1,15500000,26000,2,78.0,62.0,74.0,77.0,72.0,71.0,https://cdn.sofifa.net/players/263/781/26_120.png
+222357,B. Embolo,Breel Donald Embolo,ST,ST,77,77,28,Switzerland,Stade Rennais FC,Ligue 1,11000000,31000,2,78.0,75.0,70.0,75.0,51.0,80.0,https://cdn.sofifa.net/players/222/357/26_120.png
+234153,Carlos Soler,Carlos Soler Barragán,CM,"CM, CAM",77,77,28,Spain,Real Sociedad,La Liga,10500000,38000,2,70.0,75.0,78.0,78.0,69.0,68.0,https://cdn.sofifa.net/players/234/153/26_120.png
+225782,Ainsley Maitland-Niles,Ainsley Cory Maitland-Niles,RB,"RB, RM, RW",77,77,27,England,Olympique Lyonnais,Ligue 1,10000000,21000,2,77.0,65.0,73.0,76.0,72.0,74.0,https://cdn.sofifa.net/players/225/782/26_120.png
+229984,Ben Chilwell,Benjamin James Chilwell,LB,"LB, LM",77,77,28,England,RC Strasbourg Alsace,Ligue 1,9500000,49000,2,70.0,60.0,77.0,75.0,76.0,68.0,https://cdn.sofifa.net/players/229/984/26_120.png
+227813,O. Zinchenko,Oleksandr ZinchenkoЗінченко Олександр Володимирович,LB,LB,77,77,28,Ukraine,Nottingham Forest,Premier League,9500000,100000,2,63.0,66.0,79.0,78.0,76.0,62.0,https://cdn.sofifa.net/players/227/813/26_120.png
+204529,M. Batshuayi,Michy Batshuayi-Atunga,ST,ST,77,77,31,Belgium,Eintracht Frankfurt,Bundesliga,9000000,35000,2,74.0,78.0,64.0,75.0,36.0,74.0,https://cdn.sofifa.net/players/204/529/26_120.png
+210736,Emerson,Emerson Palmieri dos Santos,LB,"LB, LM",77,77,30,Italy,Olympique de Marseille,Ligue 1,9000000,38000,2,69.0,63.0,75.0,76.0,74.0,65.0,https://cdn.sofifa.net/players/210/736/26_120.png
+212404,Federico Bernardeschi,Federico Bernardeschi,RM,"RM, ST, RW",77,77,31,Italy,Bologna,Serie A,8500000,47000,2,75.0,75.0,77.0,80.0,54.0,67.0,https://cdn.sofifa.net/players/212/404/26_120.png
+220523,Y. Mina,Yerry Fernando Mina González,CB,CB,77,77,30,Colombia,Cagliari,Serie A,8500000,14000,2,34.0,50.0,52.0,55.0,77.0,84.0,https://cdn.sofifa.net/players/220/523/26_120.png
+221671,Lee Jae Sung,Jae-sung Lee이재성 李在成,CAM,"CAM, CM",77,77,32,Korea Republic,1. FSV Mainz 05,Bundesliga,8500000,30000,2,72.0,71.0,72.0,81.0,63.0,66.0,https://cdn.sofifa.net/players/221/671/26_120.png
+234612,J. Ikoné,Nanitamo Jonathan Ikoné,RM,"RM, RW",76,76,27,France,Paris FC,Ligue 1,8000000,42000,3,85.0,67.0,72.0,80.0,35.0,56.0,https://cdn.sofifa.net/players/234/612/26_120.png
+221363,Donny van de Beek,Donny van de Beek,CAM,"CAM, CM",76,76,28,Netherlands,Girona FC,La Liga,7500000,31000,3,59.0,75.0,74.0,76.0,70.0,65.0,https://cdn.sofifa.net/players/221/363/26_120.png
+190460,C. Eriksen,Christian Dannemann Eriksen,CM,"CM, CDM, CAM",76,76,33,Denmark,VfL Wolfsburg,Bundesliga,4600000,42000,3,48.0,74.0,82.0,76.0,53.0,47.0,https://cdn.sofifa.net/players/190/460/26_120.png
+208830,J. Vardy,Jamie Richard Vardy,ST,ST,76,76,38,England,Cremonese,Serie A,2600000,12000,3,71.0,77.0,68.0,72.0,52.0,67.0,https://cdn.sofifa.net/players/208/830/26_120.png
+193082,J. Cuadrado,Juan Guillermo Cuadrado Bello,RM,"RM, RB, RW",76,76,37,Colombia,Pisa,Serie A,2400000,9000,3,77.0,72.0,76.0,78.0,74.0,61.0,https://cdn.sofifa.net/players/193/082/26_120.png
+238067,Nicolò Zaniolo,Nicolò Zaniolo,RM,"RM, RW, ST",76,77,25,Italy,Udinese,Serie A,9000000,42000,2,74.0,75.0,73.0,75.0,60.0,77.0,https://cdn.sofifa.net/players/238/067/26_120.png
+245541,G. Reyna,Giovanni Alejandro Reyna,RM,"RM, CAM, LM, RW",75,81,22,United States,Borussia Mönchengladbach,Bundesliga,9000000,22000,2,67.0,72.0,72.0,80.0,38.0,68.0,https://cdn.sofifa.net/players/245/541/26_120.png
