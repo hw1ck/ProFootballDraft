@@ -13,11 +13,13 @@ const {
   isOverpay,
   hasGoalkeeper
 } = require('../utils/auctionMath');
+const { roomManager } = require('../rooms/RoomManager');
 
 let timerInterval = null;
 let transitionTimeout = null;
 
 function setupAuctionSocket(io) {
+  roomManager.init(io);
   // Helper to fetch populated auction state
   async function getPopulatedState() {
     let state = await AuctionState.findOne()
@@ -369,6 +371,78 @@ function setupAuctionSocket(io) {
     } catch (e) {
       console.error('Error sending initial state:', e);
     }
+
+    // ==========================================
+    // ROOM-SPECIFIC REAL-TIME AUCTION HANDLERS
+    // ==========================================
+    socket.on('room:join', ({ roomCode, user }) => {
+      if (!roomCode) return;
+      const cleanCode = roomCode.toUpperCase().trim();
+      socket.join(`room:${cleanCode}`);
+      const room = roomManager.getRoom(cleanCode);
+      if (room) {
+        if (user) {
+          try { room.addManager(user); } catch (e) {}
+        }
+        socket.emit('room:state_update', room.toFullState());
+      }
+    });
+
+    socket.on('room:leave', ({ roomCode, userId }) => {
+      if (!roomCode) return;
+      const cleanCode = roomCode.toUpperCase().trim();
+      socket.leave(`room:${cleanCode}`);
+      const room = roomManager.getRoom(cleanCode);
+      if (room && userId) {
+        room.removeManager(userId);
+      }
+    });
+
+    socket.on('room:start', ({ roomCode, userId }) => {
+      const room = roomManager.getRoom(roomCode);
+      if (!room) return;
+      try {
+        room.startAuction(userId);
+      } catch (err) {
+        socket.emit('room:error', { message: err.message });
+      }
+    });
+
+    socket.on('room:bid', ({ roomCode, userId, amount }) => {
+      const room = roomManager.getRoom(roomCode);
+      if (!room) return;
+      try {
+        room.placeBid(userId, Number(amount));
+      } catch (err) {
+        socket.emit('room:error', { message: err.message });
+      }
+    });
+
+    socket.on('room:skip', ({ roomCode, userId }) => {
+      const room = roomManager.getRoom(roomCode);
+      if (!room) return;
+      try {
+        room.skipLot(userId);
+      } catch (err) {
+        socket.emit('room:error', { message: err.message });
+      }
+    });
+
+    socket.on('room:pause_toggle', ({ roomCode, userId }) => {
+      const room = roomManager.getRoom(roomCode);
+      if (!room) return;
+      try {
+        room.togglePause(userId);
+      } catch (err) {
+        socket.emit('room:error', { message: err.message });
+      }
+    });
+
+    socket.on('room:chat', ({ roomCode, user, text }) => {
+      const room = roomManager.getRoom(roomCode);
+      if (!room || !text) return;
+      room.addChatMessage(user, text);
+    });
 
     // 1. PLACE BID
     socket.on('bid:place', async (data) => {

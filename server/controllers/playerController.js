@@ -39,14 +39,19 @@ function deriveRole(pos, stats) {
 // @route GET /api/players
 exports.getPlayers = async (req, res) => {
   try {
-    const { search, position, status, minPrice, maxPrice, sortBy, sortOrder } = req.query;
+    const { search, position, status, minPrice, maxPrice, sortBy, sortOrder, competition } = req.query;
 
     let filter = {};
+
+    if (competition && competition !== 'ALL' && competition !== 'ANY') {
+      filter.competitions = competition;
+    }
 
     if (search) {
       filter.$or = [
         { name: { $regex: search, $options: 'i' } },
         { displayName: { $regex: search, $options: 'i' } },
+        { surname: { $regex: search, $options: 'i' } },
         { nationality: { $regex: search, $options: 'i' } },
         { club: { $regex: search, $options: 'i' } },
         { role: { $regex: search, $options: 'i' } }
@@ -73,11 +78,44 @@ exports.getPlayers = async (req, res) => {
       if (sortBy === 'rating') sortOptions = { 'stats.overall': order };
       else if (sortBy === 'price') sortOptions = { basePrice: order };
       else if (sortBy === 'name') sortOptions = { name: order };
+      else if (sortBy === 'estValue') sortOptions = { estimatedValue: order };
     }
 
-    const players = await Player.find(filter)
+    let players = await Player.find(filter)
       .populate('soldTo', 'name shortName logo color')
       .sort(sortOptions);
+
+    // If database is empty or still seeding, fallback to local JSON dataset
+    if (players.length === 0) {
+      try {
+        const poolPath = path.join(__dirname, '..', 'data', 'players-2026-27.json');
+        if (fs.existsSync(poolPath)) {
+          let pool = JSON.parse(fs.readFileSync(poolPath, 'utf8'));
+          if (competition && competition !== 'ALL' && competition !== 'ANY') {
+            pool = pool.filter(p => p.competitions && p.competitions.includes(competition));
+          }
+          if (position && position !== 'ALL') {
+            pool = pool.filter(p => p.position === position);
+          }
+          if (search) {
+            const q = search.toLowerCase();
+            pool = pool.filter(p => (
+              (p.name && p.name.toLowerCase().includes(q)) ||
+              (p.club && p.club.toLowerCase().includes(q)) ||
+              (p.nationality && p.nationality.toLowerCase().includes(q))
+            ));
+          }
+          if (sortBy === 'rating') {
+            pool.sort((a, b) => (sortOrder === 'asc' ? 1 : -1) * (a.stats.overall - b.stats.overall));
+          } else if (sortBy === 'estValue') {
+            pool.sort((a, b) => (sortOrder === 'asc' ? 1 : -1) * (a.estimatedValue - b.estimatedValue));
+          }
+          players = pool;
+        }
+      } catch (err) {
+        console.warn('Fallback JSON read error:', err.message);
+      }
+    }
 
     return res.status(200).json({
       success: true,

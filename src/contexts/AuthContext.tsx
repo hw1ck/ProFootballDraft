@@ -170,10 +170,32 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   );
 };
 
+const DEFAULT_FALLBACK_USER: UserData = {
+  id: 'guest',
+  _id: 'guest',
+  name: 'Pep Guardiola',
+  email: 'city@profootballdraft.com',
+  role: 'manager'
+};
+
+const DEFAULT_AUTH_CONTEXT: AuthContextType = {
+  user: DEFAULT_FALLBACK_USER,
+  token: null,
+  isAuthenticated: true,
+  isAdmin: false,
+  isManager: true,
+  login: async () => false,
+  logout: () => {},
+  refreshProfile: async () => {},
+  switchDemoUser: () => {},
+  demoUsers: [DEFAULT_FALLBACK_USER],
+  fetchDemoUsers: async () => {}
+};
+
 export const useAuth = () => {
   const context = useContext(AuthContext);
   if (!context) {
-    throw new Error('useAuth must be used within an AuthProvider');
+    return DEFAULT_AUTH_CONTEXT;
   }
   return context;
 };

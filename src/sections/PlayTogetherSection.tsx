@@ -74,6 +74,17 @@ export const PlayTogetherSection: React.FC = () => {
             <span className="w-1.5 h-1.5 rounded-full bg-[#10E7B2] animate-pulse"></span> Ready
           </span>
         </div>
+
+        {/* Action Link to Full Matchmaking Hub */}
+        <div className="pt-2 border-t border-[#00F0FF]/15 flex items-center justify-between">
+          <span className="text-xs text-slate-400 font-mono">Want to host with custom rules?</span>
+          <a
+            href="/play"
+            className="text-xs font-mono font-bold text-[#00F0FF] hover:underline flex items-center gap-1"
+          >
+            <span>Create Custom Room &rarr;</span>
+          </a>
+        </div>
       </div>
     </section>
   );

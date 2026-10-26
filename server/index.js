@@ -63,6 +63,9 @@ app.get('/health', (req, res) => {
 });
 
 // API Routes
+app.use('/api/rooms', require('./routes/roomRoutes'));
+app.use('/api/profile', require('./routes/profileRoutes'));
+app.use('/api/leaderboard', require('./routes/profileRoutes'));
 app.use('/api/auction', require('./routes/auctionRoutes'));
 app.use('/api/players', require('./routes/playerRoutes'));
 app.use('/api/teams', require('./routes/teamRoutes'));

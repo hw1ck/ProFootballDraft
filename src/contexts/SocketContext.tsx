@@ -355,10 +355,32 @@ export const SocketProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   );
 };
 
+const DEFAULT_SOCKET_FALLBACK: SocketContextType = {
+  socket: null,
+  connected: false,
+  auctionState: null,
+  timerSeconds: 30,
+  notifications: [],
+  lastSoldInfo: null,
+  clearLastSold: () => {},
+  lastBidTeam: null,
+  isMuted: false,
+  toggleMute: () => {},
+  placeBid: () => {},
+  skipCurrentLot: () => {},
+  startAuction: () => {},
+  pauseAuction: () => {},
+  resumeAuction: () => {},
+  hammerSell: () => {},
+  passPlayer: () => {},
+  nextPlayer: () => {},
+  setAuctionPlayer: () => {}
+};
+
 export const useSocket = (): SocketContextType => {
   const context = useContext(SocketContext);
   if (!context) {
-    throw new Error('useSocket must be used within a SocketProvider');
+    return DEFAULT_SOCKET_FALLBACK;
   }
   return context;
 };

@@ -33,3 +33,4 @@ export function getSocketUrl(): string {
 
 export const API_BASE = getApiBaseUrl();
 export const SOCKET_SERVER = getSocketUrl();
+export const SOCKET_URL = SOCKET_SERVER;

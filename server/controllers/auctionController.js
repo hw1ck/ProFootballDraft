@@ -1,3 +1,5 @@
+const fs = require('fs');
+const path = require('path');
 const AuctionState = require('../models/AuctionState');
 const Player = require('../models/Player');
 const Team = require('../models/Team');
@@ -69,12 +71,23 @@ exports.seedDatabase = async (req, res) => {
       createdTeams.push(team);
     }
 
-    console.log('[Seed] Creating Star Players...');
+    console.log('[Seed] Creating Star Players from 2026-27 Pool...');
     const createdPlayers = [];
-    for (const p of seedData.players) {
+    let playersToSeed = seedData.players;
+    try {
+      const fullPoolPath = path.join(__dirname, '..', 'data', 'players-2026-27.json');
+      if (fs.existsSync(fullPoolPath)) {
+        playersToSeed = JSON.parse(fs.readFileSync(fullPoolPath, 'utf8'));
+        console.log(`[Seed] Loaded full 2026-27 dataset with ${playersToSeed.length} players!`);
+      }
+    } catch (err) {
+      console.warn('[Seed] Using fallback seedData.players:', err.message);
+    }
+
+    for (const p of playersToSeed) {
       const player = await Player.create({
         ...p,
-        currentPrice: p.basePrice,
+        currentPrice: p.basePrice || 10,
         status: 'upcoming'
       });
       createdPlayers.push(player);

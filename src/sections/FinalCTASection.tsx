@@ -24,13 +24,19 @@ export const FinalCTASection: React.FC = () => {
           Join a room, draft 16 players, and see how your squad ranks among friends.
         </p>
 
-        <div className="pt-2">
+        <div className="pt-2 flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
+          <Link
+            href="/play"
+            className="w-full sm:flex-1 bg-gradient-to-r from-[#00F0FF] via-[#10E7B2] to-[#b4ff39] hover:brightness-110 active:scale-[0.99] text-[#0B0E17] py-3.5 px-6 rounded-full font-black text-xs sm:text-sm flex items-center justify-center gap-2 cyber-glow-btn transition-all font-mono tracking-wide cursor-pointer shadow-[0_0_20px_rgba(0,240,255,0.3)]"
+          >
+            <span className="material-symbols-outlined text-base text-[#0B0E17]">sports_soccer</span>
+            <span className="font-bold text-black uppercase tracking-wider">Play Now · Matchmake</span>
+          </Link>
           <Link
             href="/auction"
-            className="w-full max-w-sm bg-gradient-to-r from-[#00F0FF] via-[#6366F1] to-[#8B5CF6] hover:brightness-110 active:scale-[0.99] text-[#0B0E17] py-3.5 px-6 rounded-full font-bold text-xs sm:text-sm flex items-center justify-center gap-2 mx-auto cyber-glow-btn transition-all font-mono tracking-wide cursor-pointer shadow-[0_0_20px_rgba(0,240,255,0.3)]"
+            className="w-full sm:w-auto bg-[#141d33] hover:bg-[#1a2642] border border-[#00F0FF]/40 text-[#00F0FF] py-3.5 px-6 rounded-full font-bold text-xs sm:text-sm font-mono transition-all"
           >
-            <span className="material-symbols-outlined text-base text-[#0B0E17]">rocket_launch</span>
-            <span className="font-bold text-black uppercase tracking-wider">Join Draft</span>
+            Live Arena
           </Link>
         </div>
       </div>

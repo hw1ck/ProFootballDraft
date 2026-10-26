@@ -166,3 +166,11 @@ class SoundManager {
 }
 
 export const soundManager = new SoundManager();
+
+export function playSound(type: 'tick' | 'bid' | 'hammer' | 'bell' | 'pass' | 'fanfare' | 'error') {
+  if (type === 'tick') soundManager.playTickSound(true);
+  else if (type === 'bid') soundManager.playBidSound();
+  else if (type === 'hammer') soundManager.playGavelSound();
+  else if (type === 'bell' || type === 'fanfare') soundManager.playSoldCelebration();
+  else if (type === 'pass' || type === 'error') soundManager.playErrorSound();
+}
